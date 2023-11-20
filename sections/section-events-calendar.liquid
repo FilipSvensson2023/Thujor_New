@@ -1,0 +1,472 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{%- liquid
+  if section.settings.link_text != empty and section.settings.link_url != blank
+    assign link = true
+  endif
+
+  if section.settings.title != empty
+    assign show_header = true
+  elsif link and section.settings.text_alignment == 'start'
+    assign show_header = true
+  endif
+
+  capture title_classes
+    echo 'w720 ' | append: section.settings.title_size
+    if section.settings.text_alignment == 'center'
+      echo ' text-center align-center'
+    endif
+  endcapture
+  if section.settings.title_size == 'size-50'
+    assign title_size = 'h1'
+    assign title_classes = title_classes | append: ' mobile-size-' | append: settings.mobile_font_size | remove: 'px'
+  else
+    assign title_size = section.settings.title_size
+  endif
+-%}
+
+{%- if link %}
+  {%- capture link -%}
+    <p class="class-x{% unless section.settings.show_link %} link-btn{% endunless %} button-palette-{{ section.settings.button_color_palette }}"><a href="{{ section.settings.link_url }}" {% if section.settings.show_link %}class="strong"{% endif %}>{{ section.settings.link_text }}{% if section.settings.show_link %}&nbsp;<i aria-hidden="true" class="icon-chevron-right"></i>{% endif %}</a></p>
+  {%- endcapture %}
+{%- endif -%}
+
+{%- if show_header -%}
+<header class="cols{% if link and section.settings.show_link == false %} align-middle{% endif %}">
+  {%- if section.settings.title != empty -%}
+    <{{ title_size }} class="{{ title_classes }}">{{ section.settings.title }}</{{ title_size }}>
+  {%- endif -%}
+  {%- if link and section.settings.text_alignment == 'start' -%}
+    {{ link | replace: 'class-x', 'mobile-hide' }}
+  {%- endif -%}
+  </header>
+{%- endif -%}
+<link href="{{ 'async-events.css' | asset_url }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ 'async-events.css' | asset_url }}">
+</noscript>
+<ul class="l4ev">
+  {%- for block in section.blocks -%}
+    <li {{ block.shopify_attributes }}{% if block.settings.title_size == 'size-50' %} class="size-18 mobile-size-14"{% endif %}>
+      {%- liquid
+        if block.settings.title_size == 'size-50'
+          assign title_classes = block.settings.title_size
+          assign title_size = 'h1'
+        else
+          assign title_classes = false
+          assign title_size = block.settings.title_size
+        endif
+        assign day = block.settings.date | date: "%d"
+        assign month = block.settings.date | date: "%b"
+      -%}
+      {%- if block.settings.image != blank -%}
+        <figure>
+          <picture>
+            <img
+              src="{{ 'placeholder-pixel.png' | asset_img_url }}"
+              data-src="{{ block.settings.image | image_url: 305 }}"
+              data-srcset="{% render 'image-srcset', image: block.settings.image, max_width: 720 %}"
+              sizes="
+                (min-width: 760px) 305px,
+                100vw
+                "
+              alt="{{ block.settings.image.alt | default: block.settings.title | escape }}"
+              style="object-position: {{ block.settings.image.presentation.focal_point }}"
+              width="305"
+              height="190">
+          </picture>
+        </figure>
+      {%- endif -%}
+      {%- if block.settings.date != empty -%}<p class="palette-{{ block.settings.date_color_palette }} date">{{ day }} <span>{{ month }}</span></p>{%- endif -%}
+      <div>
+        {%- if block.settings.title or block.settings.time -%}
+          <{{ title_size }} class="cols {% if title_classes %}{{ title_classes }}{% endif %} {{ block.settings.title_size_mobile }}">
+            <span>{{ block.settings.title }}</span>
+            {%- if block.settings.time != empty -%}<span class="small overlay-content"><i aria-hidden="true" class="icon-time"></i>&nbsp;{{ block.settings.time }}</span>{%- endif -%}
+          </{{ title_size }}>
+        {%- endif -%}
+        {{ block.settings.text }}
+        <p class="link-btn">
+          {%- if block.settings.location != empty -%}
+            {% if block.settings.location_url %}
+              <a href="{{ block.settings.location_url }}" class="button-palette-light_2 size-s font-regular plain"><i aria-hidden="true" class="icon-pin"></i>&nbsp;{{ block.settings.location }}</a>
+            {% else %}
+              <span class="button-palette-light_2 s1bx size-s font-regular plain"><i aria-hidden="true" class="icon-pin"></i>&nbsp;{{ block.settings.location }}</span>
+            {% endif %}
+          {%- endif -%}
+          {%- if block.settings.show_link and block.settings.link_text -%}
+            <a href="{{ block.settings.link_url }}" class="button-palette-{{ block.settings.button_color_palette }} inline">{{ block.settings.link_text }}&nbsp;<i aria-hidden="true" class="icon-chevron-right"></i></a>
+          {%- endif -%}
+        </p>
+        {%- if block.settings.show_link == false and block.settings.link_text -%}
+          <p class="link-btn button-palette-{{ block.settings.button_color_palette }}"><a href="{{ block.settings.link_url }}">{{ block.settings.link_text }}</a></p>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endfor -%}
+</ul>
+{%- if link and section.settings.text_alignment == 'center' -%}
+  {{ link | replace: 'class-x', 'm0 text-center' }}
+{%- elsif link and section.settings.text_alignment == 'start' -%}
+  {{ link | replace: 'class-x', 'm0 mobile-only' }}
+{%- endif -%}
+
+
+<style>
+  @media only screen and (min-width: 47.5em) {
+  {% if link and section.settings.text_alignment == 'center' %}
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+  {% else %}
+    #shopify-section-{{ section.id }} .l4ev { margin-bottom: {{ section.settings.spacing_desktop | minus: 20 }}px; }
+  {% endif %}
+  }
+  @media only screen and (max-width: 47.5em) {
+  {% if link %}
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+  {% else %}
+    #shopify-section-{{ section.id }} .l4ev { margin-bottom: {{ section.settings.spacing_mobile | minus: 20 }}px; }
+  {% endif %}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.events_calendar.name",
+  "tag": "article",
+  "settings": [
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "t:sections.events_calendar.settings.text_alignment.label",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.events_calendar.settings.text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.events_calendar.settings.text_alignment.options__2.label"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "label": "t:sections.events_calendar.settings.title_size.label",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.events_calendar.settings.title_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.events_calendar.settings.title_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.events_calendar.settings.title_size.options__3.label"
+        },
+        {
+          "value": "size-50",
+          "label": "t:sections.events_calendar.settings.title_size.options__4.label"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "label": "t:sections.events_calendar.settings.title.label",
+      "default": "Events"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "t:sections.events_calendar.settings.link_text.label",
+      "info": "t:sections.events_calendar.settings.link_text.info",
+      "default": "View all"
+    },
+    {
+      "id": "link_url",
+      "type": "url",
+      "label": "t:sections.events_calendar.settings.link_url.label"
+    },
+    {
+      "type": "select",
+      "id": "button_color_palette",
+      "label": "t:sections.events_calendar.settings.button_color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:sections.events_calendar.settings.button_color_palette.options__6.label"
+        }
+      ],
+      "default": "accent"
+    },
+    {
+      "id": "show_link",
+      "type": "checkbox",
+      "label": "t:sections.events_calendar.settings.show_link.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.events_calendar.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:sections.events_calendar.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:sections.events_calendar.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "t:sections.events_calendar.blocks.event.name",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "t:sections.events_calendar.blocks.event.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "date_color_palette",
+          "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.label",
+          "options": [
+            {
+              "value": "white",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__1.label"
+            },
+            {
+              "value": "black",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__2.label"
+            },
+            {
+              "value": "light",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__3.label"
+            },
+            {
+              "value": "dark",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__4.label"
+            },
+            {
+              "value": "accent",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__5.label"
+            },
+            {
+              "value": "light_2",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__6.label"
+            },
+            {
+              "value": "light_gradient",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__7.label"
+            },
+            {
+              "value": "dark_gradient",
+              "label": "t:sections.events_calendar.blocks.event.settings.date_color_palette.options__8.label"
+            }
+          ],
+          "default": "dark"
+        },
+        {
+          "type": "select",
+          "id": "button_color_palette",
+          "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.label",
+          "options": [
+            {
+              "value": "white",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__1.label"
+            },
+            {
+              "value": "black",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__2.label"
+            },
+            {
+              "value": "light",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__3.label"
+            },
+            {
+              "value": "dark",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__4.label"
+            },
+            {
+              "value": "accent",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__5.label"
+            },
+            {
+              "value": "light_2",
+              "label": "t:sections.events_calendar.blocks.event.settings.button_color_palette.options__6.label"
+            }
+          ],
+          "default": "accent"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "label": "t:sections.events_calendar.blocks.event.settings.title_size.label",
+          "options": [
+            {
+              "value": "h3",
+              "label": "t:sections.events_calendar.blocks.event.settings.title_size.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.events_calendar.blocks.event.settings.title_size.options__2.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.events_calendar.blocks.event.settings.title_size.options__3.label"
+            },
+            {
+              "value": "size-50",
+              "label": "t:sections.events_calendar.blocks.event.settings.title_size.options__4.label"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.events_calendar.blocks.event.settings.title.label",
+          "default": "Event"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "t:sections.events_calendar.blocks.event.settings.text.label",
+          "default": "<p>Share information and details about this event.</p>"
+        },
+        {
+          "id": "date",
+          "type": "text",
+          "label": "t:sections.events_calendar.blocks.event.settings.date.label",
+          "placeholder": "July 15th",
+          "default": "July 15th"
+        },
+        {
+          "id": "time",
+          "type": "text",
+          "label": "t:sections.events_calendar.blocks.event.settings.time.label",
+          "placeholder": "7PM - 11PM"
+        },
+        {
+          "id": "location",
+          "type": "text",
+          "label": "t:sections.events_calendar.blocks.event.settings.location.label",
+          "default": "Event location"
+        },
+        {
+          "id": "location_url",
+          "type": "url",
+          "label": "t:sections.events_calendar.blocks.event.settings.location_url.label"
+        },
+        {
+          "id": "link_text",
+          "type": "text",
+          "label": "t:sections.events_calendar.blocks.event.settings.link_text.label",
+          "info": "t:sections.events_calendar.blocks.event.settings.link_text.info",
+          "default": "More info"
+        },
+        {
+          "id": "link_url",
+          "type": "url",
+          "label": "t:sections.events_calendar.blocks.event.settings.link_url.label"
+        },
+        {
+          "id": "show_link",
+          "type": "checkbox",
+          "label": "t:sections.events_calendar.blocks.event.settings.show_link.label",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "t:sections.events_calendar.blocks.event.settings.mobile.header"
+        },
+        {
+          "type": "select",
+          "id": "title_size_mobile",
+          "label": "t:sections.events_calendar.blocks.event.settings.mobile.title_size_mobile.label",
+          "options": [
+            {
+              "value": "mobile-size-16",
+              "label": "t:sections.events_calendar.blocks.event.settings.mobile.title_size_mobile.options__1.label"
+            },
+            {
+              "value": "mobile-size-18",
+              "label": "t:sections.events_calendar.blocks.event.settings.mobile.title_size_mobile.options__2.label"
+            },
+            {
+              "value": "mobile-size-22",
+              "label": "t:sections.events_calendar.blocks.event.settings.mobile.title_size_mobile.options__3.label"
+            }
+          ],
+          "default": "mobile-size-18"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.events_calendar.presets.name",
+      "blocks": [
+        {
+          "type": "event",
+          "settings": {
+            "date": "July 31th",
+            "time": "7PM - 11PM"
+          }
+        },
+        {
+          "type": "event",
+          "settings": {
+            "date": "August 1th",
+            "time": "8PM"
+          }
+        },
+        {
+          "type": "event",
+          "settings": {
+            "date": "August 2nd"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

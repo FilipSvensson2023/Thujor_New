@@ -1,0 +1,79 @@
+{%- if section.settings.text != empty and section.settings.enable -%}
+  <div class="text-center">
+    <div>
+      <p class="announcemnet__text">
+        {{ section.settings.text | replace: '</p><p>', '<br>' | remove: '<p>' | remove: '</p>' }}
+      </p>
+    </div>
+  {%- endif -%}
+  {%- style -%}
+    :root {
+      --custom_alert_bg: var(--{{ section.settings.color_palette }}_bg);
+      --custom_alert_fg: var(--{{ section.settings.color_palette | remove: '_gradient' }}_fg);
+    }
+  {%- endstyle -%}
+</div>
+
+
+{% schema %}
+{
+  "name": "t:static_sections.announcement_bar.name",
+  "settings": [
+    {
+      "id": "enable",
+      "type": "checkbox",
+      "label": "t:static_sections.announcement_bar.settings.enable.label",
+      "info": "t:static_sections.announcement_bar.settings.enable.info"
+    },
+    {
+      "type": "select",
+      "id": "color_palette",
+      "label": "t:static_sections.announcement_bar.settings.color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__6.label"
+        },
+        {
+          "value": "light_gradient",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__7.label"
+        },
+        {
+          "value": "dark_gradient",
+          "label": "t:static_sections.announcement_bar.settings.color_palette.options__8.label"
+        }
+      ],
+      "default": "accent"
+    },
+    {
+      "id": "text",
+      "type": "richtext",
+      "label": "t:static_sections.announcement_bar.settings.text.label",
+      "default": {
+        "en": "<p>Shout out your big announcement here!</p>",
+        "nl": "<p>Beschrijf je grote aankondiging hier!</p>"
+      }
+    }
+  ]
+}
+{% endschema %}

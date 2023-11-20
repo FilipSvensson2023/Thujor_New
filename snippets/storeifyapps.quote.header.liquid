@@ -1,0 +1,52 @@
+<script type="text/javascript">
+	var storeifyRequestaquote = storeifyRequestaquote || {};
+	storeifyRequestaquote.locale = {{shop.locale | json }};
+	storeifyRequestaquote.shop_domain = {{shop.domain | json }};
+	storeifyRequestaquote.shop_url = {{shop.url | json }};
+	{% if product %}
+	  storeifyRequestaquote.product = {{ product | json }};
+	  storeifyRequestaquote.product.options = {{ product.options_with_values | json }};
+	  {% for variant in product.variants %}
+	    storeifyRequestaquote.product.variants[{{forloop.index0}}].inventory_management = '{{variant.inventory_management }}';
+	    storeifyRequestaquote.product.variants[{{forloop.index0}}].inventory_quantity = {{variant.inventory_quantity }};
+	    storeifyRequestaquote.product.variants[{{forloop.index0}}].inventory_policy = '{{variant.inventory_policy }}';
+	  {% endfor %}
+	  {% assign prdCollectionsify = product.collections | map:'id' %}
+	   storeifyRequestaquote.product.collection = {{ prdCollectionsify | json }};
+	{% endif %}
+	{% if request.page_type == 'collection' %}
+      storeifyRequestaquote.collection = {
+        id : '{{ collection.id }}',
+        handle : '{{collection.handle}}',
+      };
+    {% endif %}
+	{% if customer %}
+	  storeifyRequestaquote.customer = {
+	    id : {{ customer.id }},
+	    first_name : "{{ customer.first_name }}",
+	    last_name : "{{ customer.last_name }}",
+	    email : "{{ customer.email }}",
+	    phone : "{{ customer.phone }}"
+	  };
+	{% endif %}
+
+	storeifyRequestaquote.page = {
+	type : '{{ request.page_type }}',
+	path : '{{request.path}}',
+	};
+	storeifyRequestaquote.money_format = '{{shop.money_format}}';
+	storeifyRequestaquote.collections = {};
+ storeifyRequestaquote.storeify_requestaquote_json = "{{ 'storeify-requestaquote-json.js' | asset_url }}"; 
+	storeifyRequestaquote.root_url = '{{ routes.root_url }}';
+	{% if shop.metafields.storeifyquote %}	{% assign locale_current = shop.locale %}	{% if shop.metafields.storeifyquote.quote_lang contains locale_current %}		storeifyRequestaquote.lang = {{shop.metafields.storeifyquote.quote_lang[locale_current] | json }};	{% else %}	   storeifyRequestaquote.lang = {% raw %}{"btn_addquote":"Vi erbjuder denna produkt som Planterad & Klar - Beg\u00e4r offert h\u00e4r","call_for_price":"Beg\u00e4r offert som Planterad & Klar","btn_view":"Beg\u00e4r offert >>","btn_continue":"Forts\u00e4tt till webshopen >>","add_title":"L\u00e4gg till \"{{product}}\" till offert","tbl_name":"Namn","tbl_sku":"SKU","tbl_option":"V\u00e4lj","tbl_qty":"Antal","quote_empty":"Din f\u00f6rfr\u00e5gan \u00e4r tom","your_price":"Your Price","old_price":"Price","print":"Print PDF","total":"Total","btn_see_price":"Login to see price","draft_order":"Draft Order","date":"Date","status":"Status","view":"View","quote_history":"Quote history","load_more":"Load more >>","subtotal":"Subtotal","total_tax":"Total Tax","excl_shipping":"(Excl. Shipping)","excl_tax_shipping":"(Excl. Tax & Shipping)"};{% endraw %}	{% endif %}{% endif %}storeifyRequestaquote.show_input_price = 0;	storeifyRequestaquote.hide_variants_outofstock = 0;
+	
+</script>
+<link rel="stylesheet" href="{{ 'storeify-requestaquote-styles.css' | asset_url }}" type="text/css"  media="all">
+<link id="storeify-requestaquote-hidden" href="{{ 'storeify-requestaquote-hidden.css' | asset_url}}" type="text/css" media="all">
+<style type="text/css">.storeify-quote-btn-trigger-popup {
+border: 0;
+text-transform: none;
+background-color: #1a925e;
+font-size: 12px;
+}
+.storeify-button-grid button{width:100%;}</style>

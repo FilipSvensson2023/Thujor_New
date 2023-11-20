@@ -1,0 +1,369 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": true
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "90724a70-740a-4cc9-984c-764e1d76a5bd": {
+          "type": "codes",
+          "disabled": true,
+          "settings": {
+            "show_sku": true,
+            "show_barcode": true
+          }
+        },
+        "c7259cb9-7235-4028-b6df-3a68077fed80": {
+          "type": "title",
+          "settings": {
+            "layout": "title-right",
+            "title_size": "h3",
+            "show_vendor_brand": false,
+            "show_vendor_name": false,
+            "show_product_rating": true,
+            "share_whatsapp": true,
+            "share_facebook": true,
+            "share_twitter": true,
+            "share_pinterest": true,
+            "share_messenger": true,
+            "share_email": true,
+            "layout_mobile": "title-top"
+          }
+        },
+        "f1c255b3-9dd7-4eed-8846-5e1f76c61660": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"shopify-product-reviews-badge\" data-id=\"{{ product.id }}\"><\/span>"
+          }
+        },
+        "a7cf2009-7f3d-4ef1-8c8a-4b7f710369e4": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": false
+          }
+        },
+        "ec1a405e-152c-41e7-bdd9-cbd24bb36c66": {
+          "type": "custom_html",
+          "settings": {
+            "custom_html": "<i>Alla priser är inkl moms<i><\/i><\/i>"
+          }
+        },
+        "ce24ee89-1c0b-49ec-adaa-f4db693f8331": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "dropdown",
+            "options": false,
+            "show_variant_images": true,
+            "show_unavailable_variants": true,
+            "enable_selling_plans": true
+          }
+        },
+        "buy_button": {
+          "type": "buy_button",
+          "settings": {
+            "show_amount_selection": true,
+            "show_dynamic_buybutton": true,
+            "preorder": false,
+            "preorder_button_text": "Pre-order",
+            "preorder_label": "",
+            "preorder_label_color_palette": "light_2",
+            "preorder_show_dynamic_buybutton": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "22a73158-8f21-4a17-826e-2158c4a70773": {
+          "type": "shopify:\/\/apps\/s-request-a-quote-hide-price\/blocks\/button_block\/dac9aba2-251e-4c25-abc3-9fc57dbf7885",
+          "settings": {
+            "font_size": 16,
+            "color_text": "#ffffff",
+            "bg_button": "#000000",
+            "label_btn": "Add to Quote",
+            "multi_lang": true,
+            "class_button": "storeify-btn-custom",
+            "form_id": ""
+          }
+        },
+        "dedff549-0b51-4aa3-bca9-ea29eea32b29": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp": "<p>Minsta ordervärde för beställning av växter är 3000kr<\/p>"
+          }
+        },
+        "279e5685-464c-4653-883c-1323cde962d7": {
+          "type": "shipping_timer",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "f44ef894-cdf7-44a8-95a3-0f1cfb8f35e6": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Info om {{ product.title }}",
+            "icon": "none",
+            "header_image": "shopify:\/\/shop_images\/tree.png",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "",
+            "image_width": 465,
+            "liquid": "{{ product.metafields.global.short_description }}",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "76484768-ec6c-43bd-aa05-1272322d038b": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Så många plantor behöver du",
+            "icon": "none",
+            "header_image": "shopify:\/\/shop_images\/tree-2.png",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "hur-manga-thujor-behovs",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "ce205997-9cfd-4668-b318-8e333e12f7d6": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Så planterar du thuja",
+            "icon": "none",
+            "header_image": "shopify:\/\/shop_images\/plant.png",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "sa-planterar-du-en-thuja",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "b25f20b8-3803-4f85-8833-36421dd30bc3": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Leveranstider",
+            "icon": "24_hour_clock",
+            "header_image": "shopify:\/\/shop_images\/time-left.png",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "<p>Vid beställning under leveransperiden Mar-Okt levereras din order till dig inom 3-14 dagar. <\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "f91b17c0-8b88-4087-9c39-1ad426d7a14c": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Så går leveranser till",
+            "icon": "truck",
+            "header_image": "shopify:\/\/shop_images\/garbage-truck.png",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "leveransplan",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "6406183b-c291-4c95-8b2f-2c801d9b8514": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Villkor & Garantier",
+            "icon": "verified",
+            "header_image": "shopify:\/\/shop_images\/download_4.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "villkor-info",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "903be460-3bcb-453e-81f5-0c4b79e11bce": {
+          "type": "complementary_products",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Passar till {{ product.title }}",
+            "icon": "coupon",
+            "header_image": "shopify:\/\/shop_images\/download_6.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "layout": "grid",
+            "number_of_items": 5,
+            "enable_quick_buy_desktop": true,
+            "enable_quick_buy_mobile": true,
+            "enable_quick_buy_drawer": true,
+            "enable_quick_buy_qty_selector": true,
+            "enable_color_picker": false,
+            "enable_quick_buy_compact": true,
+            "products_show_image": true,
+            "products_show_labels": true,
+            "products_show_vendor": false,
+            "products_show_title": true,
+            "products_show_rating": false,
+            "products_show_price": true,
+            "products_show_stock": false
+          }
+        },
+        "17aa2c87-5ec4-4996-a659-322daf66fab8": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "90724a70-740a-4cc9-984c-764e1d76a5bd",
+        "c7259cb9-7235-4028-b6df-3a68077fed80",
+        "f1c255b3-9dd7-4eed-8846-5e1f76c61660",
+        "a7cf2009-7f3d-4ef1-8c8a-4b7f710369e4",
+        "price",
+        "ec1a405e-152c-41e7-bdd9-cbd24bb36c66",
+        "ce24ee89-1c0b-49ec-adaa-f4db693f8331",
+        "buy_button",
+        "22a73158-8f21-4a17-826e-2158c4a70773",
+        "dedff549-0b51-4aa3-bca9-ea29eea32b29",
+        "279e5685-464c-4653-883c-1323cde962d7",
+        "f44ef894-cdf7-44a8-95a3-0f1cfb8f35e6",
+        "76484768-ec6c-43bd-aa05-1272322d038b",
+        "ce205997-9cfd-4668-b318-8e333e12f7d6",
+        "b25f20b8-3803-4f85-8833-36421dd30bc3",
+        "f91b17c0-8b88-4087-9c39-1ad426d7a14c",
+        "6406183b-c291-4c95-8b2f-2c801d9b8514",
+        "903be460-3bcb-453e-81f5-0c4b79e11bce",
+        "17aa2c87-5ec4-4996-a659-322daf66fab8"
+      ],
+      "settings": {
+        "show_thumbs_desktop": true,
+        "show_thumbs_mobile": true,
+        "images_layout": "aside",
+        "show_product_description": true,
+        "product_description_enable_read_more": false,
+        "pros": "",
+        "cons": "",
+        "specifications": "",
+        "product_description_mobile_collapse": true
+      }
+    },
+    "1679056478ba8d02e3": {
+      "type": "apps",
+      "blocks": {
+        "fd22a2a4-d569-46ea-ba0d-d6f1fe3a3565": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fd22a2a4-d569-46ea-ba0d-d6f1fe3a3565"
+      ],
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommended_products_qty": 6,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Du kanske också gillar",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 0,
+        "mobile_collapse": false
+      }
+    },
+    "recently-viewed": {
+      "type": "section-recently-viewed-products",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "left",
+        "title_size": "h3",
+        "title": "Tidigare produkter du tittat på",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "reviews": {
+      "type": "product-reviews",
+      "settings": {
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Recensioner",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "mobile_collapse": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "1679056478ba8d02e3",
+    "recommendations",
+    "recently-viewed",
+    "reviews"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2": {
+      "type": "section-usp-bar",
+      "blocks": {
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Faktura 14 dagar<\/strong><\/p>"
+          }
+        },
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Delbetalning<\/strong><\/p>"
+          }
+        },
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Swish<\/strong><\/p>"
+          }
+        },
+        "c4cbf904-98c0-4c09-84b2-7fe832888ea3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Direktbetalning<\/strong><\/p>"
+          }
+        },
+        "3ca1abd6-63c9-433c-af07-3826e6504ccb": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Kortbetalning<\/strong><\/p>"
+          }
+        },
+        "fb5b68b9-87f2-43c2-9b9b-7d4f6a946245": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Trustly<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-1",
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-2",
+        "template--19642163593545__85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2-usp-3",
+        "c4cbf904-98c0-4c09-84b2-7fe832888ea3",
+        "3ca1abd6-63c9-433c-af07-3826e6504ccb",
+        "fb5b68b9-87f2-43c2-9b9b-7d4f6a946245"
+      ],
+      "settings": {
+        "color_palette": "light",
+        "layout": "rows",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "show_arrows": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-cart": {
+      "type": "main-cart",
+      "blocks": {
+        "2e80a36d-6430-46c3-9e9d-1dee82e7df53": {
+          "type": "shipping_timer",
+          "settings": {
+          }
+        },
+        "df654767-2f64-4ff1-a1f4-2b5173c81b42": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Vi erbjuder faktura, delbetalning och Swish. Klicka dig vidare till kassan nedan för samtliga betalalternativ.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2e80a36d-6430-46c3-9e9d-1dee82e7df53",
+        "df654767-2f64-4ff1-a1f4-2b5173c81b42"
+      ],
+      "settings": {
+        "show_dynamic_buybutton": true,
+        "enable_giftcard_or_discount_tab": true,
+        "show_payment_methods": true,
+        "show_order_notes": true,
+        "order_notes_alignment": "right",
+        "enable_terms_checkbox": false,
+        "terms_text": "<p>I accept the <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a><\/p>"
+      }
+    },
+    "16989516480a9ca0d5": {
+      "type": "apps",
+      "blocks": {
+        "0aafdd17-e7da-4b5d-b286-28d1595d3076": {
+          "type": "shopify:\/\/apps\/propair-furniture-warranty\/blocks\/app-block-cart\/0fac0297-0c28-4409-8d5e-8673f623171f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "0aafdd17-e7da-4b5d-b286-28d1595d3076"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "85b6bbd4-6427-4b44-a8dd-cfa3a75bcfc2",
+    "main-cart",
+    "16989516480a9ca0d5"
+  ]
+}

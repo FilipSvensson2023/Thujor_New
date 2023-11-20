@@ -1,0 +1,348 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "71d787cc-e7cb-4103-abeb-3137b2331429": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19385963675977__71d787cc-e7cb-4103-abeb-3137b2331429-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/how-to-make-laurel-grow-faster.webp",
+            "layout": "left",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "black",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Lagerhägg - Prunus laurocerasus",
+            "text": "<p>Lagerhägg är den grönaste av alla häckar! Trädgårdsdesigners förstaval! Stora intensivgröna blad som är gröna hela året, passar mycket bra som både häck eller som solitärplanta i din trädgård.<\/p><p>Gör som <strong>andra nöjda<\/strong> kunder, beställ dina lagerhäggsplantor hos Thujor.se.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "3a29738d-2e88-46b8-8617-b88b910b4d85": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/long-barn-vita-sackville-west-hornbeams-garden-door-clare-coulson-e1494559544481.jpg",
+            "layout": "left",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "black",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Avenbok - Carpinus Betulus",
+            "text": "<p>Trivs bäst i humusrik, kalkhaltig jord i sol\/halvskugga men klarar även djupare skugga. Bör bindas upp de första åren för att behålla rätt linje. Klipp inte på höjden förrän strax under önskad slutlig höjd.Perfekt för både stora och små trädgårdar och för avskärmning.<\/p><p>Gör som <strong>34 000 nöjda<\/strong> kunder, beställ dina Avenboksplantor hos Thujor.se.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "571eea15-7ff1-4836-9d73-017e0829dd05": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hedgetrimming2-1200x675.jpg",
+            "layout": "left",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "black",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Avenbok - Carpinus Betulus",
+            "text": "<p>Trivs bäst i humusrik, kalkhaltig jord i sol\/halvskugga men klarar även djupare skugga. Bör bindas upp de första åren för att behålla rätt linje. Klipp inte på höjden förrän strax under önskad slutlig höjd.Perfekt för både stora och små trädgårdar och för avskärmning.<\/p><p>Gör som <strong>34 000 nöjda<\/strong> kunder, beställ dina Avenboksplantor hos Thujor.se.<\/p>",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "3d6ecd74-6f7f-4d18-8cd3-7e26f43a8988": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hornbeam-instant-hedge-3.jpg",
+            "layout": "left",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "black",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Avenbok - Carpinus Betulus",
+            "text": "<p>Trivs bäst i humusrik, kalkhaltig jord i sol\/halvskugga men klarar även djupare skugga. Bör bindas upp de första åren för att behålla rätt linje. Klipp inte på höjden förrän strax under önskad slutlig höjd.Perfekt för både stora och små trädgårdar och för avskärmning.<\/p><p>Gör som <strong>34 000 nöjda<\/strong> kunder, beställ dina Avenboksplantor hos Thujor.se.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "570ef1c0-8fb3-427d-8ce7-3fcb2b890791": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-1793176863.jpg",
+            "layout": "left",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "black",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Avenbok - Carpinus Betulus.",
+            "text": "<p>Trivs bäst i humusrik, kalkhaltig jord i sol\/halvskugga men klarar även djupare skugga. Bör bindas upp de första åren för att behålla rätt linje. Klipp inte på höjden förrän strax under önskad slutlig höjd.Perfekt för både stora och små trädgårdar och för avskärmning.<\/p><p>Gör som <strong>34 000 nöjda<\/strong> kunder, beställ dina Avenboksplantor hos Thujor.se.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19385963675977__71d787cc-e7cb-4103-abeb-3137b2331429-slide-1",
+        "3a29738d-2e88-46b8-8617-b88b910b4d85",
+        "571eea15-7ff1-4836-9d73-017e0829dd05",
+        "3d6ecd74-6f7f-4d18-8cd3-7e26f43a8988",
+        "570ef1c0-8fb3-427d-8ce7-3fcb2b890791"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": true,
+        "autoplay_seconds": 6,
+        "enable_controls": true,
+        "height_mobile": "m",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "left"
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "sorting",
+        "product_grid"
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 4,
+        "show_collection_image": true,
+        "enable_filters": false,
+        "enable_menu": false,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "filter_sticky": false,
+        "filters_show_more_limit": 7,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "4abcee74-e407-4e22-8056-e6ddd557a88b": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Image banner",
+            "text": "<p>Highlight a new collection and share details about products related to this image<\/p>",
+            "link_text": "Button",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "853179a9-1761-421e-afde-9639335d5d7a": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19385963675977__853179a9-1761-421e-afde-9639335d5d7a-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "video": "shopify:\/\/files\/videos\/Svedberga reel_1080p_Proxy.mp4",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19385963675977__853179a9-1761-421e-afde-9639335d5d7a-slide-1"
+      ],
+      "settings": {
+        "height": "l",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "08fd39b0-72b4-4d8e-bd0b-56dc681e6f80": {
+      "type": "section-contact-form",
+      "blocks": {
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "Namn",
+            "placeholder": "Namn",
+            "required": true
+          }
+        },
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "Företagsnamn",
+            "placeholder": "Företagsnamn",
+            "required": false
+          }
+        },
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-email-1": {
+          "type": "email",
+          "settings": {
+            "title": "E-post",
+            "placeholder": "E-post"
+          }
+        },
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-tel-1": {
+          "type": "tel",
+          "settings": {
+            "title": "Telefonnummer",
+            "placeholder": "Telefonnummer",
+            "required": false
+          }
+        },
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "Ämne",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-textarea-1": {
+          "type": "textarea",
+          "settings": {
+            "title": "Meddelande",
+            "placeholder": "Meddelande",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-1",
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-2",
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-email-1",
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-tel-1",
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-text-3",
+        "template--19385963675977__08fd39b0-72b4-4d8e-bd0b-56dc681e6f80-textarea-1"
+      ],
+      "custom_css": [
+        ".f8cm {height: 100%; background: #fff;}"
+      ],
+      "settings": {
+        "alignment": "center",
+        "title_size": "size-50",
+        "title": "Har du frågor om Lagerhägg?",
+        "button_color_palette": "dark",
+        "show_placeholder": true,
+        "compact": false,
+        "spacing_desktop": 10,
+        "spacing_mobile": 10
+      }
+    },
+    "1690967937383ddefd": {
+      "type": "apps",
+      "blocks": {
+        "b152d0ca-d9ff-403d-a808-1915060db653": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "b152d0ca-d9ff-403d-a808-1915060db653"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "71d787cc-e7cb-4103-abeb-3137b2331429",
+    "main-collection",
+    "4abcee74-e407-4e22-8056-e6ddd557a88b",
+    "853179a9-1761-421e-afde-9639335d5d7a",
+    "08fd39b0-72b4-4d8e-bd0b-56dc681e6f80",
+    "1690967937383ddefd"
+  ]
+}

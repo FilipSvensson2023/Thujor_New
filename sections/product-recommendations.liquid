@@ -1,0 +1,226 @@
+{%- liquid
+  capture title_classes
+    echo 'w720 ' | append: section.settings.title_size
+    if section.settings.text_alignment == 'center'
+      echo ' text-center align-center'
+    endif
+  endcapture
+  if section.settings.title_size == 'size-50'
+    assign title_size = 'h1'
+    assign title_classes = title_classes | append: ' mobile-size-' | append: settings.mobile_font_size | remove: 'px'
+  else
+    assign title_size = section.settings.title_size
+  endif
+-%}
+
+<div class="m6tb static">
+  <nav class="hidden">
+    <ul>
+      <li class="active"><a href="#section-related">{{ section.settings.title }}</a></li>
+    </ul>
+  </nav>
+  <div>
+    <div id="section-related" {% if recommendations.products_count == 0 %}data-hide{% endif %} class="product-recommendations{% if section.settings.mobile_collapse %} tab-closed{% endif %}" data-template="{{ section.id }}" data-product-id="{{ product.id }}" data-limit="{{ section.settings.recommended_products_qty }}" data-intent="related">
+      <article>
+        {%- if recommendations.products_count > 0 -%}
+          {%- liquid
+             assign product_count = recommendations.products_count
+             assign limit = product_count | at_most: section.settings.number_of_items
+             case limit
+               when 0
+                 assign width_class = 'w20'
+               when 2
+                 assign width_class = 'w50'
+               when 3
+                 assign width_class = 'w33'
+               when 4
+                 assign width_class = 'w25'
+               when 5
+                 assign width_class = 'w20'
+               when 6
+                 assign width_class = 'w16'
+               when 7
+                 assign width_class = 'w14'
+               else
+                 assign width_class = 'w12'
+             endcase
+          -%}
+          <header class="cols">
+            {%- if section.settings.title != empty -%}
+              <{{ title_size }} class="mobile-hide {{ title_classes }}">{{ section.settings.title }}</{{ title_size }}>
+            {%- endif -%}
+          </header>
+          <ul class="l4cl {% if settings.enable_quick_buy and section.settings.hide_quick_buy == false %}with-quick-buy{% endif %} slider {{ width_class }}">
+            {%- liquid
+              for product in recommendations.products
+                capture placeholder_int
+                  cycle 1, 2, 3, 4, 5, 6
+                endcapture
+                render 'product-item', product: product, placeholder_int: placeholder_int, enable_quick_buy_desktop: section.settings.enable_quick_buy_desktop, enable_quick_buy_mobile: section.settings.enable_quick_buy_mobile, enable_quick_buy_qty_selector: section.settings.enable_quick_buy_qty_selector, quick_buy_compact: section.settings.enable_quick_buy_compact, enable_quick_buy_drawer: section.settings.enable_quick_buy_drawer
+              endfor
+            -%}
+          </ul>
+      {%- endif -%}
+      </article>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media only screen and (min-width: 47.5em) {
+    #shopify-section-{{ section.id }} .l4cl { margin-bottom: {{ section.settings.spacing_desktop | minus: 22 }}px; }
+  }
+  @media only screen and (max-width: 47.5em) {
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_mobile | minus: -26 }}px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:static_sections.product_recommendations.name",
+  "class": "with-mobile-tab hidden",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:static_sections.product_recommendations.settings.paragraph"
+    },
+    {
+      "type": "range",
+      "id": "recommended_products_qty",
+      "label": "t:static_sections.product_recommendations.settings.recommended_products_qty.label",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "number_of_items",
+      "label": "t:static_sections.product_recommendations.settings.number_of_items.label",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "t:static_sections.product_recommendations.settings.text_alignment.label",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:static_sections.product_recommendations.settings.text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:static_sections.product_recommendations.settings.text_alignment.options__2.label"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "label": "t:static_sections.product_recommendations.settings.title_size.label",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:static_sections.product_recommendations.settings.title_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:static_sections.product_recommendations.settings.title_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:static_sections.product_recommendations.settings.title_size.options__3.label"
+        },
+        {
+          "value": "size-50",
+          "label": "t:static_sections.product_recommendations.settings.title_size.options__4.label"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "label": "t:static_sections.product_recommendations.settings.title.label",
+      "default": "You may also like"
+    },
+    {
+      "type": "header",
+      "content": "t:static_sections.product_recommendations.settings.quick_buy.header"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:static_sections.product_recommendations.settings.quick_buy.paragraph"
+    },
+    {
+      "id": "enable_quick_buy_desktop",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_desktop.label",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_mobile",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_mobile.label",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_drawer",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_drawer.label",
+      "info": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_drawer.info"
+    },
+    {
+      "id": "enable_quick_buy_qty_selector",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_qty_selector.label",
+      "info": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_qty_selector.info",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_compact",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_compact.label",
+      "info": "t:static_sections.product_recommendations.settings.quick_buy.enable_quick_buy_compact.info"
+    },
+    {
+      "type": "header",
+      "content": "t:static_sections.product_recommendations.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:static_sections.product_recommendations.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:static_sections.product_recommendations.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:static_sections.product_recommendations.settings.mobile.header"
+    },
+    {
+      "id": "mobile_collapse",
+      "type": "checkbox",
+      "label": "t:static_sections.product_recommendations.settings.mobile.mobile_collapse.label",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

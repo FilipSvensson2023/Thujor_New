@@ -1,0 +1,375 @@
+{%- liquid
+  assign body_font_bold = settings.body_font | font_modify: 'weight', 'bold'
+  assign body_font_italic = settings.body_font | font_modify: 'style', 'italic'
+  assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+%}
+{{ settings.heading_font | font_face: font_display: 'swap' }}
+{{ settings.body_font | font_face: font_display: 'swap' }}
+{{ body_font_bold | font_face: font_display: 'swap' }}
+{{ body_font_italic | font_face: font_display: 'swap' }}
+{{ body_font_bold_italic | font_face: font_display: 'swap' }}
+@font-face { font-family: 'i'; src: url({{ 'icomoon.woff2' | asset_url }}) format('woff2'), url({{ 'icomoon.woff' | asset_url }}) format('woff'); font-display: swap; }
+
+:root {
+  --secondary_text:     var(--white);
+  --secondary_bg:       {{ settings.palette_accent }};
+	--secondary_bg_dark:  {{ settings.palette_accent | color_darken: 10 }};
+	--secondary_bg_fade:  {{ settings.palette_accent | color_lighten: 10 }};
+
+  --secondary_btn_text:    {{ settings.regular_button_text_color }};
+	--secondary_bg_btn:      {{ settings.regular_button_color }};
+	--secondary_bg_btn_dark: {{ settings.regular_button_color | color_darken: 10 }};
+	--secondary_bg_btn_fade: {{ settings.regular_button_color | color_lighten: 10 }};
+
+  --tertiary_text:      {{ settings.buy_button_text_color }};
+	--tertiary_bg:        {{ settings.buy_button_color }};
+	--tertiary_bg_dark:   {{ settings.buy_button_color | color_darken: 10 }};
+	--tertiary_bg_fade:   {{ settings.buy_button_color | color_lighten: 10 }};
+  --tertiary_fg:        var(--tertiary_text);
+  {% if settings.button_style == 'inv' %}
+    --tertiary_text: var(--tertiary_bg);
+  {% endif %}
+
+  --quaternary_text:    {{ settings.dynamic_buy_button_text_color }};
+  --quaternary_bg:      {{ settings.dynamic_buy_button_color }};
+  --quaternary_bg_dark: {{ settings.dynamic_buy_button_color | color_darken: 10 }};
+  --quaternary_bg_fade: {{ settings.dynamic_buy_button_color | color_lighten: 10 }};
+  {% if settings.button_style == 'inv' %}
+    --quaternary_text: var(--quaternary_bg);
+  {% endif %}
+
+  --custom_top_search_bg:var(--body_bg);
+  --custom_input_fg:    var(--dark);
+
+  --alert_error:        {{ settings.negative_vibes }};
+	// --alert_error_bg:     {{ settings.negative_vibes | color_lighten: 50 }};
+	--alert_valid:        {{ settings.positive_vibes }};
+  --lime:               {{ settings.positive_vibes }};
+  --gallery:            {{ settings.palette_light }};
+  --sand:               {{ settings.palette_light }};
+
+  --product_label_bg:   {{ settings.product_label_color }};
+  --product_label_bg_dark:{{ settings.product_label_color | color_darken: 5 }};
+  --product_label_text: {{ settings.product_label_text_color }};
+  --sale_label_bg:      {{ settings.sale_label_color }};
+  --sale_label_bg_dark: {{ settings.sale_label_color | color_darken: 5 }};
+  --sale_label_text:    {{ settings.sale_label_text_color }};
+
+  --positive_bg:        {{ settings.positive_vibes }};
+  --positive_bg_dark:   {{ settings.positive_vibes | color_darken: 5 }};
+  --positive_fg:	      var(--white);
+
+  --price_color:        {{ settings.price_color }};
+  --price_color_old:    {{ settings.compare_at_price_color }};
+
+  --primary_text:       var(--{{ settings.text_color }});
+  --primary_text_h:     var(--{{ settings.title_color }});
+
+  --body_bg:            {{ settings.body_background_color }};
+
+  --main_ff:            {{ settings.body_font.family | remove: '"' }}, {{ settings.body_font.fallback_families }};
+	--main_ff_h:          {{ settings.heading_font.family | remove: '"' }}, {{ settings.heading_font.fallback_families }};
+  --main_fw:            {{ settings.body_font.weight }};
+  --main_fw_strong:     {{ settings.body_font.weight | plus: 300 | at_most: 900 }};
+  --main_fw_h:          {{ settings.heading_font.weight }};
+  --main_fw_h_strong:   {{ settings.heading_font.weight | plus: 300 | at_most: 900 }};
+  --main_fs:            {{ settings.body_font.style }};
+  --main_fs_h:          {{ settings.heading_font.style }};
+  --mob_h1:             {{ settings.mobile_font_size }};
+  --mob_h2:             {{ settings.mobile_font_size }};
+  --mob_h3:             {{ settings.mobile_font_size }};
+
+  {% unless settings.everything_rounded %}
+    --b2r: 0;
+  {% endunless %}
+
+  {% if settings.body_width == 'wide' %}
+    --glw: 100%;
+  {% endif %}
+}
+.t1ac {
+	--secondary_bg_btn:      {{ settings.regular_button_color | color_darken: 20 }};
+	--secondary_bg_btn_dark: {{ settings.regular_button_color | color_darken: 30 }};
+	--secondary_bg_btn_fade: {{ settings.regular_button_color }};
+
+  --tertiary_bg:        {{ settings.buy_button_color | color_darken: 20 }};
+  --tertiary_bg_dark:   {{ settings.buy_button_color | color_darken: 30 }};
+	--tertiary_bg_fade:   {{ settings.buy_button_color }};
+
+  --quaternary_bg:      {{ settings.dynamic_buy_button_color | color_darken: 20 }};
+  --quaternary_bg_dark: {{ settings.dynamic_buy_button_color | color_darken: 30 }};
+  --quaternary_bg_fade: {{ settings.dynamic_buy_button_color }};
+
+  --mob_h1:             {{ settings.mobile_font_size | remove: 'px' | plus: 2 }}px;
+  --mob_h2:             {{ settings.mobile_font_size | remove: 'px' | plus: 2 }}px;
+  --mob_h3:             {{ settings.mobile_font_size | remove: 'px' | plus: 2 }}px;
+}
+
+:root {
+  --white:              {{ settings.palette_white }};
+  --white_bg:           var(--white);
+  --white_bg_dark:      {{ settings.palette_white | color_darken: 5 }};
+  --white_bg_var:       var(--white_bg);
+  --white_fg:           var(--black);
+  --white_pl:           {{ settings.palette_black | color_lighten: 10 }};
+  --white_btn_bg:       var(--accent_bg);
+  --white_btn_bg_dark:  {{ settings.palette_accent | color_darken: 7 }};
+  --white_btn_fg:       var(--accent_fg);
+
+  --black:              {{ settings.palette_black }};
+  --black_bg:           var(--black);
+  --black_bg_dark:      {{ settings.palette_black | color_darken: 5 }};
+  --black_bg_var:       {{ settings.palette_black | color_lighten: 5 }};
+  --black_fg:           var(--white);
+  --black_pl:           {{ settings.palette_white | color_lighten: 10 }};
+  --black_btn_bg:       var(--accent_bg);
+  --black_btn_bg_dark:  {{ settings.palette_accent | color_darken: 7 }};
+  --black_btn_fg:       var(--accent_fg);
+
+  --light:              {{ settings.palette_light }};
+  --light_bg:           var(--light);
+  --light_bg_dark:      {{ settings.palette_light | color_darken: 5 }};
+  --light_bg_var:       {{ settings.palette_light | color_darken: 5 }};
+  --light_fg:           var(--black);
+  --light_pl:           {{ settings.palette_black | color_lighten: 10 }};
+  --light_btn_bg:       var(--accent_bg);
+  --light_btn_bg_dark:  {{ settings.palette_accent | color_darken: 7 }};
+  --light_btn_fg:       var(--accent_fg);
+
+  --light_2:            {{ settings.palette_light_2 }};
+  --light_2_bg:         var(--light_2);
+  --light_2_bg_dark:    {{ settings.palette_light_2 | color_darken: 5 }};
+  --light_2_bg_var:     {{ settings.palette_light_2 | color_darken: 5 }};
+  --light_2_fg:         var(--black);
+  --light_2_pl:         {{ settings.palette_black | color_lighten: 10 }};
+  --light_2_btn_bg:     var(--dark);
+  --light_2_btn_bg_dark:{{ settings.palette_dark | color_darken: 7 }};
+  --light_2_btn_fg:     var(--accent_fg);
+
+  --accent:	            {{ settings.palette_accent }};
+  --accent_bg:	        var(--accent);
+  --accent_bg_dark:     {{ settings.palette_accent | color_darken: 5 }};
+  --accent_bg_var:      {{ settings.palette_accent | color_darken: 5 }};
+  --accent_fg:	        var(--white);
+  --accent_pl:          {{ settings.palette_white | color_lighten: 10 }};
+  --accent_btn_bg:	    var(--accent_fg);
+  --accent_btn_bg_dark:	{{ settings.palette_white | color_darken: 7 }};
+  --accent_btn_fg:	    var(--accent_bg);
+
+  --dark:	              {{ settings.palette_dark }};
+  --dark_bg:	          var(--dark);
+  --dark_bg_dark:       {{ settings.palette_dark | color_darken: 5 }};
+  --dark_bg_var:        {{ settings.palette_dark | color_lighten: 5 }};
+  --dark_fg:	          var(--white);
+  --dark_pl:            {{ settings.palette_white | color_lighten: 10 }};
+  --dark_btn_bg:	      var(--accent_bg);
+  --dark_btn_bg_dark:	  {{ settings.palette_accent | color_darken: 7 }};
+  --dark_btn_fg:	      var(--accent_fg);
+
+  --light_gradient:     {{ settings.palette_light_gradient }};
+  --light_gradient_bg:  var(--light_gradient);
+
+  --dark_gradient:     {{ settings.palette_dark_gradient }};
+  --dark_gradient_bg:  var(--dark_gradient);
+}
+
+[class^="palette-white"], [data-active-content*="palette-white"] {
+  --primary_bg:         var(--white_bg);
+  --primary_text:       var(--white_fg);
+  --secondary_btn_text:     var(--white_btn_fg);
+  --secondary_bg_btn:       var(--white_btn_bg);
+	--secondary_bg_btn_dark:  var(--white_btn_bg_dark);
+}
+[class^="palette-black"], [data-active-content*="palette-black"] {
+  --primary_bg:         var(--black_bg);
+  --primary_text:       var(--black_fg);
+  --secondary_btn_text:     var(--black_btn_fg);
+  --secondary_bg_btn:       var(--black_btn_bg);
+	--secondary_bg_btn_dark:  var(--black_btn_bg_dark);
+}
+[class^="palette-light"], [data-active-content*="palette-light"] {
+  --primary_bg:         var(--light_bg);
+  --primary_text:       var(--light_fg);
+  --secondary_btn_text:     var(--light_btn_fg);
+  --secondary_bg_btn:       var(--light_btn_bg);
+	--secondary_bg_btn_dark:   var(--light_btn_bg_dark);
+}
+[class^="palette-light_2"], [data-active-content*="palette-light_2"] {
+  --primary_bg:         var(--light_2_bg);
+  --primary_text:       var(--light_2_fg);
+  --secondary_btn_text:     var(--light_2_btn_fg);
+  --secondary_bg_btn:       var(--light_2_btn_bg);
+	--secondary_bg_btn_dark:  var(--light_2_btn_bg_dark);
+}
+[class^="palette-accent"], [data-active-content*="palette-accent"] {
+  --primary_bg:         var(--accent_bg);
+  --primary_text:       var(--accent_fg);
+  --secondary_btn_text:     var(--accent_btn_fg);
+  --secondary_bg_btn:       var(--accent_btn_bg);
+	--secondary_bg_btn_dark:  var(--accent_btn_bg_dark);
+}
+[class^="palette-dark"], [data-active-content*="palette-dark"] {
+  --primary_bg:         var(--dark_bg);
+  --primary_text:       var(--dark_fg);
+  --secondary_btn_text:     var(--dark_btn_fg);
+  --secondary_bg_btn:       var(--dark_btn_bg);
+	--secondary_bg_btn_dark:  var(--dark_btn_bg_dark);
+}
+.palette-light_gradient, [data-active-content*="palette-light_gradient"] {
+  --primary_bg:         var(--light_gradient_bg);
+}
+.palette-dark_gradient, [data-active-content*="palette-dark_gradient"] {
+  --primary_bg:         var(--dark_gradient_bg);
+}
+[class*="button-palette-white"], [data-active-content*="button-palette-white"] {
+  --secondary_bg:           var(--white_bg);
+  --secondary_btn_text:     var(--white_fg);
+  --secondary_bg_btn:       var(--white_bg);
+	--secondary_bg_btn_dark:  var(--white_bg_dark);
+}
+[class*="button-palette-black"], [data-active-content*="button-palette-black"] {
+  --secondary_bg:           var(--black_bg);
+  --secondary_btn_text:     var(--black_fg);
+  --secondary_bg_btn:       var(--black_bg);
+	--secondary_bg_btn_dark:  var(--black_bg_dark);
+}
+[class*="button-palette-light"], [data-active-content*="button-palette-light"] {
+  --secondary_bg:           var(--light_bg);
+  --secondary_btn_text:     var(--light_fg);
+  --secondary_bg_btn:       var(--light_bg);
+	--secondary_bg_btn_dark:  var(--light_bg_dark);
+}
+[class*="button-palette-light_2"], [data-active-content*="button-palette-light_2"] {
+  --secondary_bg:           var(--light_2_bg);
+  --secondary_btn_text:     var(--light_2_fg);
+  --secondary_bg_btn:       var(--light_2_bg);
+	--secondary_bg_btn_dark:  var(--light_2_bg_dark);
+}
+[class*="button-palette-accent"], [data-active-content*="button-palette-accent"] {
+  --secondary_bg:           var(--accent_bg);
+  --secondary_btn_text:     var(--accent_fg);
+  --secondary_bg_btn:       var(--accent_bg);
+	--secondary_bg_btn_dark:  var(--accent_bg_dark);
+}
+[class*="button-palette-dark"], [data-active-content*="button-palette-dark"] {
+  --secondary_bg:           var(--dark_bg);
+  --secondary_btn_text:     var(--dark_fg);
+  --secondary_bg_btn:       var(--dark_bg);
+	--secondary_bg_btn_dark:  var(--dark_bg_dark);
+}
+[class*="button-palette-"] {
+  color: var(--secondary_bg);
+  {% if settings.button_style == 'inv' %}
+    --secondary_btn_text: var(--secondary_bg);
+    --secondary_bg_dark: var(--secondary_btn_text);
+  {% endif %}
+
+}
+[class^="palette-"], [data-active-content*="palette-"] {
+  --secondary_bg_btn_fade:  var(--secondary_bg_btn_dark);
+  --second_btn_bg_fade: var(--second_btn_bg_dark);
+  --headings_text:      var(--primary_text);
+}
+
+#root [class*="button-palette-"] button[disabled]:before, #root [class*="button-palette-"] button.disabled:before {
+  --secondary_bg_fade:  var(--secondary_bg_btn_dark);
+}
+
+{% comment %}.module-color-palette[class^='palette-'] .placeholder-svg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }{% endcomment %}
+.module-color-palette[class^="palette-"] .img-overlay, #background.module-color-palette[class^="palette-"] .img-overlay { background: var(--primary_bg); }
+.module-color-palette[class^="palette-"] h1, .module-color-palette[class^="palette-"] h2, .module-color-palette[class^="palette-"] h3, .module-color-palette[class^="palette-"] h4, .module-color-palette[class^="palette-"] h5, .module-color-palette[class^="palette-"] h6 { color: var(--headings_text); }
+.module-color-palette[class^="palette-"] { color: var(--primary_text); }
+.module-color-palette[class^="palette-"] .swiper-button-next, .module-color-palette[class^="palette-"] .swiper-button-prev { color: var(--primary_text); }
+.module-color-palette[class^='palette-']:before { background: var(--primary_bg); }
+[class^="palette-"] button, [class^="palette-"] input[type="button"], [class^="palette-"] input[type="reset"], [class^="palette-"] input[type="submit"], [class^="palette-"] .link-btn a { color: var(--secondary_btn_text)!important; }
+{% unless settings.button_style == 'inv' %}
+  [data-whatin=mouse] .module-color-palette[class^="palette-"] button:hover,
+  [data-whatin=mouse] .module-color-palette[class^="palette-"] .link-btn a:hover { color: var(--secondary_btn_text); }
+{% endunless %}
+[data-active-content*="palette-"] .swiper-custom-pagination, [data-active-content*="palette-"] .play-pause { color: var(--primary_text); }
+.m6bx[class^="palette-"] > p, .m6bx[class^="palette-"] > p, .m6bx[class^="palette-"] > h2, .m6bx[class^="palette-"]  a, .m6bx[class^="palette-"] > strong, .m6bx[class^="palette-"] > em, .m6bx[class^="palette-"] > ul { color: var(--primary_text); }
+.m6bx[class^="palette-"] .l4cn.box a { color: var(--dark_bg); }
+.m6bx[class^="palette-"]:before { background: var(--primary_bg); }
+.m6bx[class^="palette-"].overlay:before { border: none; }
+[data-whatin=mouse] .m6bx[class^="palette-"] .l4cn li a:hover { color: var(--accent); }
+.m6as[class^="palette-"]:before { background: var(--primary_bg); }
+.m6wd[class^="palette-"]:not(.palette-white):not(.palette-light):not(.palette-light_2) .l4cu.box li > span:before { background: var(--white); }
+.m6wd[class^="palette-"].numbers-accent .l4cu li > span { color: var(--accent); }
+.m6wd[class^="palette-"] .l4ts.box li, .m6wd[class^="palette-"] .l4ts.box .li { color: var(--black); }
+.m6wd[class^="palette-"] .r6rt .rating > * .fill { background: none; }
+.m6wd[class^="palette-"] .l4ts .r6rt .rating > * .fill { color: var(--accent); }
+.l4ft.hover-out li[class^="palette-"]:before { background: none; }
+
+/* Other*/
+{%- assign text_color_handle = 'palette_' | append: settings.text_color -%}
+{%- assign text_color = settings[text_color_handle] | remove: '#' -%}
+select, .bv_atual, select:focus, #root .f8sr select, #root .f8sr select:focus { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5.7' style='enable-background:new 0 0 9 5.7' xml:space='preserve'%3E%3Cpath d='M8.4.2C8.2.1 8 0 7.8 0s-.3.1-.5.2L4.5 3 1.7.2C1.5.1 1.4 0 1.2 0S.8.1.6.2L.2.6C.1.8 0 1 0 1.2s.1.4.2.5L4 5.5c.1.1.3.2.5.2s.4-.1.5-.2l3.8-3.8c.1-.1.2-.3.2-.5S8.9.8 8.8.6L8.4.2z' style='fill:%23{{ text_color }}'/%3E%3C/svg%3E"); }
+label span.text-end.hidden, #root span.f8pr-pickup.hidden { display: none; }
+.image-compare figure { width: 100%; }
+@media only screen and (max-width: 47.5em) {
+  .accordion-a.compact + .accordion-a { margin-top: -10px; }
+}
+@media only screen and (max-width: 62.5em) {
+  #root .l4ft.mobile-compact li:not(:first-child) {
+    border-left-width: var(--dist_a);
+  }
+}
+[data-whatin=mouse] .l4cl .li:hover figure picture ~ picture { display: block; } /* was only defined for li, not for .li */
+.l4ft figure video { transition-property: all; transition-duration: .4s; transition-timing-function: cubic-bezier(.4,0,.2,1); transition-delay: 0s; } /* video in promo gallery, hover scale transition was not animated */
+#nav-bar.text-justify > ul, #nav.text-justify > ul { -webkit-flex-grow: 3; -ms-flex-grow: 3; flex-grow: 3; -webkit-justify-content: space-between; justify-content: space-between; } /* 1/2 text-justify for the navbar */
+#nav-bar.text-justify > ul > li.show-all, #nav.text-justify > ul > li.show-all { position: absolute; left: var(--lar0); right: var(--l0ra); top: 0; } /* 2/2 text-justify for the navbar */
+html #nav.fixed > ul, html #nav-bar.fixed > ul { max-width: var(--ghw); } /* fixed navbar should get the same width as the header */
+.m6pr { max-width: 1600px; margin-inline: auto; }
+
+.check.box, .check.color { margin-right: -8px; margin-bottom: 18px; color: var(--custom_input_fg); }
+.check.box li, .check.color li { margin-right: 8px; margin-bottom: 8px; }
+.check.color { margin-bottom: 22px; }
+.check.color li { margin-bottom: 4px; }
+#root .check.color label { display: block; overflow: hidden; width: 38px; height: 38px; padding: 0; border-radius: 25px; border: 1px solid rgba(0,0,0,0); /*var(--custom_input_bd)*/; cursor: pointer; }
+#root .check.color input:checked ~ label { border-color: var(--secondary_bg); }
+#root .check.color label i { display: block; overflow: hidden; position: absolute; left: 4px; right: 4px; top: 4px; bottom: 4px; width: 28px; height: 28px; margin: 0; padding: 0; box-shadow: inset 0 1px 2px rgba(0,0,0,.2); border-radius: 99px; font-size: 30px; line-height: 30px; text-align: left; text-indent: -3000em; direction: ltr; }
+#root .check.color label i:before { display: none; }
+#root .check.color input[disabled] ~ label, #root .check.color input.disabled ~ label { border-color: var(--custom_input_bd); cursor: default; }
+#root .check.color input.disabled ~ label:after { cursor: default; }
+#root .check.color input[disabled] ~ label:after, #root .check.color input.disabled ~ label:after { content: ""; display: block; position: absolute; left: -10px; top: 50%; right: -10px; width: auto; height: 1px; margin-top: -0.5px; border-top: 1px solid var(--custom_input_bd); background: none; }
+#root .check.color input[disabled] ~ label:after, #root .check.color input.disabled ~ label:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+#root .check.color input[disabled][checked] ~ label, #root .check.color input[disabled][checked] ~ label:after { border-color: var(--alert_error); }
+.check.color label:before, .check.color label:after, .check.color label * { display: none; }
+
+/* Buttons */
+{% if settings.button_font == 'title' %}
+.link-btn a, button, .l4cn li, .spr-button { font-family: var(--main_ff_h); }
+{% endif %}
+{% if settings.button_height == 'size-m' %}
+.link-btn a, button, .l4cl.mobile-compact .link-btn a { padding: 17px 23px; }
+{% elsif settings.button_height == 'size-l' %}
+.link-btn a, button, .l4cl.mobile-compact .link-btn a { padding: 19px 28px; }
+{% endif %}
+{% if settings.button_style == 'plain' %}
+.link-btn a, button, .link-btn a:before, button:before { box-shadow: none; }
+{% elsif settings.button_style == 'inv' %}
+.link-btn a, button { box-shadow: none; border-width: 0; color: var(--secondary_bg_btn); }
+.link-btn a.overlay-tertiary, #root .link-btn a.overlay-tertiary, button.overlay-tertiary, [data-whatin=mouse] .link-btn a.overlay-tertiary:hover, [data-whatin=mouse] #root .link-btn a.overlay-tertiary:hover, [data-whatin=mouse] button.overlay-tertiary:hover { color: var(--tertiary_bg); }
+#root .link-btn a, #root button:not(.shopify-payment-button__button) { background: none!important; }
+#root .link-btn a:before, #root button:not(.override):before,
+#root form.processing .submit [type=button]:after, #root form.processing .submit [type=submit]:after, #search.processing button:after { box-shadow: none; border-width: 1px; background: none!important; }
+html[data-whatin="mouse"] .link-btn a:hover, html[data-whatin="mouse"] button:not(.shopify-payment-button__button):hover { color: var(--secondary_bg_btn_dark); }
+html[data-whatin="mouse"] .link-btn a.overlay-tertiary:hover, html[data-whatin="mouse"] button.overlay-tertiary:hover { color: var(--tertiary_bg_dark); }
+html[data-whatin="mouse"] .link-btn a.overlay-quaternary:hover, html[data-whatin="mouse"] button.overlay-quaternary:hover { color: var(--quaternary_bg_dark); }
+#shopify-section-header > .link-btn a, #header > .link-btn a, #header-inner > .link-btn a { color: var(--custom_top_main_link_bg); }
+#shopify-section-footer .link-btn a, #shopify-section-footer button { color: var(--custom_footer_link_bg); }
+#root form.f8pr.processing .submit [type="submit"]:after { border-color: var(--secondary_bg_btn); }
+{% endif %}
+{% if settings.button_rounded == 'square' %}
+.link-btn a, button, .link-btn a:before, button:before, #root #nav .l4cn li { border-radius: 0; }
+{% elsif settings.button_rounded == 'slightly-rounded' %}
+.link-btn a, button, .link-btn a:before, button:before, #root #nav .l4cn li { border-radius: 4px; }
+{% elsif settings.button_rounded == 'rounded' %}
+{% if settings.button_height == 'size-s' %}
+.link-btn a, button, .link-btn a:before, button:before, #root #nav .l4cn li, #root .dynamic-checkout__content li div:before, #root .dynamic-checkout__content li div:after, #root .dynamic-checkout__content li div, .shopify-payment-button div[role="button"]:after, .shopify-payment-button div[role="button"], .shopify-payment-button button { border-radius: 14px; }
+{% elsif settings.button_height == 'size-m' %}
+.link-btn a, button, .link-btn a:before, button:before, #root #nav .l4cn li, #root .dynamic-checkout__content li div:before, #root .dynamic-checkout__content li div:after, #root .dynamic-checkout__content li div, .shopify-payment-button div[role="button"]:after, .shopify-payment-button div[role="button"], .shopify-payment-button button { border-radius: 25px; }
+{% elsif settings.button_height == 'size-l' %}
+.link-btn a, button, .link-btn a:before, button:before, #root #nav .l4cn li, #root .dynamic-checkout__content li div:before, #root .dynamic-checkout__content li div:after, #root .dynamic-checkout__content li div, .shopify-payment-button div[role="button"]:after, .shopify-payment-button div[role="button"], .shopify-payment-button button { border-radius: 28px; }
+{% endif %}
+{% endif %}

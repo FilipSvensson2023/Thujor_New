@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_alignment": "left"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "product_grid"
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 4,
+        "show_collection_image": true,
+        "enable_filters": false,
+        "enable_menu": false,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "filter_sticky": false,
+        "filters_show_more_limit": 7,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "4abcee74-e407-4e22-8056-e6ddd557a88b": {
+      "type": "section-slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Image banner",
+            "text": "<p>Highlight a new collection and share details about products related to this image<\/p>",
+            "link_text": "Button",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "cc85dce6-3137-43b5-b7c1-a32764f35ecb": {
+      "type": "section-contact-form",
+      "blocks": {
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "Namn",
+            "placeholder": "Namn",
+            "required": true
+          }
+        },
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "Företagsnamn",
+            "placeholder": "Företagsnamn",
+            "required": false
+          }
+        },
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-email-1": {
+          "type": "email",
+          "settings": {
+            "title": "E-post",
+            "placeholder": "E-post"
+          }
+        },
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-tel-1": {
+          "type": "tel",
+          "settings": {
+            "title": "Telefonnummer",
+            "placeholder": "Telefonnummer",
+            "required": false
+          }
+        },
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "Ämne",
+            "placeholder": "Ämne",
+            "required": false
+          }
+        },
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-textarea-1": {
+          "type": "textarea",
+          "settings": {
+            "title": "Meddelande",
+            "placeholder": "Meddelande",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-1",
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-2",
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-email-1",
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-tel-1",
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-text-3",
+        "template--19449845023049__cc85dce6-3137-43b5-b7c1-a32764f35ecb-textarea-1"
+      ],
+      "settings": {
+        "alignment": "start",
+        "title_size": "h1",
+        "title": "Kontakta oss angående vintertäckning.",
+        "button_color_palette": "dark",
+        "show_placeholder": true,
+        "compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-collection",
+    "4abcee74-e407-4e22-8056-e6ddd557a88b",
+    "cc85dce6-3137-43b5-b7c1-a32764f35ecb"
+  ]
+}

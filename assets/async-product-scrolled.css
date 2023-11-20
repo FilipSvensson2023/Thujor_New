@@ -1,0 +1,82 @@
+
+.f8ps header ul:after { content: ""; display: block; overflow: hidden; clear: both; }
+.f8ps:before { content: ""; display: block; position: absolute; left: 50%; top: 0; bottom: 0; z-index: -1; width: 110vw; margin: 0 0 0 -55vw; }
+.f8ps button i { display: block; overflow: visible; position: absolute; left: 0; right: 0; top: 50%; bottom: auto; margin: -10px 0 0; box-shadow: none; border-radius: 0; border-width: 0; background: none; font-weight: 400; font-family: i; line-height: 20px; text-align: center; text-indent: 0; letter-spacing: normal; }
+.product-scrolled .f8ps { -webkit-transform: none; transform: none; }
+
+.f8ps { position: fixed; left: 0; right: 0; top: auto; bottom: 0; z-index: 99; height: 68px; margin: 0; padding: 7px var(--rpp) 3px; background: var(--white); font-size: var(--size_14_f); line-height: var(--main_lh_l); }
+	.f8ps fieldset { width: 100%; max-width: var(--glw); margin-left: auto; margin-right: auto; }
+	.f8ps:before { background: var(--body_bg); }
+	.f8ps > *, .f8ps fieldset > * { min-width: 0; margin-left: 38px; }
+	.f8ps footer { margin-left: 0; }
+		.f8ps footer > * { padding-left: 38px; }
+	.f8ps figure { width: 64px; min-width: 64px; max-width: 64px; height: 54px; margin: 0 20px 4px 0; }
+		.f8ps figure picture { width: 100%; height: 100%; }
+		.f8ps figure img, .bv_mainselect .bv_ul_inner .img img { width: 100% !important; height: 100% !important; -o-object-fit: contain; object-fit: contain; -o-object-position: center center; object-position: center center; }
+		.f8ps figure.portrait, .f8ps.portrait figure { width: 43px; min-width: 43px; max-width: 43px; }
+		.f8ps figure.landscape, .f8ps.landscape figure { width: 72px; min-width: 72px; max-width: 72px; }
+	.f8ps header, .f8ps fieldset header { /*max-width: 360px;*/ margin: 0 auto 0 0; }
+		.f8ps h1, .f8ps h2, .f8ps h3, .f8ps h4, .f8ps h5, .f8ps h6 { overflow: hidden; margin: 0 0 1px; font-size: 1em; line-height: var(--main_lh_l); text-overflow: ellipsis; white-space: nowrap; }
+		.f8ps header ul { overflow: hidden; list-style: none; margin: 0 0 2px; padding: 0; text-overflow: ellipsis; white-space: nowrap; }
+			.f8ps header ul li { display: inline; margin-right: 14px; font-size: var(--size_12_f); }
+	.f8ps p { margin-bottom: 2px; }
+		.f8ps div p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+	.f8ps input, .f8ps select, .f8ps textarea, .f8ps .bv_atual, .f8ps #root .bv_mainselect input { width: 200px; }
+		.product-scrolled .f8ps .bv_mainselect .bv_ul_inner { top: auto; bottom: 100%; border-radius: var(--b2r) var(--b2r) 0 0; border-top-width: 1px; border-bottom-width: 0; }
+		.product-scrolled .f8ps .bv_mainselect .bv_atual.up { border-radius: 0 0 var(--b2r) var(--b2r); }
+.f8ps button i { display: none; }
+.f8ps .submit > *, #root #content .f8ps { margin-bottom: 0; }
+.product-scrolled .f8ps:before { box-shadow: 0 -3px 15px rgba(0,0,0,.04); }
+.product-not-scrolled #root { padding-bottom: 0 !important; }
+
+.f8ps, .f8ps fieldset { display: -moz-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.f8ps .submit .input-amount .semantic-amount, .f8ps .submit .input-amount, .f8ps footer, .f8ps figure, .f8ps, .f8ps fieldset { display: -moz-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+.f8ps footer, .f8ps header ul, .f8ps .submit, .f8ps, .f8ps fieldset  { -webkit-flex-wrap: nowrap; flex-wrap: nowrap; }
+.f8ps figure { -webkit-justify-content: center; justify-content: center; }
+.f8ps footer { -webkit-justify-content: flex-end; justify-content: flex-end; }
+.f8ps { -webkit-justify-content: space-between; justify-content: space-between; }
+.f8ps footer, .f8ps figure, .f8ps, .f8ps fieldset { -webkit-align-items: center; align-items: center; }
+.f8ps footer p.submit { -webkit-flex-grow: 0; -ms-flex-grow: 0; flex-grow: 0; }
+.f8ps footer p { -webkit-flex-grow: 3; -ms-flex-grow: 3; flex-grow: 3; }
+
+.f8ps header { -webkit-flex-shrink: 100; -ms-flex-shrink: 100; flex-shrink: 100; }
+/*.f8ps > header { flex: 1 1 20%; }
+.f8ps footer { flex: 2 1 15.5%; } */
+.f8ps footer button { white-space: nowrap; }
+
+
+@media only screen and (max-width: 1200px) { /* 1200 */
+/*.f8ps { }*/
+	.f8ps > *, .f8ps fieldset > * { margin-left: 28px; }
+	.f8ps footer > * { padding-left: 28px; }
+
+#root .f8ps figure { display: none; }
+}
+@media only screen and (max-width: 1100px) { /* 1100 */
+.f8ps { font-size: var(--size_12_f); }
+	.f8ps button { width: 45px; min-width: 0; height: 45px; padding: 0; border-radius: 99px; text-indent: -3000em; text-align: left; direction: ltr; }
+		.f8ps button:before, .f8ps button:after { border-radius: 99px; }
+		.f8ps button i { display: block; margin-top: -12px; font-size: var(--size_20_f); line-height: 24px; }
+
+.f8ps footer { -webkit-flex-basis: auto; -ms-flex-basis: auto; flex-basis: auto; }
+.f8ps footer { -webkit-flex-grow: 0; -ms-flex-grow: 0; flex-grow: 0; }
+.f8ps footer { -webkit-flex-shrink: 1; -ms-flex-shrink: 1; flex-shrink: 1; }
+}
+@media only screen and (max-width: 760px) { /* 760 */
+.t1pr #root { padding-bottom: 0 !important; }
+
+.f8ps, #root .f8ps { display: none; right: 4px; height: 59px; min-height: 0; padding: 7px 0 0; }
+	#root .f8ps > *, #root .f8ps footer > *, #root .f8ps fieldset > * { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+	#root .f8ps footer > p, #root .f8ps > p, #root .f8ps fieldset > p { display: none; }
+	#root .f8ps .input-amount { top: 0; }
+	.f8ps button { overflow: hidden; width: auto; padding: 0 16px; border-radius: var(--b2r); text-align: center; text-overflow: ellipsis; text-indent: 0; white-space: nowrap; direction: inherit; }
+		.f8ps button:before, .f8ps button:after { border-radius: var(--b2r); }
+	#root .f8ps footer { padding-left: 0; padding-right: 0; }
+
+.f8ps p, .f8ps .submit > * { margin-bottom: 0; }
+.accordion-a details[open] summary, l4rv header, #root .m0-mobile, .m6as.inv > figure:first-child, .l4ts li:last-child, .l4ts .li:last-child { margin-bottom: 0; }
+#root .f8ps footer > p.submit { display: -moz-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+#root .f8ps footer > p.submit { -webkit-flex-wrap: nowrap; flex-wrap: nowrap; }
+.f8ps button, .f8ps footer p.submit { -webkit-flex-grow: 3; -ms-flex-grow: 3; flex-grow: 3; }
+#root .f8ps button i, .f8ps figure, .f8ps header, .f8ps > div, .f8ps fieldset > div, .f8ps footer > div { display: none; }
+}

@@ -1,0 +1,396 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": true
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "106bff73-2e62-4b7e-b065-56fc7a668863": {
+          "type": "content",
+          "settings": {
+            "enable_tab": false,
+            "collapse": true,
+            "title": "",
+            "icon": "none",
+            "header_image_svg": "",
+            "header_image_width": 150,
+            "text": "",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Prisgaranti-1.png",
+            "image_width": 245,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "c7259cb9-7235-4028-b6df-3a68077fed80": {
+          "type": "title",
+          "settings": {
+            "layout": "title-right",
+            "title_size": "h1",
+            "show_vendor_brand": false,
+            "show_vendor_name": false,
+            "show_product_rating": false,
+            "share_whatsapp": true,
+            "share_facebook": true,
+            "share_twitter": true,
+            "share_pinterest": true,
+            "share_messenger": true,
+            "share_email": true,
+            "layout_mobile": "title-top"
+          }
+        },
+        "6870a595-54a7-44f3-ba56-72e8aab6645e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"shopify-product-reviews-badge\" data-id=\"{{ product.id }}\"><\/span>"
+          }
+        },
+        "90724a70-740a-4cc9-984c-764e1d76a5bd": {
+          "type": "codes",
+          "settings": {
+            "show_sku": true,
+            "show_barcode": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": false
+          }
+        },
+        "2852b543-45fa-4ed6-8a27-bf5602a09cb7": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "dropdown",
+            "options": false,
+            "show_variant_images": true,
+            "show_unavailable_variants": true,
+            "enable_selling_plans": true
+          }
+        },
+        "buy_button": {
+          "type": "buy_button",
+          "settings": {
+            "show_amount_selection": true,
+            "show_dynamic_buybutton": false,
+            "preorder": false,
+            "preorder_button_text": "Pre-order",
+            "preorder_label": "",
+            "preorder_label_color_palette": "light_2",
+            "preorder_show_dynamic_buybutton": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "5c52c882-4ece-46b5-8f8e-1630167da417": {
+          "type": "shopify:\/\/apps\/s-request-a-quote-hide-price\/blocks\/button_block\/dac9aba2-251e-4c25-abc3-9fc57dbf7885",
+          "settings": {
+            "font_size": 16,
+            "color_text": "#ffffff",
+            "bg_button": "#000000",
+            "label_btn": "Add to Quote",
+            "multi_lang": true,
+            "class_button": "storeify-btn-custom",
+            "form_id": ""
+          }
+        },
+        "dedff549-0b51-4aa3-bca9-ea29eea32b29": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Önska eget leveransdatum?<\/strong> Det gör du efter utcheckning i kassan.<\/p>"
+          }
+        },
+        "b717a7d0-5b22-481e-87e0-4b66bc67d86b": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Leveranskostnaden beräknas i kassan.<br\/><\/strong><em>Du måste fylla i dina adressuppgifter för att beräkningen ska visas.<\/em><\/p>"
+          }
+        },
+        "a77818a7-9622-48a0-929d-8ededcf19293": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Denna produkt kan hämtas på: <\/strong>{{ product.metafields.custom.avhamtning | metafield_tag }}<\/p>"
+          }
+        },
+        "903be460-3bcb-453e-81f5-0c4b79e11bce": {
+          "type": "complementary_products",
+          "settings": {
+            "enable_tab": true,
+            "collapse": false,
+            "title": "Glöm inte att köpa till",
+            "icon": "shopping_bag",
+            "header_image": "shopify:\/\/shop_images\/download_6.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "layout": "grid",
+            "number_of_items": 3,
+            "enable_quick_buy_desktop": false,
+            "enable_quick_buy_mobile": false,
+            "enable_quick_buy_drawer": false,
+            "enable_quick_buy_qty_selector": false,
+            "enable_color_picker": false,
+            "enable_quick_buy_compact": false,
+            "products_show_image": true,
+            "products_show_labels": false,
+            "products_show_vendor": false,
+            "products_show_title": true,
+            "products_show_rating": false,
+            "products_show_price": true,
+            "products_show_stock": false
+          }
+        },
+        "f44ef894-cdf7-44a8-95a3-0f1cfb8f35e6": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Info om {{ product.title }}",
+            "icon": "speech_bubbles",
+            "header_image": "shopify:\/\/shop_images\/download.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "",
+            "image_width": 465,
+            "liquid": "{{ product.metafields.global.short_description }}",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "b25f20b8-3803-4f85-8833-36421dd30bc3": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Leveranstider",
+            "icon": "24_hour_clock",
+            "header_image": "shopify:\/\/shop_images\/download_2.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "<p>Vid beställning under leveransperiden Mar-Okt levereras din order till dig inom 3-14 dagar. <\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "f91b17c0-8b88-4087-9c39-1ad426d7a14c": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Så går leveranser till",
+            "icon": "truck",
+            "header_image": "shopify:\/\/shop_images\/download_3.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "leveransplan",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "6406183b-c291-4c95-8b2f-2c801d9b8514": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Villkor & Garantier",
+            "icon": "verified",
+            "header_image": "shopify:\/\/shop_images\/download_4.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "villkor-info",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "76484768-ec6c-43bd-aa05-1272322d038b": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": true,
+            "title": "Så många plantor behöver du",
+            "icon": "review",
+            "header_image": "shopify:\/\/shop_images\/download_5.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "<p>Avenbok & Bok planteras vanligtvis med <strong>4-5st\/meter<\/strong> häck.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "d6b9976c-cc61-4aeb-8f85-c6cb0503e8d1": {
+          "type": "content",
+          "settings": {
+            "enable_tab": true,
+            "collapse": false,
+            "title": "Betalningsalternativ",
+            "icon": "coin",
+            "header_image": "shopify:\/\/shop_images\/download_7.svg",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "text": "",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/sveainklamex_small_c5b40467-d69f-4792-9d20-614b3622b49c.png",
+            "image_width": 230,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "3e2ea935-b3ed-420a-a917-aa46d8ae519b": {
+          "type": "custom_html",
+          "settings": {
+            "custom_html": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/paTr7ezjWS0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+          }
+        },
+        "d5016c65-d599-4f28-bf85-27c0ab3f6d93": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/list-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "disabled": true,
+          "settings": {
+            "themeId": "light",
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "106bff73-2e62-4b7e-b065-56fc7a668863",
+        "c7259cb9-7235-4028-b6df-3a68077fed80",
+        "6870a595-54a7-44f3-ba56-72e8aab6645e",
+        "90724a70-740a-4cc9-984c-764e1d76a5bd",
+        "price",
+        "2852b543-45fa-4ed6-8a27-bf5602a09cb7",
+        "buy_button",
+        "5c52c882-4ece-46b5-8f8e-1630167da417",
+        "dedff549-0b51-4aa3-bca9-ea29eea32b29",
+        "b717a7d0-5b22-481e-87e0-4b66bc67d86b",
+        "a77818a7-9622-48a0-929d-8ededcf19293",
+        "903be460-3bcb-453e-81f5-0c4b79e11bce",
+        "f44ef894-cdf7-44a8-95a3-0f1cfb8f35e6",
+        "b25f20b8-3803-4f85-8833-36421dd30bc3",
+        "f91b17c0-8b88-4087-9c39-1ad426d7a14c",
+        "6406183b-c291-4c95-8b2f-2c801d9b8514",
+        "76484768-ec6c-43bd-aa05-1272322d038b",
+        "d6b9976c-cc61-4aeb-8f85-c6cb0503e8d1",
+        "3e2ea935-b3ed-420a-a917-aa46d8ae519b",
+        "d5016c65-d599-4f28-bf85-27c0ab3f6d93"
+      ],
+      "settings": {
+        "show_thumbs_desktop": true,
+        "show_thumbs_mobile": true,
+        "images_layout": "aside",
+        "show_product_description": true,
+        "product_description_enable_read_more": false,
+        "pros": "",
+        "cons": "",
+        "specifications": "",
+        "product_description_mobile_collapse": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommended_products_qty": 6,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Du kanske också gillar",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 0,
+        "mobile_collapse": false
+      }
+    },
+    "recently-viewed": {
+      "type": "section-recently-viewed-products",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "left",
+        "title_size": "h3",
+        "title": "Tidigare produkter du tittat på",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "reviews": {
+      "type": "product-reviews",
+      "disabled": true,
+      "settings": {
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Recensioner",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "mobile_collapse": false
+      }
+    },
+    "699f5b7e-31e0-4ca6-82d0-85fe3e3dbf14": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19385963708745__699f5b7e-31e0-4ca6-82d0-85fe3e3dbf14-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "video": "shopify:\/\/files\/videos\/Plantering av färdiga häckelement i Göteborg 2023 (ingen grafik).mp4",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19385963708745__699f5b7e-31e0-4ca6-82d0-85fe3e3dbf14-slide-1"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "recommendations",
+    "recently-viewed",
+    "reviews",
+    "699f5b7e-31e0-4ca6-82d0-85fe3e3dbf14"
+  ]
+}

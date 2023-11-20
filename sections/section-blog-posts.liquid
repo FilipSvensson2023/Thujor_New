@@ -1,0 +1,316 @@
+{%- liquid
+  if blogs[section.settings.blog] != blank
+    assign number_of_items = blogs[section.settings.blog].articles.size | at_most: section.settings.number_of_items
+  else
+    assign number_of_items = section.settings.number_of_items
+  endif
+  case number_of_items
+    when 2
+      assign width_class = 'w50'
+    when 3
+      assign width_class = 'w33'
+    when 4
+      assign width_class = 'w25'
+    when 5
+      assign width_class = 'w20'
+  endcase
+  if section.settings.number_of_items == 5 and blogs[section.settings.blog].articles.size >= 5 and template.name != 'password'
+    assign width_class = 'featured'
+  elsif section.settings.number_of_items == 5 and blogs[section.settings.blog] == blank and template.name != 'password'
+    assign width_class = 'featured'
+  endif
+
+  if section.settings.link_text != empty and section.settings.link_url != blank
+    assign link = true
+  endif
+
+  if section.settings.title != empty
+    assign show_header = true
+  elsif link and section.settings.text_alignment == 'start'
+    assign show_header = true
+  endif
+
+  capture title_classes
+    echo 'w720 ' | append: section.settings.title_size
+    if section.settings.text_alignment == 'center'
+      echo ' text-center align-center'
+    endif
+  endcapture
+  if section.settings.title_size == 'size-50'
+    assign title_size = 'h2'
+    assign title_classes = title_classes | append: ' mobile-size-' | append: settings.mobile_font_size | remove: 'px'
+  else
+    assign title_size = section.settings.title_size
+  endif
+-%}
+
+{%- if link %}
+  {%- capture link -%}
+    <p class="class-x{% unless section.settings.show_link %} link-btn{% endunless %} button-palette-{{ section.settings.button_color_palette }}"><a href="{{ section.settings.link_url }}" {% if section.settings.show_link %}class="strong"{% endif %}>{{ section.settings.link_text }}{% if section.settings.show_link %}&nbsp;<i aria-hidden="true" class="icon-chevron-right"></i>{% endif %}</a></p>
+  {%- endcapture %}
+{%- endif -%}
+
+{%- if show_header -%}
+  <header class="cols{% if link and section.settings.show_link == false %} align-middle{% endif %} blog__section__heading">
+    {%- if section.settings.title != empty -%}
+      <h2 class="{{ title_classes }}">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if link and section.settings.text_alignment == 'start' -%}
+      {{ link | replace: 'class-x', 'mobile-hide' }}
+    {%- endif -%}
+  </header>
+{%- endif -%}
+<div class="blogs_wrapper">
+<ul class="l4ne landscape {{ width_class }} blog__section">
+  {%- liquid
+    if blogs[section.settings.blog] != empty
+      for article in blogs[section.settings.blog].articles limit: section.settings.number_of_items
+        render 'article-item', article: article, show_excerpt: section.settings.show_excerpt, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_link: section.settings.show_link_post, button_color_palette: section.settings.button_color_palette_post
+      endfor
+    else
+      for i in (1..section.settings.number_of_items)
+        render 'article-item', article: blank, show_excerpt: section.settings.show_excerpt, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_link: section.settings.show_link_post, button_color_palette: section.settings.button_color_palette_post
+      endfor
+    endif
+  -%}
+
+</ul>
+          <button class="viewallblogs"><a href="https://thujor.se/blogs/nyheter">Se alla bloggar</button></a>
+</div>
+{%- if link and section.settings.text_alignment == 'center' -%}
+  {{ link | replace: 'class-x', 'm0 text-center' }}
+{%- elsif link and section.settings.text_alignment == 'start' -%}
+  {{ link | replace: 'class-x', 'm0 mobile-only' }}
+{%- endif -%}
+
+<style>
+  @media only screen and (min-width: 47.5em) {
+  {% if link and section.settings.text_alignment == 'center' %}
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+  {% else %}
+    #shopify-section-{{ section.id }} .l4ne { margin-bottom: {{ section.settings.spacing_desktop | minus: 26 }}px; }
+  {% endif %}
+  }
+  @media only screen and (max-width: 47.5em) {
+  {% if link %}
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+  {% else %}
+    #shopify-section-{{ section.id }} .l4ne { margin-bottom: {{ section.settings.spacing_mobile | minus: 8 }}px; }
+  {% endif %}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.blog_posts.name",
+  "tag": "article",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.blog_posts.settings.blog.label"
+    },
+    {
+      "type": "range",
+      "id": "number_of_items",
+      "label": "t:sections.blog_posts.settings.number_of_items.label",
+      "info": "t:sections.blog_posts.settings.number_of_items.info",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "t:sections.blog_posts.settings.text_alignment.label",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.blog_posts.settings.text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.blog_posts.settings.text_alignment.options__2.label"
+        }
+      ],
+      "default": "start"
+    }, 
+    {
+      "type": "select",
+      "id": "title_size",
+      "label": "t:sections.blog_posts.settings.title_size.label",
+      "options": [
+        {
+          "value": "h4",
+          "label": "t:sections.blog_posts.settings.title_size.options__1.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.blog_posts.settings.title_size.options__2.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.blog_posts.settings.title_size.options__3.label"
+        },
+        {
+          "value": "size-50",
+          "label": "t:sections.blog_posts.settings.title_size.options__4.label"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "label": "t:sections.blog_posts.settings.title.label",
+      "default": "Blog posts"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "t:sections.blog_posts.settings.link_text.label",
+      "info": "t:sections.blog_posts.settings.link_text.info",
+      "default": "Button"
+    },
+    {
+      "id": "link_url",
+      "type": "url",
+      "label": "t:sections.blog_posts.settings.link_url.label"
+    },
+    {
+      "type": "select",
+      "id": "button_color_palette",
+      "label": "t:sections.blog_posts.settings.button_color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__6.label"
+        }
+      ],
+      "default": "accent"
+    },
+    {
+      "id": "show_link",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.show_link.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blog_posts.settings.blog_posts.header"
+    },
+    {
+      "id": "show_image",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.blog_posts.show_image.label",
+      "default": true
+    },
+    {
+      "id": "show_date",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.blog_posts.show_date.label",
+      "default": true
+    },
+    {
+      "id": "show_author",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.blog_posts.show_author.label",
+      "default": true
+    },
+    {
+      "id": "show_excerpt",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.blog_posts.show_excerpt.label"
+    },
+    {
+      "type": "select",
+      "id": "button_color_palette_post",
+      "label": "t:sections.blog_posts.settings.button_color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:sections.blog_posts.settings.button_color_palette.options__6.label"
+        }
+      ],
+      "default": "accent"
+    },
+    {
+      "id": "show_link_post",
+      "type": "checkbox",
+      "label": "t:sections.blog_posts.settings.show_link.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blog_posts.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:sections.blog_posts.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:sections.blog_posts.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.blog_posts.presets.name",
+      "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,283 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "ff20ecfb-7624-40d2-8a34-eaa3a487fb53": {
+      "type": "section-promo-gallery",
+      "disabled": true,
+      "blocks": {
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Liuster_kampanj_2048x_27ff3d7c-3f1d-4bec-ac31-a8b820c26120_2048x-compressed.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Thuja Brabant",
+            "text": "<p>Denna växt passar dig som vill skapa insynskydd<\/p>",
+            "link_text": "Thuja Brabant",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-1": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Promo banner",
+            "text": "<p>Describe a product or make an announcement<\/p>",
+            "link_text": "Button",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-2": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Promo banner",
+            "text": "<p>Describe a product or make an announcement<\/p>",
+            "link_text": "Button",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "a189e1f9-c150-4411-a5b5-cd0cc85d242e": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Promo banner",
+            "text": "<p>Describe a product or make an announcement<\/p>",
+            "link_text": "Button",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-0",
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-1",
+        "template--16120548622499__ff20ecfb-7624-40d2-8a34-eaa3a487fb53-1669135682fedbe361-2",
+        "a189e1f9-c150-4411-a5b5-cd0cc85d242e"
+      ],
+      "settings": {
+        "style": "style_one",
+        "items_width": 4,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "rows",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "365cd7c7-375a-4824-bffe-1cb0b285a36a": {
+      "type": "section-featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "thuja-brabant",
+        "limit": 8,
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Thuja Brabant",
+        "text": "<p>Thuja <\/p>",
+        "link_text": "Se alla",
+        "button_color_palette": "dark",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "47874222-39b2-476d-9286-052400dc70bb": {
+      "type": "section-collection-list",
+      "settings": {
+        "collections": [
+          "thuja-brabant",
+          "thuja-smaragd",
+          "thuja-martin",
+          "thuja-columna",
+          "thuja-fastigiata"
+        ],
+        "image_ratio": "square",
+        "fill_images": false,
+        "number_of_items": 8,
+        "text_alignment": "center",
+        "title_size": "h3",
+        "title": "Thujor",
+        "link_text": "",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "collection_title_size": "p",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "left"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "product_grid"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 4,
+        "show_collection_image": false,
+        "enable_filters": true,
+        "enable_menu": true,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "filter_sticky": true,
+        "filters_show_more_limit": 10,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "4ce362b3-c2eb-4ce1-9d83-08190ddc7820": {
+      "type": "section-contact-form",
+      "blocks": {
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-0": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "placeholder": "Name",
+            "required": true
+          }
+        },
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-1": {
+          "type": "text",
+          "settings": {
+            "title": "Company name",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-2": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Email"
+          }
+        },
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-3": {
+          "type": "tel",
+          "settings": {
+            "title": "Phone number",
+            "placeholder": "Phone number",
+            "required": false
+          }
+        },
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-4": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "placeholder": "Text",
+            "required": false
+          }
+        },
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-5": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "placeholder": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-0",
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-1",
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-2",
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-3",
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-4",
+        "template--16120548622499__4ce362b3-c2eb-4ce1-9d83-08190ddc7820-166914131982366b05-5"
+      ],
+      "settings": {
+        "alignment": "start",
+        "title_size": "h3",
+        "title": "Kontakta oss",
+        "button_color_palette": "dark",
+        "show_placeholder": true,
+        "compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "ff20ecfb-7624-40d2-8a34-eaa3a487fb53",
+    "365cd7c7-375a-4824-bffe-1cb0b285a36a",
+    "47874222-39b2-476d-9286-052400dc70bb",
+    "main-collection",
+    "4ce362b3-c2eb-4ce1-9d83-08190ddc7820"
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "sections": {
+    "4e432bcd-5989-463f-aa2c-9d295bf83f79": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19485414064457__4e432bcd-5989-463f-aa2c-9d295bf83f79-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6433000200059-Kekkila-Puutarhamulta-50-L-ja-lapio-vaaka-ja-lapio-pystykuva-1620x1080.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "dark",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Kvalitetsjord från Hasselfors.",
+            "text": "<p>För att skapa en bra jord krävs det många olika komponenter som ser till växtens alla behov. Det är ofta värt att välja kvalitativa produkter när du ska odla.<strong> Vi erbjuder hela Hasselfors sortiment med fri hemleverans.<\/strong><\/p>",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19485414064457__4e432bcd-5989-463f-aa2c-9d295bf83f79-slide-1"
+      ],
+      "settings": {
+        "height": "s",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "69c7b4e5-6de4-4249-ac4e-68f0cf590600": {
+      "type": "section-video-banner",
+      "blocks": {
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-title-1": {
+          "type": "title",
+          "settings": {
+            "title": "Vi pratar jord med Hasselfors produktchef Theresa.",
+            "title_size": "h1"
+          }
+        },
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Att välja rätt jord vid plantering är ofta skillnaden mellan ett lyckat resultat eller motsatsen. Se filmen där vi snackar jord med produktchefen på Hasselfors. Vi erbjuder enbart jord av högsta kvalité med noga kontrollerade näringsvärden.<\/p>"
+          }
+        },
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Vikten av att välja en bra jord.<\/p>"
+          }
+        },
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Det innehåller Hasselfors jord.<\/p>"
+          }
+        },
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Därför använder vi enbart Hasselforsjord.<\/p>"
+          }
+        },
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "Kundtjänst: 010-18 88 000",
+            "link_url_1": "shopify:\/\/pages\/kundservice",
+            "button_color_palette_1": "dark",
+            "link_text_2": "",
+            "link_url_2": "",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-title-1",
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-text-1",
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-1",
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-2",
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-usp-3",
+        "template--19485414064457__69c7b4e5-6de4-4249-ac4e-68f0cf590600-buttons-1"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ckbvbq3s-Jk",
+        "video_alt_text": "",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "left"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "product_grid"
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 4,
+        "show_collection_image": true,
+        "enable_filters": false,
+        "enable_menu": false,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "filter_sticky": false,
+        "filters_show_more_limit": 7,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "4abcee74-e407-4e22-8056-e6ddd557a88b": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Image banner",
+            "text": "<p>Highlight a new collection and share details about products related to this image<\/p>",
+            "link_text": "Button",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18576745627977__4abcee74-e407-4e22-8056-e6ddd557a88b-slide-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "4e56f857-971e-4e2f-af63-e1076a9512fa": {
+      "type": "section-faq",
+      "blocks": {
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-1": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad är torv?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Torv är ett unikt naturligt material som bildas av delvis nedbruten växtlighet på torvmarker. Den klassificeras av IPCC[1] som torv, långsamt förnybar biomassa. Sverige har bra förutsättningar för torvbildning och det har skapats torvmarker sedan inlandsisen drog sig tillbaka för mer än 10 000 år sedan. En torvmosse är speciella torvmark där torven främst bildas av vitmossor och mäktiga lager på flera meter torv byggs upp.<\/p><p><strong>Torv har en unik kombination av egenskaper<\/strong> som gör den utmärkt för tillverkning av odlingsjord:<\/p><ul><li>Naturligt och organiskt<\/li><li>Goda fukthållande egenskaper<\/li><li>Goda näringshållande egenskaper<\/li><li>Bidrar med volym och struktur för god rottillväxt<\/li><li>Lätt att anpassa till olika växter så att odlingen blir förutsägbar (struktur, näring, pH-värde)<\/li><li>Fri från oönskade organismer och föroreningar; patogener, tungmetaller, ogräs, växtskyddsmedel, främmande föremål, plast mm<\/li><li>Finns tillgängligt i stora och enhetliga volymer, året runt<\/li><li>Stabil och lagringsbar<\/li><li>Transporteffektiv med låg vikt<\/li><li>Inhemsk och lokal<\/li><\/ul><p>Läs mer om torv och miljö: <a href=\"https:\/\/www.hasselforsgarden.se\/news\/information-om-torv-klimat-och-hallbarhet\/\">Information om torv, klimat och hållbarhet<\/a><\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-2": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Går det att odla ätbara växter i blomjord?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Ja, man kan odla ätbara växter i alla våra jordar även om det är specialjordar med namngivning som kanske inte omfattar ätbara växter. Våra jordar består bara av kontrollerade och för livsmedelsproduktion godkända råvaror. Vi har inte rötslam från reningsverk på våra jordfabriker eller i några produkter. Vi har heller inte kompost av hushållsavfall i våra yrkes- eller konsumentprodukter.<\/p><p>Blomjord och många andra av våra jordar är gödslade med mineralgödsel (konstgödsel) så om man vill <a href=\"http:\/\/www.hasselforsgarden.se\/article\/odla-ekologiskt\/\">odla ekologiskt<\/a> rekommenderar vi att använda några av våra ekologiska alternativ: <a href=\"https:\/\/www.hasselforsgarden.se\/produkter\/reko-jord\/\">Reko-jord<\/a>, <a href=\"http:\/\/www.hasselforsgarden.se\/product\/naturgodslad-plantjord\/\">Naturgödslad Plantjord<\/a> eller <a href=\"https:\/\/www.hasselforsgarden.se\/produkter\/ort-gronsaksjord\/\">Ört & Grönsaksjord<\/a>.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-3": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Hur ska man spara jord och hur länge?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Jord som inte används ska sparas mörkt och svalt i väl tillsluten påse. Det som kan hända med jorden är dels att den torkar ut och blir svår att vattna upp igen och att näringsämnen försvinner.<\/p><p>Både uttorkningen och näringsförlusten sker snabbare ju varmare jorden lagras. Vid frysgrader och upp till 10 grader händer det inte mycket, då kan jorden lagras upp till två år. Undvik att använda gammal jord i krukor, lägg ut den som jordförbättring i rabatter och land istället.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "b9e3beb5-65c7-492c-b2f6-f035946872da": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varför möglar ytan på jorden?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Om det bildas ett gulbrunt skikt på jordytan är det troligen torvmögel. Det är en svamp som förekommer bland råvaror som utgör blomjorden. De mikrober som lever i blomjorden är livsviktiga för växternas rotsystem, de gör ingen skada. Men man vill ju helst inte ha någon oestetisk tillväxt på blomjordens yta.<\/p><p>Det effektivaste sättet att bekämpa svamptillväxten är att vattna underifrån. Genom att vattna underifrån hålls blomjordens yta torr och svampen, som trivs i en fuktig miljö, kan inte växa på jordytan. För bekämpning av mögel på jorden kan man också täcka ytan med dekorationsprodukter eller lecakulor. Lecakulor på ytan gör att även så att växten inte behöver vattnas lika ofta.<\/p><p>Svampen kan stjäla lite näring från växterna så var noga med att vattna med flytande näring så får växten säkert det den behöver. Mögeltillväxten försvinner så småningom.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "acbcd49e-29bf-428a-8b67-08b6af0c8bdf": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varför kommer det gula svampar ur jorden?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Tropisk svamp kan ibland dyker upp i blomkrukorna inomhus. Den heter Gul veckskivling, Leucocoprinus birnbaumii. Man kan ibland även se den i en annan form nere i blomjorden då som myriader av små gula eller vita korn.<\/p><p>Svampen lever inte i symbios med plantan, utan är en saprofyt, d.v.s. livnär sig på förmultnade växtdelar i blomjorden. Svampen försvinner av sig själv så småningom. Svampen är inte farlig att ta på men ät den inte!<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "91d3769e-072e-41d5-842e-a80480191fa0": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varför finns det träbitar och tussar i blomjorden?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>En av ingredienserna i blomjord är torv som utvunnits från mossar. Stubbarna efter de träd som har växt på mossen har visserligen avlägsnats efter avverkningen, men torven kan innehålla tunnare stubbrötter som ibland blir kvar i blomjorden trots att den sållas. Vi blandar även i bark för att få lite grövre struktur som gör jorden luftigare. Träbitar kan också komma med i barken. Om blomjorden innehåller träbitar kan du plocka bort de synliga. Träbitar som är under ytan gör ingen skada.<\/p><p>Tussar eller långa trådar i jorden kommer från en växt som vuxit på mossen där torv bryts, tuvdun. Det kanske ser lite skräpigt ut men är inget farligt, snarare är det bra med lite grövre fibrer i jorden som för in luft i den. Normalt siktas tussarna bort.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "46b0f512-897c-4da2-a126-f8ea7b83f490": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Det är fullt med små svarta flugor runt växterna efter omplantering, vad gör jag?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>De små flugor som flyger runt krukväxterna är med all sannolikhet sorgmyggor. De är allmänt förekommande i naturen men dras till doften av färsk jord. Sorgmyggor dyker ofta upp när man planterat om sina växter. Då kan man misstänka att de kommer med jorden.<\/p><p><strong>Inga skadedjur<\/strong><\/p><p>Sorgmyggor dras alltid till ny, färsk jord och förökar upp sig på kort tid – det tar cirka en månad från ägg till vuxen mygga i rumstemperatur. Larverna lever av torven i jorden. Sorgmyggan är vanlig ute i naturen och kan följa med råvarorna i jorden, men vanligare är att de under lagring i till exempel butiken kryper in i jordpåsen och lägger sina ägg.<\/p><p>Sorgmyggorna är i och för sig inga skadedjur, men kan vara nog så förargliga. Larverna kan äta av växternas rötter och kan i stort antal ställa till skada, särskilt på sådder och sticklingar. Äldre växter brukar normalt inte påverkas. De fullbildade sorgmyggorna äter inte på växter.<\/p><p><strong>Minska på sorgmyggorna<\/strong><\/p><p>Att det blivit vanligare med sorgmyggor i blomjord beror på två saker. Dels blandade vissa tillverkare kemiska bekämpningsmedel i jorden förr för att ta död på myggorna (detta är inte längre tillåtet), dels använder vi nuförtiden mer naturgödsel i blomjordarna.<\/p><p>Du kan minska på sorgmyggorna genom att hålla jordytan torr så att inte myggorna vill lägga sina ägg där. Vattna gärna från fatet och håll växterna åt det torrare hållet en tid. Ett alternativ är att täcka jordytan med något material som snabbt torkar upp till exempel lecakulor eller sten. Gula klisterskivor som finns i trädgårdsfackhandeln fångar de vuxna myggorna.<\/p><p>Ett annat knep för att fånga sorgmyggorna är att ställa fram en skål med en blandning av vatten, ättika och lite diskmedel. Helst bör skålen vara gul på insidan. Blandningen lockar till sig myggorna och när de sätter sig på vattnet ramlar de i och drunknar eftersom ytspänningen minskat med diskmedlet.<\/p><p>Det finns biologiska bekämpningsmedel, nematoder och bakterier, som säljs i trädgårdsfackhandeln eller som kan beställas över nätet. De är färskvara och kan tyvärr inte blandas i jorden vid tillverkningen.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "f43a9e55-61d3-4cac-af11-df9559f23dab": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varför blir det grå mögeltussar på U-jord?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>U-jord och en del andra jordar innehåller hönsgödsel som är ett mycket bra långtidsverkande naturgödsel. Använder man jorden utomhus brukar det inte synas något men lägger man jorden i krukor inomhus kan det förekomma grå mögeltussar i ytan på jorden. Det är hönsgödseln, som är pelleterad, som när den ligger i ytan börjar mögla. Det är helt naturligt och ett led i nedbrytningsprocessen som gör att näringen blir tillgänglig för växterna. Om du vill kan du trycka ner pelletsen under jordytan annars försvinner möglet av sig självt efter ett tag.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "c224c39c-9c72-48f4-98af-cd0fa3817d79": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Det står i texten på säcken att man ska blanda med befintlig jord, varför det?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Många växter som vi köper i plantskolan har drivits upp i en kruka med torvbaserad jord. Skillnaden är väldigt stor mot markjorden som växten sedan ska planteras i. Markjorden kan vara lerig eller sandig, tät eller stenig.<\/p><p>För att få rötterna att söka sig ut i den nya omgivande jorden är det bra att den i viss mån liknar den jord rötterna vuxit i. Blandar man den köpta jorden med befintlig jord så får man en gradvis övergång till den nya jorden, både vad gäller struktur och näringsinnehåll.<\/p><p>Om man bara häller i jord direkt från påsen i planteringsgropen finns det en risk att det blir som en ”kruka i jorden” -och rötterna kommer inte att söka sig ut längre än den näringsberikade luckra jorden från påsen.<\/p><p>Det är också stor risk att den befintliga jorden antingen drar ut vattnet ur planteringsgropen eller gör att det blir stående så att jorden alltid är för våt och syrefattig.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "26a1bb61-2f5f-4a80-9633-328fbc676072": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Hur skiljer sig era jordar?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Det finns jordar som är avsedda för specifika grupper av växter eller som är bättre lämpade för vissa specifika odlingsförhållanden. Här är några exempel.<\/p><p><strong>U-jord<\/strong> är det bästa valet till sommarblommor av alla slag. Jorden ger en otrolig blomning i urnor, amplar och balkonglådor. U-jord är även ett utmärkt val till andra näringskrävande växter som odlas i stor jordvolym t ex tomater.<\/p><p><strong>Orkidéjord<\/strong> eller orkidékompost är en grov blandning av barkbitar och torv för alla vanliga orkidéer. Den är så grov för att luften kring orkidéernas känsliga rötter ska hållas fuktig men inte mer.<\/p><p><strong>Mårbacka<\/strong> pelargonjord ger en rik och varaktig blomning hela säsongen därför att den innehåller rikligt med långtidsverkande näring och har en struktur som gynnar rötterna.<\/p><p><strong>Rosjord & perennjord<\/strong> ger lite extra till krävande rosor, jorden är rik på lera samt innehåller extra kalium och tångmjöl. Det främjar bildning av blomknoppar som ger en rik blomning med vackra färger.<\/p><p><strong>Rhododendronjord<\/strong> är en specialjord för surjordsväxter som behöver ett lågt pH-värde för att trivas. Jorden är gödslad och används som den är vid plantering både ute i kruka.<\/p><p><strong>Tomat & chilijord<\/strong> är en specialgödslad jord för odling av alla slags tomater, chili och paprika men även till andra fruktgivande grönsaker. Jorden används främst till odling i krukor och växtbäddar på varma skyddade platser.  Jorden är gödslad med extra kalium, kalcium och magnesium för att säkra god smak och kvalitet.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "300dc1d0-d092-4427-b0ed-32c343c58279": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Bör växter gödslas under hösten?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>På hösten blir bladen gula och växterna går in i sin viloperiod. Anledningen till att du ska höstgödsla på sensommaren är för att växterna ska hinna ta upp näringen inför vintern. Höstgödsling gör nämligen växterna mer tåliga inför vintern och främjar bildandet av blomsterknoppar till nästa år.<a href=\"http:\/\/www.hasselforsgarden.se\/product\/tradgardsgodsel-mognad\/\">Trädgårdsgödsel Mognad<\/a>passar till alla växter i trädgården och det är bara doseringen som skiljer. Den bästa tiden att höstgödsla är faktiskt under sensommaren eller tidig höst när växterna fortfarande växer och kan utnyttja näringsämnena. Läs mer<a href=\"http:\/\/www.hasselforsgarden.se\/article\/anvand-hostgodsel-innan-loven-blir-gula\/\">här<\/a>.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "f4b429e9-9f20-40df-a4f0-8f83e5a9944b": {
+          "type": "text",
+          "settings": {
+            "faq_question": "För återförsäljare: Hur lång tid tar det att få produkter levererade?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Om orden registrerats hos oss innan klockan 11:00 sker leverans inom fyra arbetsdagar. Med arbetsdag avses helgfri vardag med undantag för lördagar, julafton, midsommarafton och nyårsafton. Snabbare leverans kan erbjudas, se separat prislista. Våra öppettider är 07:00-16:00. Leveransen ska levereras så nära kunden som möjligt där dragbil med släp kan lossa. Om dragbilen inte kan lossa vid kaj är det kundens ansvar att ombesörja truck eller annat godkänt fordon för avlastning.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "f288394d-2fa6-493e-aacf-f307dcc1ea39": {
+          "type": "text",
+          "settings": {
+            "faq_question": "pH i jord",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>När man pratar pH–värdet i en jord handlar det om växternas möjlighet att ta upp näringsämnen. En generell riktlinje är att de flesta växter trivs med ett värde på 5,5-7. För att höja pH-värdet kan man tillsätta kalk.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "8de8c0b2-dbb0-4563-a5ea-16c97ef49f45": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varför skiljer sig volymen på påsen från det jag själv mäter upp?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Att mäta volym på torvbaserad jord är inte helt lätt, eftersom den till största delen består av porvolym antingen fylld med luft eller vatten. Det är därför växterna trivs så bra i den. Säckpackad jord är manglad (dvs luften pressas ut) för att inte jorden ska ta mer transport- och lagringsvolym än nödvändigt. Innan jorden används ska den luckras upp för att återfå sin porvolym.<\/p><p><strong>Det finns en EU –standard, EN 12580 som beskriver hur volymmätning går till:<\/strong><\/p><ul><li>Förpackningen (eller bulkmaterialet) som ska volymbestämmas vägs, vikten noteras. Vid senare beräkning dras tomemballagets vikt bort.<\/li><li>Materialet luckras upp (enligt producentens anvisningar) och man undersöker vilken falldämpare som ska användas. Högst 10 vol% av materialet får stanna kvar i falldämparen.<\/li><li>Mätcylindern vägs (lämpligen nollställs vågen med cylindern på), kragen monteras och falldämparen ställs på plats. I portioner om högst 5 liter åt gången fylls burken. Material som stannar i falldämparen hälls ned i cylindern mellan varje ny portion. Sluta när burk och krage är fyllda. Skrapa av kragen, ta av den och stryk därefter av mätcylindern jämns med kanten. Var noga med att inte packa materialet vid avstrykningen. Nu har man en standardiserad volym. Väg denna volym.<\/li><li>Vikten divideras med cylinderns kalibrerade volym. Den på detta sätt beräknade volymvikten används för att bestämma volymen i förpackningen vars vikt är känd.<\/li><\/ul><p>På alla Hasselfors Gardens fabriker arbetar vi rutinmässigt med denna standardmetod och prover tas från varje tillverkningsomgång.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "89b4a750-d09c-41bd-a885-8cac43b649a2": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Kan jord innehålla mikrober som är skadliga för människor?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Jord och odlingssubstrat innehåller ett brett utbud av jordmikrober. Dessa naturligt förekommande mikrober har många fördelar men det finns några som kan vara skadliga för människor. Det är därför viktigt att vara medveten om potentiella risker och skydda sig mot dem vid behov.<\/p><p>Stelkramp, till exempel, är en vanlig sjukdom som orsakas av en jordmikrob, men som vi kan vaccineras mot. För att undvika att bli sjuk är det särskilt viktigt att vara medveten om möjligheten att vaccineras samt att skydda potentiella sår genom att hålla händerna bort från dem och att hålla händerna rena när du arbetar med jord.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "7cc690a3-c076-40da-bf9f-c7b40866700a": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Finns Legionella i jord?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Legionella är en bakterie som kan förekomma i jord, kompost och odlingssubstrat och som har orsakat infektioner hos människor genom åren. De flesta som utsätts för bakterien blir inte sjuka, men bakterien kan orsaka lunginflammationsliknande symtom som är viktiga att diagnostisera korrekt.<\/p><p>Medvetenheten om risken för Legionella-infektioner från jord och förbättrade diagnostiska metoder har ökat erkännandet av sjukdomen.<\/p><p>Finns Legionella i jorden kan mängden bakterier öka kraftigt när förhållandena blir mer gynnsamma för bakterien. Legionella gynnas av hög värme.<\/p><p>Legionella bakterier överförs huvudsakligen genom inandning av damm och aerosoler. I synnerhet bör riskgrupper som äldre, rökare eller personer med nedsatt immunförsvar helt undvika inandning av jorddamm på grund av eventuell exponering för Legionella-bakterier.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "96497f1a-5e98-4145-9bde-6a3a332916c3": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad bör man tänka på för säker hantering av jord?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Säker hantering av jord berör både yrkesverksamma som arbetar med anläggningsjord och odlingssubstrat samt fritidsodlare som hanterar kompost, trädgårdsjord och påsjord. Produkter innehåller alltid jordmikrober, men med korrekt hantering utgör de ingen fara.<\/p><ul><li>Vi avråder från att lagra jordprodukter direkt i solen eftersom detta kan öka temperaturen i förpackningen, vilket kan stimulera bakterietillväxt.<\/li><li>Förpackningen ska öppnas försiktigt så att jorddamm inte sprids i ansiktet.<\/li><li>Legionella bakterier överförs huvudsakligen genom inandning av damm och aerosoler. Undvik inandning av organiskt damm.<\/li><li>Torra jordar bör vattnas med lågt vattentryck före användning för att undvika damm och stänk. Vid bevattning är det en bra idé att använda sprinkler- eller vattenstrålespridningsmunstycke.<\/li><li>Är jorden torr i påsen rekommenderar vi att den fuktas i påsen innan hantering.<\/li><li>Bakterier såsom stelkramp kan även infektera via sår så tänk på att använda handskar om du har sår på händerna. Undvik att röra sår med smutsiga händer.<\/li><li>Det är också viktigt att tvätta händerna efter att ha hanterat jord.<\/li><\/ul>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "5566adad-e60e-45e9-bba5-6ac42d3f1368": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad gör Hasselfors för att förebygga sjukdomar vid hantering av jord?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Vi märker våra produkter med hanteringsråd. Dessa säger att produkterna ska förvaras mörkt och svalt och att damm av produkterna inte bör andas in. Dessutom rekommenderar vi alltid att tvätta händerna efter avslutat trädgårdsarbete.<\/p><p>Vi deltar också i forskning och kommunikation med andra aktörer och myndigheter inom området.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "02443806-8def-4ad4-94cc-e0eabd39e06c": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad är klopyralid och varför finns det i vissa växtnäringsprodukter?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Klopyralid är ett godkänt bekämpningsmedel som vanligtvis används vid odling av till exempel sockerbetor och raps. Små mängder av klopyralid kan förekomma i restprodukterna från livsmedelsindustrin, varifrån små rester också kan hamna i gödselråvaran som utvinns från dessa restprodukter. Produkter för ekologisk odling använder cirkulära råvaror som därför kan innehålla små rester av bekämpningsmedel.<\/p><p>På Hasselfors Garden vill vi vara med och främja hållbar utveckling och hitta lösningar baserade på cirkulär ekonomi. Användbarheten, säkerheten och kvaliteten på våra produkter är av största vikt för oss och vi vill att våra produkter ska göra det enkelt att ta hand om växter.<\/p><p>Utmaningarna i användningen av cirkulära råvaror gäller för hela sektorn och vi, som en ledande aktör inom sektorn, kommer att främja testningen av cirkulära råvaror och se till att industrin sätter tydliga gränser för den mängd bekämpningsmedel som kan finnas i cirkulära produkter. För närvarande finns till exempel inga sådana gränsvärden för klopyralidkoncentrationer i gödningsmedel.<\/p><p>Du kan läsa mer om våra undersökningar och åtgärder gällande klopyralid i dessa artiklar:<\/p><ul><li><a href=\"https:\/\/www.hasselforsgarden.se\/news\/information-om-klopyralid-i-godselprodukter\/\">Information om Klopyralid i gödselprodukter<\/a><\/li><\/ul>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-1",
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-2",
+        "template--19413669740873__4e56f857-971e-4e2f-af63-e1076a9512fa-text-3",
+        "b9e3beb5-65c7-492c-b2f6-f035946872da",
+        "acbcd49e-29bf-428a-8b67-08b6af0c8bdf",
+        "91d3769e-072e-41d5-842e-a80480191fa0",
+        "46b0f512-897c-4da2-a126-f8ea7b83f490",
+        "f43a9e55-61d3-4cac-af11-df9559f23dab",
+        "c224c39c-9c72-48f4-98af-cd0fa3817d79",
+        "26a1bb61-2f5f-4a80-9633-328fbc676072",
+        "300dc1d0-d092-4427-b0ed-32c343c58279",
+        "f4b429e9-9f20-40df-a4f0-8f83e5a9944b",
+        "f288394d-2fa6-493e-aacf-f307dcc1ea39",
+        "8de8c0b2-dbb0-4563-a5ea-16c97ef49f45",
+        "89b4a750-d09c-41bd-a885-8cac43b649a2",
+        "7cc690a3-c076-40da-bf9f-c7b40866700a",
+        "96497f1a-5e98-4145-9bde-6a3a332916c3",
+        "5566adad-e60e-45e9-bba5-6ac42d3f1368",
+        "02443806-8def-4ad4-94cc-e0eabd39e06c"
+      ],
+      "settings": {
+        "alignment": "left",
+        "title_size": "h1",
+        "compact": false,
+        "title": "Frågor och svar om Jord",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "b0b83619-1d6c-4a52-a37c-acb4bc7147f7": {
+      "type": "instafeed",
+      "blocks": {
+        "abe3d3ce-4df1-40fe-b405-d659a9611f88": {
+          "type": "blockthree",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "abe3d3ce-4df1-40fe-b405-d659a9611f88"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "95eed7d6-4c39-407b-acdc-9cfe4ff9a996": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19485414064457__95eed7d6-4c39-407b-acdc-9cfe4ff9a996-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/E1A9290-1620x1080.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "dark",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Välj rätt jord för planteringen i trädgården eller rabatten",
+            "text": "<p>När du ska köpa planteringsjord för växter och odling utomhus behöver du ta hänsyn till vilka växter som ska planteras och var.<\/p>",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19485414064457__95eed7d6-4c39-407b-acdc-9cfe4ff9a996-slide-1"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "4e432bcd-5989-463f-aa2c-9d295bf83f79",
+    "breadcrumbs",
+    "69c7b4e5-6de4-4249-ac4e-68f0cf590600",
+    "main-collection",
+    "4abcee74-e407-4e22-8056-e6ddd557a88b",
+    "4e56f857-971e-4e2f-af63-e1076a9512fa",
+    "b0b83619-1d6c-4a52-a37c-acb4bc7147f7",
+    "95eed7d6-4c39-407b-acdc-9cfe4ff9a996"
+  ]
+}

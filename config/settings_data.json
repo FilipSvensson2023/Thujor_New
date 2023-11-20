@@ -1,0 +1,585 @@
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/Thujor_favicon.gif",
+    "enable_accessibility_default": false,
+    "banners_clickable": true,
+    "back_to_top_button": false,
+    "palette_black": "#12262f",
+    "palette_light": "#edf4f4",
+    "palette_dark": "#008060",
+    "palette_accent": "#ff9b70",
+    "palette_light_2": "#f4f4f4",
+    "palette_light_gradient": "linear-gradient(120deg, rgba(244, 244, 244, 1), rgba(239, 179, 76, 0.51) 100%)",
+    "palette_dark_gradient": "linear-gradient(320deg, rgba(232, 74, 147, 1) 4%, rgba(239, 179, 76, 1) 100%)",
+    "title_color": "black",
+    "text_color": "black",
+    "body_background_color": "#FFFFFF",
+    "positive_vibes": "#64cd82",
+    "negative_vibes": "#d14141",
+    "regular_button_color": "#008060",
+    "buy_button_color": "#008060",
+    "buy_button_text_color": "#FFFFFF",
+    "dynamic_buy_button_color": "#1a3945",
+    "price_color": "#008060",
+    "compare_at_price_color": "#d14141",
+    "product_label_color": "#1a3945",
+    "product_label_text_color": "#ffffff",
+    "sale_label_color": "#d14141",
+    "sale_label_text_color": "#FFFFFF",
+    "heading_font": "neue_haas_unica_n6",
+    "body_font": "sans-serif",
+    "mobile_font_size": "18px",
+    "product_image_ratio": "310x310",
+    "fill_product_images": true,
+    "multiply_product_images": true,
+    "multiply_collection_images": "multiply",
+    "everything_rounded": true,
+    "button_height": "size-m",
+    "button_style": "solid",
+    "button_rounded": "slightly-rounded",
+    "button_font": "body",
+    "enable_cart_drawer": true,
+    "productcards_text_alignment": "left",
+    "stock_label_qty": 5,
+    "show_price_varies": false,
+    "product_custom_label": "",
+    "show_product_stock": true,
+    "show_product_stock_always": true,
+    "show_product_rating": true,
+    "product_short_description": "product_description",
+    "product_titles_caps": false,
+    "enable_color_swatches": false,
+    "enable_free_shipping": true,
+    "free_shipping_amount": 15000,
+    "product_deliverytime_in_stock": "",
+    "product_deliverytime_not_in_stock": "",
+    "default_product_deliverytime_not_in_stock": "",
+    "default_product_deliverytime_info": "",
+    "show_deliverytime_always": true,
+    "shipping_timer_show_from": "07:00:00",
+    "shipping_timer_enable_1": true,
+    "shipping_timer_enable_2": true,
+    "shipping_timer_enable_3": false,
+    "shipping_timer_enable_4": false,
+    "shipping_timer_enable_5": false,
+    "whatsapp": 0,
+    "social_instagram": "https:\/\/instagram.com\/thujor.se?igshid=YmMyMTA2M2Y=",
+    "social_instagram_name": "",
+    "social_pinterest": "",
+    "social_pinterest_name": "",
+    "social_youtube": "",
+    "social_youtube_name": "",
+    "social_facebook": "https:\/\/sv-se.facebook.com\/Thujor\/",
+    "social_facebook_name": "",
+    "social_twitter": "",
+    "social_twitter_name": "",
+    "show_newsletterpopup": false,
+    "newsletter_popup_testmode": false,
+    "newsletter_popup_seconds": 7,
+    "newsletter_popup_image": "shopify:\/\/shop_images\/Popup_4574d3d8-c94b-443a-a202-7b4595f8fce9.webp",
+    "enable_newsletter_terms_checkbox": false,
+    "newsletter_terms_text": "<p>I accept the <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a>",
+    "show_cookiebanner": "none",
+    "cookiebanner_title": "Good to have you here!",
+    "cookiebanner_text": "<p>Our shop uses cookies. By clicking on Accept you are agreeing to our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">terms of service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">privacy policy<\/a>.<\/p>",
+    "custom_script_for_head": "<style>\nh1, .h1, .l4cl.category h1 {\nfont-size: large;\n}\np.s1pr {\n    color: #008060 !important;\n    font-size: x-large;\n    font-weight: 700 !important;\n    text-decoration: unset !important;\n}\n.l4cl .price {\n    color: #008060 !important;\n    font-size: large;\n    font-weight: 700 !important;\n    text-decoration: unset !important;\n}\n.old-price  {\n    color: #aaa9a9 !important;\n    font-weight: 400 !important;\n    font-size: medium;\n    text-decoration: line-through !important;\n\n}\n.input-amount, .input-amount input, .f8ps .input-amount input, .l4ca.compact .input-amount {\n    width: \/*50px*\/ 80px;\n}\ninput, select, textarea, .bv_atual, #root .bv_mainselect input {\n    display: block;\n    width: 100%;\n    border-radius: var(--b2r);\n    border: 1px solid #000000;\n    background: calc(100% - 15px) center no-repeat var(--custom_input_bg);\n    background-size: auto 9px;\n    color: #000000;\n    font-size: medium;\n    font-weight: 800;\n}\n#root .bv_mainselect .bv_atual.done, #root .select-wrapper.done .bv_mainselect .bv_atual, #root .done>.select-wrapper .bv_mainselect .bv_atual {\n    color: #000000;\n}\n.accordion-a:not(.compact) details[open] {\nborder-color: var(--light);\nbackground: var(--light);\ncolor: black;\n}\n#shopify-section-announcement-bar > div {\npadding-top: 14px;\npadding-bottom: 14px;\nfont-size: 25px;\ntext-shadow: 2px 2px 3px #000000;\n}\n.input-inline input { width: 0% !important; margin-right: 12px; }\n<\/style>",
+    "custom_script_for_body": "<style>\n.money {\n    color: #1a3945 !important;\n    font-weight: 700 !important;\n    text-decoration: unset !important;\n}\n.old-price .money {\n    color: #e93d3d !important;\n    font-weight: 400 !important;\n    text-decoration: line-through !important;\n}\n<\/style>",
+    "checkout_logo_image": "shopify:\/\/shop_images\/sveainklamex_small_c5b40467-d69f-4792-9d20-614b3622b49c.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_input_background_color_mode": "white",
+    "checkout_accent_color": "#008060",
+    "checkout_button_color": "#008060",
+    "checkout_error_color": "#e93d3d",
+    "enable_quick_buy_desktop": false,
+    "enable_quick_buy_mobile": false,
+    "enable_quick_buy_qty_selector": true,
+    "newsletter_show_check": false,
+    "product_deliverytime": "",
+    "cookiebar_text": "<p>Our shop uses cookies. By clicking on Accept you are agreeing to our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">terms of service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">privacy policy<\/a>.<\/p>",
+    "newsletter_terms_link": "",
+    "show_article_author": true,
+    "show_article_excerpt": false,
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "custom_css": [
+
+        ],
+        "settings": {
+          "enable": false,
+          "color_palette": "dark",
+          "text": "<p><strong>Just nu, 15% rabatt på Planterad & Klar <\/strong>®<strong> - Boka idag!<\/strong><\/p>"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-block-customer-support-1": {
+            "type": "customer_support",
+            "settings": {
+              "title": "Kundservice",
+              "customer_support_img": "shopify:\/\/shop_images\/Kundtjanst_f84fefe5-79e3-4f9b-a3e7-4d7644f0bc06.png",
+              "customer_support_img_width": 220,
+              "customer_support_offset_right": 30,
+              "customer_support_offset_bottom": 0,
+              "extra_customer_support": "<p><strong>Ring oss.<\/strong><\/p><p>Mån-Tor: 09:00-12:00, 13:00-15:00<br\/>Fre: 09:00-12:00<\/p>",
+              "show_phone_link": true,
+              "show_mail_link": true,
+              "show_whatsapp_link": true,
+              "customer_support_offset_right_mobile": 0,
+              "customer_support_offset_bottom_mobile": 0
+            }
+          },
+          "47b8cf10-071c-4b5e-b521-a5b1b62004a5": {
+            "type": "menu",
+            "settings": {
+              "menu": "sidfotsmeny-xtra",
+              "split_menu": false
+            }
+          },
+          "cec6a6b9-7a82-4d66-8c33-ff651e48b922": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "html": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-block-customer-support-1",
+          "47b8cf10-071c-4b5e-b521-a5b1b62004a5",
+          "cec6a6b9-7a82-4d66-8c33-ff651e48b922"
+        ],
+        "settings": {
+          "footer_color": "black",
+          "bottom_color": "light",
+          "bottom_img": "shopify:\/\/shop_images\/AAA.png",
+          "bottom_img_width": 95,
+          "bottom_img_link": "",
+          "bottom_svg_img": "",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "show_payment_methods": true
+        }
+      },
+      "main-account": {
+        "type": "main-account",
+        "settings": {
+          "overlay_opacity": 25,
+          "color_palette": "dark",
+          "text_position": "text-start",
+          "text": "<p>Give your customer more details about your online store.<\/p>",
+          "show_phone_link": true,
+          "show_mail_link": true,
+          "show_whatsapp_link": true
+        }
+      },
+      "main-account-login": {
+        "type": "main-account-login",
+        "blocks": {
+          "main-account-login-block-usp-1": {
+            "type": "usp",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "main-account-login-block-usp-1"
+        ],
+        "settings": {
+        }
+      },
+      "main-account-register": {
+        "type": "main-account-register",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "header-block-button-1": {
+            "type": "button",
+            "disabled": true,
+            "settings": {
+              "show_mobile": false,
+              "button_menu": "main-menu",
+              "button_color": "accent"
+            }
+          },
+          "header-block-usp-1": {
+            "type": "usp",
+            "settings": {
+              "usp": "<p><strong>Kundsupport: <\/strong>010-188 80 00 • <strong>Mån-Tor: <\/strong>09-12 & 13-15 <strong>Fre:<\/strong> 09-12<\/p>"
+            }
+          },
+          "8a42768e-1596-4cb5-9fa9-9b6e73299876": {
+            "type": "usp",
+            "settings": {
+              "usp": "<p><strong>E-post: <\/strong>info@thujor.se<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "header-block-button-1",
+          "header-block-usp-1",
+          "8a42768e-1596-4cb5-9fa9-9b6e73299876"
+        ],
+        "settings": {
+          "layout": "layout_1",
+          "header_width": "boxed",
+          "top_bar_color": "light",
+          "header_color": "white",
+          "search_color": "white",
+          "menubar_color": "dark",
+          "dropdown_color": "white",
+          "logo": "shopify:\/\/shop_images\/Thujor_loggo_2023.png",
+          "logo_width": 300,
+          "svg_logo": "",
+          "show_top_bar": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "navbar_menu_item_text": "",
+          "navbar_menu_item_link": "#",
+          "enable_usp_slider": false,
+          "enable_usp_slider_arrows": true,
+          "enable_usp_slider_autoplay": true,
+          "usp_slider_autoplay_seconds": 5,
+          "enable_sticky_header": true,
+          "sticky": "sticky-menu",
+          "cart_icon": "cart|e903",
+          "cart_icon_color": "dark",
+          "menubar_menu": "main-meny-2023",
+          "menu_layout": "dropdown",
+          "show_dropdown_images": true,
+          "show_dropdown_images_autofill": true,
+          "menubar_center": true,
+          "menubar_divide_evenly": false,
+          "main_menu_items_clickable": false,
+          "menubar_caps": false,
+          "sale_highlight": false,
+          "menu_font": "title",
+          "menu_items_limit": 15,
+          "enable_socials": true,
+          "extra_image": "shopify:\/\/shop_images\/Jordbruksverket_RGB.jpg",
+          "extra_image_width": 150,
+          "extra_image_svg": "",
+          "extra_image_link": "",
+          "disable_online_store": false,
+          "logo_width_mobile": 140,
+          "mobile_svg_logo": "",
+          "search_compact_mobile": false
+        }
+      },
+      "main-giftcard": {
+        "type": "main-giftcard",
+        "settings": {
+          "show_logo": true,
+          "logo_width": 250,
+          "svg_logo": "",
+          "show_logo_giftcard": true,
+          "logo_width_on_giftcard": 130,
+          "giftcard_background_color": "#eb5757",
+          "giftcard_text_color": "#ffffff"
+        }
+      },
+      "gallery": {
+        "type": "gallery",
+        "blocks": {
+          "02b25ae4-28fc-4d57-9a65-40ff0f187474": {
+            "type": "block",
+            "settings": {
+              "insta_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+              "link": ""
+            }
+          },
+          "2d34d9ff-8b20-436b-b330-2c727dbb4589": {
+            "type": "block",
+            "settings": {
+              "insta_img": "shopify:\/\/shop_images\/image_a6f4f2b2-f590-4e5a-8867-373328c76281.jpg",
+              "link": ""
+            }
+          },
+          "2a7e186a-72b0-4549-8e69-08d5c8c2e5ab": {
+            "type": "block",
+            "settings": {
+              "insta_img": "shopify:\/\/shop_images\/Efter1.jpg",
+              "link": ""
+            }
+          },
+          "dd67e529-72a9-4deb-9d44-b4e2fbc1c4a5": {
+            "type": "blockfour",
+            "settings": {
+              "tfirst_img": "shopify:\/\/shop_images\/IMG_20220920_162922.jpg",
+              "tsecond_img": "shopify:\/\/shop_images\/Fore1.jpg",
+              "tthird_img": "shopify:\/\/shop_images\/IMG_20220920_162922.jpg",
+              "tfour_img": "shopify:\/\/shop_images\/Efter.jpg",
+              "link": ""
+            }
+          },
+          "52706e09-407e-43cc-849a-8e5d16cb6aeb": {
+            "type": "block",
+            "settings": {
+              "insta_img": "shopify:\/\/shop_images\/Vintergrona.jpg",
+              "link": ""
+            }
+          },
+          "e5b02b8f-d111-43ab-b814-34592ec70434": {
+            "type": "blocktwo",
+            "settings": {
+              "first_img": "shopify:\/\/shop_images\/IMG_20220920_162922.jpg",
+              "second_img": "shopify:\/\/shop_images\/Fore1.jpg",
+              "link": ""
+            }
+          },
+          "f1d9b887-6fc3-436c-9d68-a9a982d07824": {
+            "type": "block",
+            "settings": {
+              "insta_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "02b25ae4-28fc-4d57-9a65-40ff0f187474",
+          "2d34d9ff-8b20-436b-b330-2c727dbb4589",
+          "2a7e186a-72b0-4549-8e69-08d5c8c2e5ab",
+          "dd67e529-72a9-4deb-9d44-b4e2fbc1c4a5",
+          "52706e09-407e-43cc-849a-8e5d16cb6aeb",
+          "e5b02b8f-d111-43ab-b814-34592ec70434",
+          "f1d9b887-6fc3-436c-9d68-a9a982d07824"
+        ],
+        "settings": {
+          "heading": "",
+          "grid_layout": "gthree",
+          "grid_layout_template": "l_two"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "807785498547235276": {
+        "type": "shopify:\/\/apps\/contact-form-ultimate\/blocks\/app-embed-block\/7f36c127-5e2b-4909-bcc7-2631483e37a4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14772705778228377435": {
+        "type": "shopify:\/\/apps\/ga-icons-trust-badges-logos\/blocks\/app-embeded\/38b0c2fb-30f0-4bd2-9f9c-2d924bf73280",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "9365423049038898845": {
+        "type": "shopify:\/\/apps\/tawk-to-live-chat\/blocks\/widget-embed-code\/91169e75-f163-40ce-90e0-9059f3c9b772",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13305045807980328211": {
+        "type": "shopify:\/\/apps\/outsell-cross-sell-upsell\/blocks\/app-embed\/f17e198c-ea50-4593-b4a0-6a8c75266a2e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13549935337288218858": {
+        "type": "shopify:\/\/apps\/labeler-product-labels\/blocks\/app-embed\/38a5b8ec-f58a-4fa4-8faa-69ddd0f10a60",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6174324309569838175": {
+        "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "11469127169306096870": {
+        "type": "shopify:\/\/apps\/s-request-a-quote-hide-price\/blocks\/embed-app\/dac9aba2-251e-4c25-abc3-9fc57dbf7885",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Maximum": {
+      "enable_accessibility_default": false,
+      "banners_clickable": true,
+      "palette_black": "#12262f",
+      "palette_light": "#edf4f4",
+      "palette_dark": "#1a3945",
+      "palette_accent": "#efb34c",
+      "palette_light_2": "#f4f4f4",
+      "palette_light_gradient": "linear-gradient(120deg, rgba(244, 244, 244, 1), rgba(239, 179, 76, 0.51) 100%)",
+      "palette_dark_gradient": "linear-gradient(320deg, rgba(232, 74, 147, 1) 4%, rgba(239, 179, 76, 1) 100%)",
+      "title_color": "black",
+      "text_color": "black",
+      "body_background_color": "#FFFFFF",
+      "positive_vibes": "#64cd82",
+      "negative_vibes": "#e93d3d",
+      "regular_button_color": "#efb34c",
+      "buy_button_color": "#64cd82",
+      "buy_button_text_color": "#FFFFFF",
+      "dynamic_buy_button_color": "#1a3945",
+      "price_color": "#1a3945",
+      "compare_at_price_color": "#e93d3d",
+      "product_label_color": "#1a3945",
+      "product_label_text_color": "#ffffff",
+      "sale_label_color": "#e93d3d",
+      "sale_label_text_color": "#FFFFFF",
+      "heading_font": "neue_haas_unica_n6",
+      "body_font": "sans-serif",
+      "mobile_font_size": "18px",
+      "button_height": "size-m",
+      "button_style": "solid",
+      "button_rounded": "slightly-rounded",
+      "everything_rounded": true,
+      "product_image_ratio": "310x310",
+      "fill_product_images": false,
+      "enable_quick_buy_desktop": false,
+      "enable_quick_buy_mobile": false,
+      "enable_quick_buy_qty_selector": true,
+      "show_article_author": true,
+      "show_article_excerpt": false,
+      "checkout_logo_size": "small",
+      "checkout_accent_color": "#ea558d",
+      "checkout_button_color": "#64cd82",
+      "checkout_error_color": "#e93d3d"
+    },
+    "Creative": {
+      "enable_accessibility_default": false,
+      "banners_clickable": true,
+      "palette_black": "#1e1f20",
+      "palette_light": "#f3f1ee",
+      "palette_dark": "#1e1f20",
+      "palette_accent": "#71c68a",
+      "palette_light_2": "#f3f1ee",
+      "palette_light_gradient": "linear-gradient(146deg, rgba(217, 221, 206, 1) 4%, rgba(255, 255, 255, 1) 99%)",
+      "palette_dark_gradient": "linear-gradient(167deg, rgba(79, 158, 111, 1) 3%, rgba(112, 198, 137, 1) 100%)",
+      "title_color": "black",
+      "text_color": "black",
+      "body_background_color": "#f3f1ee",
+      "positive_vibes": "#64cd82",
+      "negative_vibes": "#e93d3d",
+      "regular_button_color": "#ff824c",
+      "buy_button_color": "#64cd82",
+      "buy_button_text_color": "#FFFFFF",
+      "dynamic_buy_button_color": "#1e1f20",
+      "price_color": "#1e1f20",
+      "compare_at_price_color": "#938f9c",
+      "product_label_color": "#1e1f20",
+      "product_label_text_color": "#ffffff",
+      "sale_label_color": "#e93d3d",
+      "heading_font": "avenir_next_n7",
+      "body_font": "sans-serif",
+      "mobile_font_size": "18px",
+      "button_height": "size-l",
+      "button_style": "solid",
+      "button_rounded": "slightly-rounded",
+      "everything_rounded": true,
+      "product_image_ratio": "none",
+      "fill_product_images": true,
+      "multiply_product_images": true,
+      "multiply_collection_images": "multiply",
+      "enable_quick_buy_desktop": false,
+      "enable_quick_buy_mobile": false,
+      "enable_quick_buy_qty_selector": true,
+      "checkout_accent_color": "#ff824c",
+      "checkout_button_color": "#ff824c",
+      "checkout_error_color": "#e93d3d"
+    },
+    "Minimal": {
+      "enable_accessibility_default": false,
+      "banners_clickable": true,
+      "palette_black": "#1d1c1c",
+      "palette_light": "#e1e1e1",
+      "palette_dark": "#464543",
+      "palette_accent": "#1d1c1c",
+      "palette_light_2": "#f4f2ed",
+      "palette_light_gradient": "linear-gradient(120deg, rgba(236, 243, 244, 1), rgba(244, 242, 237, 1) 100%)",
+      "palette_dark_gradient": "linear-gradient(341deg, rgba(214, 210, 203, 1) 19%, rgba(159, 144, 134, 1) 100%)",
+      "title_color": "black",
+      "text_color": "dark",
+      "body_background_color": "#FFFFFF",
+      "positive_vibes": "#8ba4a9",
+      "negative_vibes": "#a73d3d",
+      "regular_button_color": "#1d1c1c",
+      "buy_button_color": "#1d1c1c",
+      "buy_button_text_color": "#FFFFFF",
+      "dynamic_buy_button_color": "#8ba4a9",
+      "price_color": "#1d1c1c",
+      "compare_at_price_color": "#8b8b8b",
+      "product_label_color": "#8b8b8b",
+      "product_label_text_color": "#ffffff",
+      "sale_label_color": "#8ba4a9",
+      "heading_font": "avenir_next_n6",
+      "body_font": "sans-serif",
+      "mobile_font_size": "22px",
+      "button_height": "size-m",
+      "button_style": "inv",
+      "button_rounded": "square",
+      "everything_rounded": false,
+      "product_image_ratio": "310x430",
+      "fill_product_images": true,
+      "multiply_collection_images": "none",
+      "enable_quick_buy_desktop": false,
+      "enable_quick_buy_mobile": false,
+      "enable_quick_buy_qty_selector": true,
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_sidebar_background_color": "#f2f2f1",
+      "checkout_accent_color": "#8ba4a9",
+      "checkout_button_color": "#1d1c1c",
+      "checkout_error_color": "#a73d3d"
+    },
+    "Wholesale": {
+      "enable_accessibility_default": false,
+      "banners_clickable": true,
+      "palette_black": "#121723",
+      "palette_light": "#f7f7f7",
+      "palette_dark": "#2c374d",
+      "palette_accent": "#3ab0d8",
+      "palette_light_2": "#eef5f7",
+      "palette_light_gradient": "linear-gradient(120deg, rgba(145, 212, 234, 0.3), rgba(245, 215, 73, 0.2) 100%)",
+      "palette_dark_gradient": "linear-gradient(320deg, rgba(245, 215, 73, 1) 4%, rgba(145, 212, 234, 1) 100%)",
+      "title_color": "black",
+      "text_color": "dark",
+      "body_background_color": "#FFFFFF",
+      "positive_vibes": "#95bf47",
+      "negative_vibes": "#e93d3d",
+      "regular_button_color": "#2c374d",
+      "buy_button_color": "#2c374d",
+      "buy_button_text_color": "#FFFFFF",
+      "dynamic_buy_button_color": "#121723",
+      "price_color": "#2c374d",
+      "compare_at_price_color": "#808793",
+      "product_label_color": "#3ab0d8",
+      "product_label_text_color": "#ffffff",
+      "sale_label_color": "#e93d3d",
+      "heading_font": "neue_haas_unica_n6",
+      "body_font": "sans-serif",
+      "mobile_font_size": "22px",
+      "button_height": "size-m",
+      "button_style": "plain",
+      "button_rounded": "slightly-rounded",
+      "button_font": "body",
+      "everything_rounded": false,
+      "product_image_ratio": "310x310",
+      "fill_product_images": false,
+      "multiply_collection_images": "none",
+      "checkout_logo_size": "small",
+      "checkout_sidebar_background_color": "#eef5f7",
+      "checkout_accent_color": "#3ab0d8",
+      "checkout_button_color": "#2c374d",
+      "checkout_error_color": "#e93d3d"
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
+  }
+}

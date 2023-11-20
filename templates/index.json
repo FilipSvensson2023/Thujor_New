@@ -1,0 +1,1263 @@
+{
+  "sections": {
+    "d78d0ed4-1ae0-4075-b7eb-5d0581928f7c": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--18152645427515__d78d0ed4-1ae0-4075-b7eb-5d0581928f7c-16776538471ea62c44-0": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vintergrona.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Välkommen till thujor.se",
+            "text": "<p><strong>Hemleverans av häckväxter sedan 2008.<\/strong><\/p>",
+            "link_text": "Kontakta oss för offert",
+            "link_url": "shopify:\/\/pages\/offert",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "1c686dab-d29b-4754-b806-a92dd2aceb8a": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AdobeStock_338185673.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "accent",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Planterad & Klar",
+            "text": "",
+            "link_text": "OFFERT",
+            "link_url": "shopify:\/\/pages\/offert",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-22"
+          }
+        },
+        "af0e44c0-4aa5-441c-9de1-95bd1a89acfc": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thuja_Smaragd.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "accent",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "aa418cb6-e5da-4ce6-9e17-5065cbd5937e": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "video": "shopify:\/\/files\/videos\/Svedberga reel_01.mp4",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "39ca2e1d-d826-4602-8b3f-343c57fba35b": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 10,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "video": "shopify:\/\/files\/videos\/Snö Thuja_480.mov",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Tack för säsongen.",
+            "text": "<p><strong>Missa inte att <\/strong><span style=\"text-decoration:underline\"><strong>boka<\/strong><\/span><strong> din vintertäckning, snart stänger vi bokningen<\/strong><\/p>",
+            "link_text": "Boka",
+            "link_url": "https:\/\/thujor.se\/products\/hyr-din-vintertackning",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__d78d0ed4-1ae0-4075-b7eb-5d0581928f7c-16776538471ea62c44-0",
+        "1c686dab-d29b-4754-b806-a92dd2aceb8a",
+        "af0e44c0-4aa5-441c-9de1-95bd1a89acfc",
+        "aa418cb6-e5da-4ce6-9e17-5065cbd5937e",
+        "39ca2e1d-d826-4602-8b3f-343c57fba35b"
+      ],
+      "custom_css": [
+        ".m6fr.wide figure {gap: 0 !important; margin-bottom: -20px !important;}"
+      ],
+      "settings": {
+        "height": "l",
+        "width": "wide",
+        "autoplay": true,
+        "autoplay_seconds": 4,
+        "enable_controls": true,
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "2182f919-2451-4425-8786-1bfe5e24b567": {
+      "type": "section-usp-bar",
+      "blocks": {
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-0": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Svenskodlade växter sedan 2008 🇸🇪<\/strong><\/p>"
+          }
+        },
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Snabba och säkra leveranser med DSV & PostNord<\/strong><\/p>"
+          }
+        },
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Fler än 54.000 nöjda kunder sedan 2008<\/strong>★★★★★<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-0",
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-1",
+        "template--18152645427515__2182f919-2451-4425-8786-1bfe5e24b567-16776546794a41dbb1-2"
+      ],
+      "custom_css": [
+        ".swiper-wrapper {gap: 0 !important; margin-bottom: 0 !important;}"
+      ],
+      "settings": {
+        "color_palette": "light",
+        "layout": "slider",
+        "autoplay": true,
+        "autoplay_seconds": 5,
+        "show_arrows": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "44748963-19cc-44b2-bb9c-a1b2b378a8e2": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-title-1": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Schema för vintertäckningar 2023\/2024"
+          }
+        },
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-content-1": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": ""
+          }
+        },
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-button-1": {
+          "type": "button",
+          "settings": {
+            "link_text": "Se schemat",
+            "link_url": "shopify:\/\/pages\/schema-for-vintertackning-2023",
+            "button_color_palette": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-title-1",
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-content-1",
+        "template--19642164216137__44748963-19cc-44b2-bb9c-a1b2b378a8e2-button-1"
+      ],
+      "settings": {
+        "color_palette": "light",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 40,
+        "spacing_mobile": 30
+      }
+    },
+    "ea442551-e619-47a7-8cbf-f9c2663b2032": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-0": {
+          "type": "title",
+          "settings": {
+            "title": "Semestertider",
+            "title_size": "h2"
+          }
+        },
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kundtjänst via telefon öppet: <br\/><strong>V.29 Mån-Fre 09-12<br\/>V.30 Mån-Tor 09-12.<\/strong><br\/>Vi läser mail regelbundet och chatten är öppen i mån av tid.<strong><br\/><\/strong><br\/><strong>Beställningar som läggs via hemsidan levereras i Augusti.<\/strong><\/p><p> <\/p>"
+          }
+        },
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Ring oss: <strong>010-188 80 00<\/strong><\/p>"
+          }
+        },
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Maila oss: <strong>Info@thujor.se<\/strong><\/p>"
+          }
+        },
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-4": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Beställ via hemsidan med leverans i Augusti.<\/p>"
+          }
+        },
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-5": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "Kundservice",
+            "link_url_1": "shopify:\/\/pages\/kundservice",
+            "button_color_palette_1": "dark",
+            "link_text_2": "Offert",
+            "link_url_2": "shopify:\/\/pages\/offert",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-0",
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-1",
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-2",
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-3",
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-4",
+        "template--18576745955657__ea442551-e619-47a7-8cbf-f9c2663b2032-16883256100cdfd760-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gardening-tips-gardener-sleeping-on-lawn.jpg",
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "27ae0782-675e-4c3f-917a-d544beb5d763": {
+      "type": "section-image-with-products",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Vinter_blocket_1.jpg",
+        "overlay_opacity": 0,
+        "color_palette": "dark",
+        "button_color_palette": "accent",
+        "layout": "image-left",
+        "text_position": "text-center",
+        "title_size": "size-50",
+        "title": "Vintertäckning",
+        "text": "<p><strong>Ingen vintertäckning = <\/strong><span style=\"text-decoration:underline\"><strong>Ingen<\/strong><\/span><strong> garanti mot vinterskador.<\/strong><\/p>",
+        "link_text": "Button",
+        "link_url": "",
+        "show_link": false,
+        "products": [
+          "hyr-din-vintertackning",
+          "skuggnat-1-meter-vintertackning-ecoplant",
+          "skuggnat-2-meter-vintertackning-ecoplant"
+        ],
+        "enable_quick_buy_desktop": false,
+        "enable_quick_buy_mobile": false,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": false,
+        "enable_quick_buy_compact": false,
+        "width_mobile": "boxed",
+        "mobile_height": "size-s",
+        "title_size_mobile": "mobile-size-18",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "425b527f-d5b3-41a0-8117-068af56f2170": {
+      "type": "section-gallery",
+      "blocks": {
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fynd.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "align-bottom text-start",
+            "title_size": "h2",
+            "title": "FYNDHÖRNA",
+            "text": "<p>Passa på att fynda partier med växter till kraftigt reducerade priser.<\/p>",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/fyndhorna",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Matgeek.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Därför ska du vintertäcka",
+            "text": "",
+            "link_text": "Se filmen",
+            "link_url": "https:\/\/www.youtube.com\/watch?v=o-7LUHxKYIU&t=31s",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vintertackning_900x900_d976fc56-6616-48e0-b504-37b20ad8d91a.webp",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Boka din vintertäckning",
+            "text": "",
+            "link_text": "Boka",
+            "link_url": "https:\/\/thujor.se\/products\/hyr-din-vintertackning",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "a7b095ec-a303-49fd-b243-392fa49ff228": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6fc963_6424bacb73e94e79a840f7bce455c3aa_mv2_jpg.webp",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "text-start",
+            "title_size": "size-50",
+            "title": "Hösten är den bästa tiden att plantera",
+            "text": "<p>Koppla av under sommaren och passa på att njuta av solens varma strålar. När värmen lagt sig kan du sätta igång med dina planteringsplaner och sätta händerna i jorden<\/p>",
+            "link_text": "Läs om höstplantering",
+            "link_url": "shopify:\/\/pages\/hostplantering",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "3580df68-36c5-41a5-a519-b879d3ebd766": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tree-planting-space-management-caring-for-new-trees-img.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "15% på planterad & klar.",
+            "text": "<p>Just nu tillfällig kampanj på planterad & Klar. Boka online eller maila oss för mer info.<\/p>",
+            "link_text": "Se alla produkter",
+            "link_url": "shopify:\/\/collections\/planterad-och-klar",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-0",
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-1",
+        "template--18152645427515__425b527f-d5b3-41a0-8117-068af56f2170-167765528634b9c20b-2",
+        "a7b095ec-a303-49fd-b243-392fa49ff228",
+        "3580df68-36c5-41a5-a519-b879d3ebd766"
+      ],
+      "settings": {
+        "items_layout": "static-grid",
+        "items_width": 3,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": true,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 35,
+        "spacing_mobile": 30
+      }
+    },
+    "22c42ae8-cad9-4a6d-9918-b6d1a9f09d66": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Liuster_kampanj_2048x_27ff3d7c-3f1d-4bec-ac31-a8b820c26120_2048x-compressed.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Thuja Brabant",
+            "text": "<p><strong>För dig som vill skapa insynskydd.<\/strong><\/p>",
+            "link_text": "Se alla",
+            "link_url": "shopify:\/\/collections\/thuja-brabant",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa_2048x-compressed.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Thuja Smaragd",
+            "text": "<p><strong>Ståtliga plantor som häck eller solitär.<\/strong><\/p>",
+            "link_text": "Se alla",
+            "link_url": "shopify:\/\/collections\/thuja-smaragd",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thuja_Martin.jpg",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Thuja Martin",
+            "text": "<p><strong>Även kallad jättethuja med snabbast tillväxt.<\/strong><\/p>",
+            "link_text": "Se alla",
+            "link_url": "shopify:\/\/collections\/thuja-martin",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "35644ab7-0be7-4260-8041-a03a7b6e9b08": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Promo banner",
+            "text": "<p>Describe a product or make an announcement<\/p>",
+            "link_text": "Button",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "96a6ef72-b9c2-4647-a88b-5ce3cda14b87": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "Promo banner",
+            "text": "<p>Describe a product or make an announcement<\/p>",
+            "link_text": "Button",
+            "link_url": "\/",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-0",
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-1",
+        "template--18152645427515__22c42ae8-cad9-4a6d-9918-b6d1a9f09d66-16776573807da8b4a4-2",
+        "35644ab7-0be7-4260-8041-a03a7b6e9b08",
+        "96a6ef72-b9c2-4647-a88b-5ce3cda14b87"
+      ],
+      "settings": {
+        "style": "style_two",
+        "items_width": 3,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "rows",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "b4a07255-4612-46f9-b6bc-16de24bd91b7": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "thuja-brabant-p-k",
+        "limit": 8,
+        "number_of_items": 6,
+        "text_alignment": "center",
+        "title_size": "h3",
+        "title": "Planterad & Klar ®",
+        "text": "<p><strong>Har du inte tid lust eller kunskap att plantera dina plantor? Lugn, våra experter hjälper dig att få ett perfekt resultat.<\/strong><\/p>",
+        "link_text": "Se alla produkter",
+        "button_color_palette": "dark",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 10,
+        "spacing_mobile": 30
+      }
+    },
+    "0df62e83-2ca6-4db5-9e9c-cc91bf43ce63": {
+      "type": "section-usp-bar",
+      "blocks": {
+        "fa200979-478b-4520-86b4-504b4e7b7fe0": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Välj faktura 14 dagar med Svea 🇸🇪<\/strong><\/p>"
+          }
+        },
+        "eb180bdb-0f0c-4339-8b56-eeac96d47464": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Vi erbjuder Delbetalning i 24 månader med Svea.<\/strong><\/p>"
+          }
+        },
+        "dac72208-95d0-4cc7-be0f-5ae9d4dc1d01": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p><strong>Fler än 54.000 nöjda kunder sedan 2008<\/strong>★★★★★<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fa200979-478b-4520-86b4-504b4e7b7fe0",
+        "eb180bdb-0f0c-4339-8b56-eeac96d47464",
+        "dac72208-95d0-4cc7-be0f-5ae9d4dc1d01"
+      ],
+      "settings": {
+        "color_palette": "light",
+        "layout": "slider",
+        "autoplay": true,
+        "autoplay_seconds": 5,
+        "show_arrows": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "8cea4322-df24-4ad4-937d-2c227106e967": {
+      "type": "section-featured-collection",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "collection": "lagerhagg",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Populära lagerhägg",
+        "text": "",
+        "link_text": "Se alla lagerhägg",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "776aa251-9cb0-4d53-a5c1-dda697f8dcc9": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "liguster",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Populära Liguster",
+        "text": "",
+        "link_text": "Se alla liguster",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "6d6afc21-fb83-40e1-a674-2efa76f5ab31": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "avenbok",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Populära Avenbok",
+        "text": "",
+        "link_text": "Se alla avenbok",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "464fb562-0658-426f-b3aa-f89c7a667759": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "buxbom",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Populära buxbom",
+        "text": "",
+        "link_text": "Se alla buxbom",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "940a8280-2d79-4e70-9541-9833cd536540": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "bambu-gras",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Populära bambu",
+        "text": "",
+        "link_text": "Se alla buxbom",
+        "button_color_palette": "accent",
+        "show_link": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "ef9daf5d-2452-4149-b466-a45129f597a2": {
+      "type": "section-featured-products",
+      "settings": {
+        "products": [
+          "s2000",
+          "s2002",
+          "s15110",
+          "s40114",
+          "s40140",
+          "s40112",
+          "s50122",
+          "s40121",
+          "s15123",
+          "s15120",
+          "s3336",
+          "s08",
+          "s5692",
+          "s40119",
+          "s15195"
+        ],
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title_size": "h1",
+        "title": "Hasselforsjord till Sverges bästa pris!",
+        "text": "<p>Nu med Fri hemleverans.<\/p>",
+        "link_text": "Se alla varianter",
+        "link_url": "shopify:\/\/collections\/jord",
+        "button_color_palette": "dark",
+        "show_link": false,
+        "enable_quick_buy_desktop": false,
+        "enable_quick_buy_mobile": false,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": false,
+        "enable_quick_buy_compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "692defe4-f444-43ef-9aea-03bdb60e1505": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-0": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Hemleverans av växter",
+            "text": "<p>Din order levereras direkt hem till din adress med Post Nord. Du behöver inte vara hemma för att kvittera godset. Vi löser den biten.<\/p>",
+            "link_text": "Button",
+            "link_url": "",
+            "button_color_palette": "accent",
+            "show_link": false
+          }
+        },
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-1": {
+          "type": "text",
+          "settings": {
+            "icon": "delivery_box_2",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Paketleveranser",
+            "text": "<p>Beställer du mindre produkter som inte är växter kan du välja att hämta din order hos ditt Post Nord ombud eller få den levererad hem till dörren.<\/p>",
+            "link_text": "Button",
+            "link_url": "",
+            "button_color_palette": "accent",
+            "show_link": false
+          }
+        },
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-2": {
+          "type": "text",
+          "settings": {
+            "icon": "verified",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Garanti upp till 3 år",
+            "text": "<p>Alla växter har garanti mellan 3-36 månader. Beställer du tjänsten Planterad & Klar erhåller du 3 års garanti. Övrig garantitid står angiven på varje produkt.<\/p>",
+            "link_text": "Button",
+            "link_url": "",
+            "button_color_palette": "accent",
+            "show_link": false
+          }
+        },
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-3": {
+          "type": "text",
+          "settings": {
+            "icon": "secure",
+            "image_svg": "",
+            "image_height": 55,
+            "title": "Säkra betalsätt",
+            "text": "<p>Vi erbjuder de flesta betalningsalternativ som efterfrågas. Vi kan utöver faktura även erbjuda dig att delbetala din order på 6, 12 eller 24 månader.<\/p>",
+            "link_text": "Button",
+            "link_url": "",
+            "button_color_palette": "accent",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-0",
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-1",
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-2",
+        "template--18152645427515__692defe4-f444-43ef-9aea-03bdb60e1505-16776609585a7fe773-3"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.swiper-slide {margin: 0 !important; }}"
+      ],
+      "settings": {
+        "items_width": 4,
+        "text_alignment": "start",
+        "title_size": "h1",
+        "title": "",
+        "text": "",
+        "link_text": "Button",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "blocks_text_alignment": "center",
+        "blocks_title_size": "h3",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "cb32d472-ae68-4814-bc4d-ecc550e94503": {
+      "type": "featured-product-pin-style",
+      "blocks": {
+        "1b7e7692-3e2c-4513-a90c-ba7d30c06d29": {
+          "type": "product",
+          "settings": {
+            "position-vertical": "20",
+            "position-horizontal": "10",
+            "product": "barrvaxtgodning-ecoplant-6-kg-burk"
+          }
+        },
+        "2d677357-ac2f-45db-b93e-fef664ed5bd7": {
+          "type": "product",
+          "settings": {
+            "position-vertical": "50",
+            "position-horizontal": "70",
+            "product": "thuja-occ-brabant-200-220-cm-krukodlad-co-20-kvalite-a"
+          }
+        },
+        "ea2c365b-9a5e-499a-905f-2a0711d6a37e": {
+          "type": "product2",
+          "settings": {
+            "position-vertical": "30",
+            "position-horizontal": "10",
+            "product": "thuja-occ-smaragd-70-80-cm-krukodlad-kvalite-a"
+          }
+        },
+        "80f08f12-dd91-43d4-8bc0-471624e38770": {
+          "type": "product2",
+          "settings": {
+            "position-vertical": "20",
+            "position-horizontal": "60",
+            "product": "thuja-occ-smaragd-80-100-cm-krukodlad-kvalite-a"
+          }
+        }
+      },
+      "block_order": [
+        "1b7e7692-3e2c-4513-a90c-ba7d30c06d29",
+        "2d677357-ac2f-45db-b93e-fef664ed5bd7",
+        "ea2c365b-9a5e-499a-905f-2a0711d6a37e",
+        "80f08f12-dd91-43d4-8bc0-471624e38770"
+      ],
+      "custom_css": [
+        ".products__wrapper {margin-bottom: 28px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fertilizer_bcaab4f7-0471-415d-8b50-73588f187f21.webp",
+        "image2": "shopify:\/\/shop_images\/one_700x_e46ed87c-5504-442b-bbf6-f77812f51725.jpg",
+        "color_palette": "black",
+        "opacity": 0.3,
+        "image_position": "left",
+        "title_size": "h1",
+        "heading": "Rätt gödning till rätt växt",
+        "description": "<p>Varje växt har ett specifikt behov av näring, välj ecoplant för optimal tillväxt.<\/p>",
+        "button_text": "",
+        "link": "",
+        "space-top": 10,
+        "space-bottom": 50,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": false,
+        "enable_quick_buy_compact": true
+      }
+    },
+    "ee6b6a06-b3d0-48ff-b596-044e3c50be52": {
+      "type": "section-blog-posts",
+      "custom_css": [
+        "button.viewallblogs {margin: 0 auto 50px;}",
+        "button.viewallblogs a {color: #fff; text-decoration: none;}"
+      ],
+      "settings": {
+        "blog": "nyheter",
+        "number_of_items": 4,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Blogg",
+        "link_text": "Button",
+        "link_url": "",
+        "button_color_palette": "black",
+        "show_link": false,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "button_color_palette_post": "dark",
+        "show_link_post": true,
+        "spacing_desktop": 30,
+        "spacing_mobile": 30
+      }
+    },
+    "29e389b4-814a-4178-ae4a-c5b40bdbf807": {
+      "type": "image-gallery-custom",
+      "blocks": {
+        "9ce022cc-5205-42d4-9eec-1db13a99b8ed": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/Efter_05285e41-1aa9-42c5-8dfe-e7b89f4c11e6.webp",
+            "heading": "Åkersberga",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Thuja Smaragd 180-200cm<\/strong><\/p><p>2022-10-15<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "1a734a94-510f-4845-a2a9-812940b54641": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/Thuja_Smaragd_110cm_4_600x_b750e2fb-1f3f-498d-a53f-143eb4e671e5.webp",
+            "heading": "Göteborg",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Thuja Smaragd 90cm<\/strong><\/p><p>2022-10-08<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "1be51b24-3f4b-4176-8bef-49aef61f2660": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/Thuja_Brabant_200cm_0a5e2ff5-f4a5-4f7d-9774-abaf0fc613fb.webp",
+            "heading": "Malmö",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Thuja Brabant 180-200cm<\/strong><\/p><p>2022-09-12<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "77719775-ff25-46dc-98fa-81036212cc01": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/Thuja_Smaragd_170cm_2_c05a51b6-ce81-4ca5-9946-59f432df9958.webp",
+            "heading": "Stockholm",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Thuja Smaragd 160-180cm<\/strong><\/p><p>2022-08-03<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "fc79ea65-b967-46e4-a860-e7dcb20a66b8": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/Thuja_Brabant_160_38641e0d-3a50-4868-a1b2-5f51b81c19cf.webp",
+            "heading": "Linköping",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Thuja Brabant 140-160cm<\/strong><\/p><p>2022-07-22<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "43da7f59-9b66-44c9-9b62-fb03482cb5bf": {
+          "type": "Image_banner",
+          "settings": {
+            "active__image": "active",
+            "image": "shopify:\/\/shop_images\/IMG_20220920_162922_45906c25-2ccb-43b3-a1f9-769d0bd5ef6e.webp",
+            "heading": "Helsingborg",
+            "text__alignment": "text__right",
+            "description": "<p><strong>Lagerhägg Novita 100-120cm<\/strong><\/p><p>2022-09-20<\/p>",
+            "button_label": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "9ce022cc-5205-42d4-9eec-1db13a99b8ed",
+        "1a734a94-510f-4845-a2a9-812940b54641",
+        "1be51b24-3f4b-4176-8bef-49aef61f2660",
+        "77719775-ff25-46dc-98fa-81036212cc01",
+        "fc79ea65-b967-46e4-a860-e7dcb20a66b8",
+        "43da7f59-9b66-44c9-9b62-fb03482cb5bf"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "overlay_opacity": 0.8,
+        "show_card": 3,
+        "row-gap": 10,
+        "col-gap": 10,
+        "space-top": 5,
+        "space-bottom": 40
+      }
+    },
+    "82dcdc1d-afdd-4904-8cd6-55b966ff0bd4": {
+      "type": "section-image-comparison",
+      "settings": {
+        "image_before": "shopify:\/\/shop_images\/Fore1.jpg",
+        "image_after": "shopify:\/\/shop_images\/Efter1.jpg",
+        "drag_color_palette": "white",
+        "drag_direction": "horizontal",
+        "drag_position": 30,
+        "labels": true,
+        "label_before": "Före",
+        "label_after": "Efter",
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "",
+        "text": "",
+        "link_text": "",
+        "link_url": "\/",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "spacing_desktop": 30,
+        "spacing_mobile": 0
+      }
+    },
+    "f5de7638-9c72-45f7-97ef-032085338a2c": {
+      "type": "section-counters",
+      "blocks": {
+        "template--18152645427515__f5de7638-9c72-45f7-97ef-032085338a2c-1677663710a2113e90-0": {
+          "type": "counter",
+          "settings": {
+            "number": "33711+",
+            "text": "<p>Unika kunder<\/p>"
+          }
+        },
+        "template--18152645427515__f5de7638-9c72-45f7-97ef-032085338a2c-1677663710a2113e90-1": {
+          "type": "counter",
+          "settings": {
+            "number": "54231+",
+            "text": "<p>Beställningar sedan 2008<\/p>"
+          }
+        },
+        "72ebd036-f710-4d9b-a51b-902f20ba3803": {
+          "type": "counter",
+          "settings": {
+            "number": "11314+",
+            "text": "<p>Utförda planteringar<\/p>"
+          }
+        },
+        "30585868-8633-4879-a11a-e44653675636": {
+          "type": "counter",
+          "settings": {
+            "number": "6934+",
+            "text": "<p>Utförda vintertäckningar<\/p>"
+          }
+        },
+        "b30f0100-ec22-4622-b686-b6ed804b4e41": {
+          "type": "counter",
+          "settings": {
+            "number": "38600000+",
+            "text": "<p>Levererade växter totalt<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__f5de7638-9c72-45f7-97ef-032085338a2c-1677663710a2113e90-0",
+        "template--18152645427515__f5de7638-9c72-45f7-97ef-032085338a2c-1677663710a2113e90-1",
+        "72ebd036-f710-4d9b-a51b-902f20ba3803",
+        "30585868-8633-4879-a11a-e44653675636",
+        "b30f0100-ec22-4622-b686-b6ed804b4e41"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Consumer_Good_Ad-high.gif",
+        "overlay_opacity": 70,
+        "color_palette": "black",
+        "text_position": "start",
+        "title_size": "h1",
+        "title": "Thujor.se",
+        "text": "<p>Är det dags att plantera en ny häck? Då har du hamnat på rätt sida. Vi har många års erfarenhet av både plantering samt försäljning av häckväxter och framförallt Thujor. Hos oss kan du känna dig säker när du handlar häckplantor både om du ska plantera själv eller låter oss plantera åt dig, du får alltid noga utvalda plantor från europas bästa plantskolor och du kan alltid vara säker på att du får det bästa priset på marknaden.<\/p><p>Vi är svergies största leverantör av hemlevererade häckväxter, vi är Thujor.se. Kontakta oss gärna med dina frågor och feedback på marknad@thujor.se eller 08 - 53 33 23 23. Du vet väl om att du kan boka ett gratis hembesök där vi tillsammans går igenom dina förutsättningar för att plantera en häck, ring oss idag eller boka ditt hembesök direkt i webshopen.<\/p><p>Fler än 50.000 nöjda kunder sedan 2008, bli en nöjd kund du också.<\/p>",
+        "numbers_boxed": true,
+        "numbers_accent_color": false,
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "16909630939cceffc9": {
+      "type": "apps",
+      "blocks": {
+        "c56c7c85-a97e-4384-b020-0f8f73f89ff7": {
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "c56c7c85-a97e-4384-b020-0f8f73f89ff7"
+      ],
+      "custom_css": [
+        ".l4ts.slider-fraction {margin: 0;}",
+        ".swiper-slide {height: 100%; background: #fff;}",
+        "@media only screen and (max-width: 768px) {.swiper-slide {margin: 0 !important; }}"
+      ],
+      "settings": {
+      }
+    },
+    "8165e302-ff17-4ccf-840b-fccdf21afe34": {
+      "type": "section-testimonials",
+      "blocks": {
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-0": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/thujor.se\/\" title=\"https:\/\/thujor.se\/\">Thujor.se<\/a> förknippar jag med snabbväxande thujor av hög kvalitet, snabb och professionell service, trevligt bemötande och en generös garanti.<\/p>",
+            "score": 5,
+            "author": "Andreas Norlén",
+            "place": "Sveriges talman"
+          }
+        },
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Jag har odlat ett närmast osunt förhållande till mina älskade thujor. Är mycket tacksam för den fina service och de kloka tips och råd som Thujor.se erbjudit och kan varmt rekommendera dem.<\/p>",
+            "score": 5,
+            "author": "Sonja Aldén",
+            "place": "Sångerska"
+          }
+        },
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Vi beställde en 25 meter lång planterad och klar thujahäck via webben. Leverans och plantering skedde på utsatt tid och med ett toppenresultat. Vi är jättenöjda med både bemötande och leverans.<\/p>",
+            "score": 5,
+            "author": "Åsa Eriksson",
+            "place": "Stockholm"
+          }
+        },
+        "4fb88e69-1dc5-4339-9cd6-9062899fd159": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Vi köpte helhetslösning (planterade thujor Brabant runt huset på hela 300st). Vi blev bemötta på ett mkt vänligt och proffsigt sätt. Smidiga. Snabba, Flexibla och bra på kommunikation!<\/p>",
+            "score": 5,
+            "author": "Jens Gustafsson",
+            "place": "Helsingborg"
+          }
+        },
+        "3099f193-baa8-46f9-b294-7e9691aa3439": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Ett företag som levererar precis det man önskar. Tydlig kommunikation och inga problem när jag som kund behövde göra några förändringar. Ett väldigt glatt och tillmötesgående gäng.<\/p>",
+            "score": 5,
+            "author": "Jennifer Rolfe",
+            "place": "Halmstad"
+          }
+        },
+        "20221a8d-ade2-4fd3-b678-3deb4867318b": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Bra kommunikation med tydliga svar, prisvärda lösningar med utmärkt resultat. Mycket trevlig personal som utförde ett kanonbra arbete.<\/p>",
+            "score": 5,
+            "author": "Niklas Göde",
+            "place": "Vallentuna"
+          }
+        }
+      },
+      "block_order": [
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-0",
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-1",
+        "template--18152645427515__8165e302-ff17-4ccf-840b-fccdf21afe34-1677663943b6937896-2",
+        "4fb88e69-1dc5-4339-9cd6-9062899fd159",
+        "3099f193-baa8-46f9-b294-7e9691aa3439",
+        "20221a8d-ade2-4fd3-b678-3deb4867318b"
+      ],
+      "custom_css": [
+        ".l4ts.slider-fraction {margin: 0;}",
+        ".swiper-slide {height: 100%; background: #fff;}",
+        "@media only screen and (max-width: 768px) {.swiper-slide {margin: 0 !important; }}"
+      ],
+      "settings": {
+        "color_palette": "light",
+        "layout": "slider",
+        "items_width": 3,
+        "autoplay": true,
+        "autoplay_seconds": 8,
+        "text_alignment": "start",
+        "title_size": "h1",
+        "title": "",
+        "text": "",
+        "link_text": "",
+        "link_url": "\/",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "testimonials_boxed": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "16921782257b6570e0": {
+      "type": "apps",
+      "blocks": {
+        "3371246a-f35d-4964-9f69-091afc23a1cf": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "3371246a-f35d-4964-9f69-091afc23a1cf"
+      ],
+      "settings": {
+      }
+    },
+    "45cd3478-1005-40b8-8a61-dca46d498d30": {
+      "type": "section-newsletter",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "dark",
+        "button_color_palette": "accent",
+        "width": "wide",
+        "title_size": "h1",
+        "title": "Få alla rabattkoder via mail.",
+        "text": "<p>Missa inte erbjudanden, tips och kampanjer. <\/p>",
+        "link_text": "Prenumerera",
+        "enable_newsletter_terms_checkbox": false,
+        "newsletter_terms_text": "<p>ddd<\/p>",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "d78d0ed4-1ae0-4075-b7eb-5d0581928f7c",
+    "2182f919-2451-4425-8786-1bfe5e24b567",
+    "44748963-19cc-44b2-bb9c-a1b2b378a8e2",
+    "ea442551-e619-47a7-8cbf-f9c2663b2032",
+    "27ae0782-675e-4c3f-917a-d544beb5d763",
+    "425b527f-d5b3-41a0-8117-068af56f2170",
+    "22c42ae8-cad9-4a6d-9918-b6d1a9f09d66",
+    "b4a07255-4612-46f9-b6bc-16de24bd91b7",
+    "0df62e83-2ca6-4db5-9e9c-cc91bf43ce63",
+    "8cea4322-df24-4ad4-937d-2c227106e967",
+    "776aa251-9cb0-4d53-a5c1-dda697f8dcc9",
+    "6d6afc21-fb83-40e1-a674-2efa76f5ab31",
+    "464fb562-0658-426f-b3aa-f89c7a667759",
+    "940a8280-2d79-4e70-9541-9833cd536540",
+    "ef9daf5d-2452-4149-b466-a45129f597a2",
+    "692defe4-f444-43ef-9aea-03bdb60e1505",
+    "cb32d472-ae68-4814-bc4d-ecc550e94503",
+    "ee6b6a06-b3d0-48ff-b596-044e3c50be52",
+    "29e389b4-814a-4178-ae4a-c5b40bdbf807",
+    "82dcdc1d-afdd-4904-8cd6-55b966ff0bd4",
+    "f5de7638-9c72-45f7-97ef-032085338a2c",
+    "16909630939cceffc9",
+    "8165e302-ff17-4ccf-840b-fccdf21afe34",
+    "16921782257b6570e0",
+    "45cd3478-1005-40b8-8a61-dca46d498d30"
+  ]
+}

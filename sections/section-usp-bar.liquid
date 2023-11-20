@@ -1,0 +1,164 @@
+<ul class="palette-{{ section.settings.color_palette }}
+  module-color-palette
+  l4us
+  wide
+  {% if section.settings.layout == 'slider' %}slider{% endif %}
+  {% unless section.settings.show_arrows %}no-nav{% endunless %}
+  "
+  {% if section.settings.layout == 'slider' and section.settings.autoplay %}data-autoplay={{ section.settings.autoplay_seconds | times: 1000 }}{% endif %}
+  >
+  {%- for block in section.blocks -%}
+    {%- if block.settings.usp != empty -%}
+      <li {{ block.shopify_attributes }}>
+        {{ block.settings.usp | replace: '</p><p>', ' ' | remove: '<p>' | remove: '</p>' }}
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
+
+<style>
+  #shopify-section-{{ section.id }} .l4us { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+  @media only screen and (max-width: 47.5em) {
+    #shopify-section-{{ section.id }} .l4us { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.usp_bar.name",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_palette",
+      "label": "t:sections.usp_bar.settings.color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:sections.usp_bar.settings.color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:sections.usp_bar.settings.color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:sections.usp_bar.settings.color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:sections.usp_bar.settings.color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:sections.usp_bar.settings.color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:sections.usp_bar.settings.color_palette.options__6.label"
+        },
+        {
+          "value": "light_gradient",
+          "label": "t:sections.usp_bar.settings.color_palette.options__7.label"
+        },
+        {
+          "value": "dark_gradient",
+          "label": "t:sections.usp_bar.settings.color_palette.options__8.label"
+        }
+      ],
+      "default": "light"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "t:sections.usp_bar.settings.layout.label",
+      "options": [
+        {
+          "value": "slider",
+          "label": "t:sections.usp_bar.settings.layout.options__1.label"
+        },
+        {
+          "value": "rows",
+          "label": "t:sections.usp_bar.settings.layout.options__2.label"
+        }
+      ],
+      "default": "rows"
+    },
+    {
+      "id": "autoplay",
+      "type": "checkbox",
+      "label": "t:sections.usp_bar.settings.autoplay.label",
+      "info": "t:sections.usp_bar.settings.autoplay.info"
+    },
+    {
+      "id": "autoplay_seconds",
+      "type": "range",
+      "label": "t:sections.usp_bar.settings.autoplay_seconds.label",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 3
+    },
+    {
+      "id": "show_arrows",
+      "type": "checkbox",
+      "label": "t:sections.usp_bar.settings.show_arrows.label",
+      "info": "t:sections.usp_bar.settings.show_arrows.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.usp_bar.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:sections.usp_bar.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:sections.usp_bar.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "t:sections.usp_bar.blocks.usp.name",
+      "settings": [
+        {
+          "id": "usp",
+          "type": "richtext",
+          "label": "t:sections.usp_bar.blocks.usp.settings.usp.label",
+          "default": "<p>Tell a unique detail about your online store</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.usp_bar.presets.name",
+      "blocks": [
+        {
+          "type": "usp"
+        },
+        {
+          "type": "usp"
+        },
+        {
+          "type": "usp"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

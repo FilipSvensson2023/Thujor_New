@@ -1,0 +1,368 @@
+{%- liquid 
+        if block.settings.title_size == 'size-50'
+          assign title_classes = block.settings.title_size
+          assign title_size = 'h1'
+        else
+          assign title_classes = false
+          assign title_size = block.settings.title_size
+        endif
+-%}
+
+<div class="products__wrapper" >
+    <div class="text__area" >
+            {% if section.settings.heading != blank %}
+            <h2>{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.description != blank %}
+            <div>
+              {{ section.settings.description }}
+            </div>
+            {% endif %}
+            {% if  section.settings.button_text != blank  %}
+              <a href="{{ section.settings.link }}">{{ section.settings.button_text }}</a>
+            {% endif %}
+    </div>
+  
+    <div class="d__flex 
+      {% if section.settings.image_position == 'left' %}left{% endif %}
+      {% if section.settings.image_position == 'right' %}right{% endif %}">
+        {% if section.settings.image !=  blank %}
+        <div class="image" >
+          <img loading="lazy" src="{{ section.settings.image | img_url:'700x' }}" alt="{{ section.settings.image.alt }}" >
+          <div class="product_pin_wrapper" >
+            {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'product' -%}
+              <div class="pin_product" onmouseover="show(this)" onmouseleave="hide(this)" style="top:{{block.settings.position-vertical}}%; left:{{block.settings.position-horizontal}}%;">
+                <div class="pin">
+                  {% for image in block.settings.product.images limit:1 %}
+                      <img src="{{ image | img_url:'30x' }}" alt="{{ image.alt }}" >
+                  {% endfor %}
+                  </div>
+                <div class="product" onmouseover="show(this)" onmouseleave="hide(this)">
+                  <a href="{{ block.settings.product.url }}" class="link__overlay" ></a>
+                  {% render 'product-item', product: block.settings.product,  
+                    quick_buy_compact: section.settings.enable_quick_buy_compact,
+                    enable_quick_buy_desktop: section.settings.enable_quick_buy_desktop,
+                    enable_quick_buy_mobile: section.settings.enable_quick_buy_mobile,
+                    enable_quick_buy_qty_selector: section.settings.enable_quick_buy_qty_selector,
+                    enable_quick_buy_drawer: section.settings.enable_quick_buy_drawer %}
+                </div>
+              </div>  
+            {%- endcase -%}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      {% if section.settings.image2 !=  blank %}
+        <div class="image" >
+          <img loading="lazy" src="{{ section.settings.image2 | img_url:'700x' }}" alt="{{ section.settings.image2.alt }}" >
+          <div class="product_pin_wrapper" >
+            {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'product2' -%}
+              <div class="pin_product" onmouseover="show(this)" onmouseleave="hide(this)" style="top:{{block.settings.position-vertical}}%; left:{{block.settings.position-horizontal}}%;">
+                <div class="pin">
+                  {% for image in block.settings.product.images limit:1 %}
+                      <img src="{{ image | img_url:'30x' }}" alt="{{ image.alt }}" >
+                  {% endfor %}
+                  </div>
+                <div class="product" onmouseover="show(this)" onmouseleave="hide(this)">
+                  <a href="{{ block.settings.product.url }}" class="link__overlay" ></a>
+                  {% render 'product-item', product: block.settings.product,  
+                    quick_buy_compact: section.settings.enable_quick_buy_compact,
+                    enable_quick_buy_desktop: section.settings.enable_quick_buy_desktop,
+                    enable_quick_buy_mobile: section.settings.enable_quick_buy_mobile,
+                    enable_quick_buy_qty_selector: section.settings.enable_quick_buy_qty_selector,
+                    enable_quick_buy_drawer: section.settings.enable_quick_buy_drawer %}
+                </div>
+              </div>  
+            {% endcase %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        
+    </div>
+</div>
+
+<script>
+function hide(el){
+        setTimeout(function(){
+            el.querySelector(".product").classList.remove('show')
+        }, 0)
+    }
+
+function show(el){
+    el.querySelector(".product").classList.add('show')
+}
+</script>
+
+<style>
+  .products__wrapper {
+    margin-top:{{ section.settings.space-top }}px;
+    margin-bottom:{{ section.settings.space-bottom }}px;
+  }
+  
+  .products__wrapper .d__flex .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:var(--{{ section.settings.color_palette }});
+    opacity:{{section.settings.opacity}};
+}
+
+.text__area h2 {
+  font-size:{% if section.settings.title_size == "h3" %} 21px{% endif %}
+            {% if section.settings.title_size == "h2" %} 24px {% endif %}
+            {% if section.settings.title_size == "h1" %} 32px{% endif %}
+            {% if section.settings.title_size == "size-50" %} 50px {% endif %};
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Featured Product in Pin",
+    "settings": [
+      {
+        "id":"image",
+        "type":"image_picker",
+        "label":"Image"
+      },
+      {
+        "id":"image2",
+        "type":"image_picker",
+        "label":"Image"
+      },
+      {
+          "type": "select",
+          "id": "color_palette",
+          "label": "t:sections.slideshow.blocks.slide.settings.color_palette.label",
+          "options": [
+            {
+              "value": "white",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__1.label"
+            },
+            {
+              "value": "black",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__2.label"
+            },
+            {
+              "value": "light",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__3.label"
+            },
+            {
+              "value": "dark",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__4.label"
+            },
+            {
+              "value": "accent",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__5.label"
+            },
+            {
+              "value": "light_2",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__6.label"
+            },
+            {
+              "value": "light_gradient",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__7.label"
+            },
+            {
+              "value": "dark_gradient",
+              "label": "t:sections.slideshow.blocks.slide.settings.color_palette.options__8.label"
+            }
+          ],
+          "default": "light_gradient"
+      },
+      {
+        "id":"opacity",
+        "type":"range",
+        "min":0,
+        "max":1,
+        "step":0.1,
+        "default": 0.3,
+        "label":"Image Opacity"
+      },
+      {
+            "type": "select",
+            "id": "image_position",
+            "label": "Image Position",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "left"
+      },
+      {
+          "type": "select",
+          "id": "title_size",
+          "label": "t:sections.gallery.blocks.image.settings.title_size.label",
+          "options": [
+            {
+              "value": "h3",
+              "label": "t:sections.gallery.blocks.image.settings.title_size.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.gallery.blocks.image.settings.title_size.options__2.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.gallery.blocks.image.settings.title_size.options__3.label"
+            },
+            {
+              "value": "size-50",
+              "label": "t:sections.gallery.blocks.image.settings.title_size.options__4.label"
+            }
+          ],
+          "default": "h1"
+        },
+      {
+        "id":"heading",
+        "type":"text",
+        "label":"Heading"
+      },
+      {
+        "id":"description",
+        "type":"richtext",
+        "label":"Description"
+      },
+      {
+        "id":"button_text",
+        "type":"text",
+        "label":"Button Text"
+      },
+      {
+        "id":"link",
+        "type":"url",
+        "label":"Link"
+      },
+      {
+        "id": "space-top",
+        "type": "range",
+        "label": "Space Top",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "default": 10
+      },
+      {
+        "id": "space-bottom",
+        "type": "range",
+        "label": "Space Bottom",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "default": 10
+      },
+      {
+      "type": "header",
+      "content": "t:main.collection.settings.quick_buy.header"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:main.collection.settings.quick_buy.paragraph"
+    },
+    {
+      "id": "enable_quick_buy_desktop",
+      "type": "checkbox",
+      "label": "t:main.collection.settings.quick_buy.enable_quick_buy_desktop.label",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_mobile",
+      "type": "checkbox",
+      "label": "t:main.collection.settings.quick_buy.enable_quick_buy_mobile.label",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_drawer",
+      "type": "checkbox",
+      "label": "t:main.collection.settings.quick_buy.enable_quick_buy_drawer.label",
+      "info": "t:main.collection.settings.quick_buy.enable_quick_buy_drawer.info"
+    },
+    {
+      "id": "enable_quick_buy_qty_selector",
+      "type": "checkbox",
+      "label": "t:main.collection.settings.quick_buy.enable_quick_buy_qty_selector.label",
+      "info": "t:main.collection.settings.quick_buy.enable_quick_buy_qty_selector.info",
+      "default": true
+    },
+    {
+      "id": "enable_quick_buy_compact",
+      "type": "checkbox",
+      "label": "t:main.collection.settings.quick_buy.enable_quick_buy_compact.label",
+      "info": "t:main.collection.settings.quick_buy.enable_quick_buy_compact.info"
+    }
+    ],
+    "blocks":[
+        {
+          "type":"product",
+          "name":"Product",
+          "settings":[
+            {
+              "id":"position-vertical",
+              "type":"text",
+              "label":"Pin Position Vertically ( in Percentage )",
+              "info":"Only write numbers"
+            },
+            {
+              "id":"position-horizontal",
+              "type":"text",
+              "label":"Pin Position Horizontally ( in Percentage )",
+              "info":"Only write numbers"
+            },
+            {
+              "id":"product",
+              "type":"product",
+              "label":"Product"
+            }
+          ]
+        },
+      {
+          "type":"product2",
+          "name":"Product2",
+          "settings":[
+            {
+              "id":"position-vertical",
+              "type":"text",
+              "label":"Pin Position Vertically ( in Percentage )",
+              "info":"Only write numbers"
+            },
+            {
+              "id":"position-horizontal",
+              "type":"text",
+              "label":"Pin Position Horizontally ( in Percentage )",
+              "info":"Only write numbers"
+            },
+            {
+              "id":"product",
+              "type":"product",
+              "label":"Product"
+            }
+          ]
+        }
+    ],
+    "presets": [
+          {
+            "name": "Featured Product in Pin"
+          }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

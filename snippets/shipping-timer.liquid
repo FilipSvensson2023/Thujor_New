@@ -1,0 +1,17 @@
+{%- liquid
+  assign show_days = ''
+  for day in (1..7)
+    assign day_setting = 'shipping_timer_enable_' | append: day
+    if settings[day_setting]
+      assign show_days = show_days | append: day
+    endif
+  endfor
+-%}
+{%- capture countdown -%}
+  <span class="countdown compact hide-days" data-timezone-offset="{{ 'now' | date: '%z' | divided_by: 100 }}" data-show-from="{{ settings.shipping_timer_show_from }}" data-show-until="{{ settings.shipping_timer_show_until }}" data-show-days="{{ show_days }}">
+    {{ 'now' | date: '%b %d, %Y ' | append: ' ' | append: settings.shipping_timer_show_until | date: "%b %d, %Y %H:%M:%S %z" }}
+  </span>
+{%- endcapture -%}
+<li class="countdown-container">
+  <span class="strong">{{ 'general.shipping_timer.shipped_today' | t }}</span> {{ 'general.shipping_timer.you_have_left_html' | t: time: countdown }}
+</li>

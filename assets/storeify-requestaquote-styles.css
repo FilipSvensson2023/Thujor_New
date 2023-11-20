@@ -1,0 +1,2441 @@
+/* @import "//use.fontawesome.com/releases/v5.3.1/css/all.css"; */
+@import "//cdn.shopify.com/s/files/1/0587/4322/6531/files/fontawsome5.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.1/css/fileinput.min.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css";
+@import "//cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css";
+#widget-icon::before {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.ify-hide{display: none !important;}
+#storeify-contactform-wrapper .bootstrap-datetimepicker-widget {
+    width: auto !important;
+}
+
+#storeify-contactform-wrapper .bootstrap-datetimepicker-widget table td.active {
+    background-color: #007bff;
+}
+
+#storeify-contactform-wrapper .bootstrap-datetimepicker-widget table td,
+#storeify-contactform-wrapper .bootstrap-datetimepicker-widget table th {
+    border: 0!important;
+}
+
+#storeify-preview-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#storeify-preview-bg img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#storeify-contactform .loading::before, #storeify-contactform .loading::after {
+    display: none;
+}
+
+/* The Modal (background) */
+
+#storeify-contactform-wrapper.modal{
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999999999;
+    /* Sit on top */
+    margin: 0 !important;
+    /* padding-top: 40px; Location of the box */
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    background-image: -o-radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    opacity: 1 !important;
+    visibility: inherit !important;
+    box-sizing: content-box;
+    transform: unset;
+    max-width: 100%;
+    pointer-events: inherit;
+}
+
+#storeify-contactform-wrapper.storeify-contactform-wrapper-shortcode {
+    display: block !important;
+    width: 100%;
+    position: static !important;
+    background: transparent !important;
+}
+
+#storeify-contactform-wrapper.in {
+    /*display: flex !important;*/
+}
+
+#storeify-contactform-wrapper .modal-dialog {
+    margin: 0 auto;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+}
+
+#storeify-contactform-wrapper.storeify-contactform-wrapper-shortcode .modal-dialog {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+}
+
+#storeify-contactform-wrapper h2.heading {
+    margin-bottom: 8px;
+    margin-top: 0;
+    text-transform: none;
+}
+
+
+/* Modal Content */
+
+#storeify-contactform-wrapper .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    border-radius: 0;
+    border: 0;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-box-shadow: 0 0px 11px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0px 11px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0px 11px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0px 11px rgba(0, 0, 0, 0.6);
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+
+#storeify-contactform-wrapper .wrap-contact-default-templete {
+    padding: 20px;
+}
+
+#storeify-contactform-wrapper .has-error {
+    border: 0;
+}
+
+#storeify-contactform-shortcode #storeify-contactform-wrapper .wrap-contact-default-templete {
+    box-shadow: none !important;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+#storeify-contactform-wrapper .close {
+    float: right;
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+#storeify-contactform-wrapper .close:hover,
+#storeify-contactform-wrapper .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#storeify-contactform-wrapper .modal-header {
+    position: relative;
+    border: 0;
+    margin-bottom: 25px;
+    padding: 0 15px;
+}
+
+#storeify-contactform-wrapper .vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#storeify-contactform-wrapper .vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#storeify-contactform-wrapper.storeify-contactform-wrapper-shortcode .vertical-align-center {
+    display: block !important;
+}
+
+#storeify-contactform-wrapper .modal-body {
+    padding: 0;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+
+#storeify-contactform-wrapper.storeify-contactform-wrapper-shortcode .modal-body {
+    display: block !important;
+}
+
+#storeify-contactform-wrapper.storeify-contactform-wrapper-shortcode .close,
+.storeify-contactform-shortcode #storeify-contact-button {
+    display: none !important;
+}
+
+#storeify-contactform-wrapper .modal-footer {
+    position: relative;
+    color: white;
+    text-align: right;
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#storeify-contactform-wrapper .row {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+textarea#field_message_placeholder {
+    height: 120px;
+}
+
+.bootstrap-storeify .has-error .form-control,
+.bootstrap-storeify .has-error .form-control-select,
+.bootstrap-storeify .storeify-field-checkbox.has-error .input-group,
+.bootstrap-storeify .storeify-field-radio.has-error .input-group,
+.bootstrap-storeify .has-error .g-recaptcha>div {
+    border: 1px solid red !important;
+}
+
+#storeify-contactform-wrapper .form-control {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    padding: 12px 12px 12px 34px;
+    border: 1px solid #ced4da;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    resize: vertical;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#storeify-contactform-wrapper .form-group {
+    margin-bottom: 8px;
+}
+
+#storeify-contactform-wrapper textarea.form-control {
+    height: 125px;
+}
+
+#storeify-contactform-wrapper .no-padding-left {
+    padding-left: 0;
+}
+
+#storeify-contactform-wrapper .no-padding-right {
+    padding-right: 0;
+}
+
+#storeify-contactform-wrapper .input-group {
+    position: relative;
+    width: 100%;
+    border: 0;
+}
+
+#storeify-contactform-wrapper .input-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    z-index: 9;
+    font-size: 14px;
+}
+
+#storeify-contactform-wrapper .help-block.with-errors {
+    color: #ff5050;
+    margin-top: -5px;
+    font-size: 12px;
+    text-align: left;
+    float: left;
+    display: none;
+}
+
+button#storeify-contactform-sendbtn {
+    background: crimson;
+    color: #fff;
+    height: 50px;
+    padding: 0 25px;
+    font-size: 18px !important;
+    cursor: pointer;
+    /*width: 145px;*/
+    border: 0;
+}
+
+#storeify-contactform-wrapper .messages .alert-success {
+    background: green;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#storeify-contactform-wrapper .copyright,
+#storeify-contactform-wrapper .copyright a {
+    text-align: center;
+    color: #dedede;
+    font-size: 12px;
+}
+
+
+/*Attach file*/
+
+.btn-ctf-remove-attach,
+.btn-ctf-upload-attach {
+    width: 25px !important;
+    text-align: center !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+#storeify-contactform-wrapper .file-caption,
+#storeify-contactform-wrapper .btn-ctf-attach {
+    padding: 5px;
+    border-radius: 0;
+    width: auto;
+    background: none;
+    color: inherit;
+    text-transform: unset;
+    cursor: pointer;
+}
+
+#storeify-contactform-wrapper #form_attach_file {
+    text-indent: -9999px;
+}
+
+#form_attach_file-success-2 li {
+    padding: 5px 35px  5px 20px;
+    position: relative;
+}
+#form_attach_file-success-2 li .fa-times{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    text-align: center;
+    line-height: 15px;
+    top:7px;
+    right: 20px;
+}
+@media (max-width: 768px) {
+    #storeify-contactform-wrapper .modal-content {
+        width: 100%;
+        padding: 20px;
+    }
+    #storeify-contactform-wrapper h2.heading {
+        font-size: 28px;
+    }
+    #storeify-contactform-wrapper {
+        padding: 0;
+    }
+    button#storeify-contactform-sendbtn {
+        float: left;
+    }
+    .btn-ctf-attach.btn-file .hidden-xs {
+        display: inline-block !important;
+    }
+}
+
+.bootstrap-storeify .sm-wrapper,.bootstrap-storeify [data-sm-init=true]{
+    display:none
+}
+.bootstrap-storeify .sm-wrapper *{
+    box-sizing:border-box
+}
+.bootstrap-storeify .sm-wrapper,.bootstrap-storeify .sm-wrapper .sm-overlay,.bootstrap-storeify .sm-wrapper .sm-popup{
+    position:fixed;
+    top:0;
+    left:0
+}
+.bootstrap-storeify .sm-wrapper{
+    z-index:99999997
+}
+.bootstrap-storeify .sm-wrapper .sm-overlay{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content:"";
+    z-index:99999998
+}
+.bootstrap-storeify .sm-wrapper .sm-popup{
+    z-index:99999999
+}
+.bootstrap-storeify .sm-sticky-button{
+    position:fixed;
+    top:30px;
+    left:30px;
+    background:#333;
+    font-size:12px;
+    font-weight:700;
+    color:#fff;
+    padding:8px 20px;
+    cursor:pointer;
+    z-index:99999996
+}
+.bootstrap-storeify .sm-sticky-button:hover{
+    opacity:.8
+}
+.bootstrap-storeify .sm-wrapper .sm-popup .sm-draggable{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    background:0 0;
+    cursor:move;
+    -webkit-user-select:none;
+    user-select:none;
+    z-index:998
+}
+.bootstrap-storeify .sm-wrapper [data-sm-close=true]{
+    cursor:pointer
+}
+body.sm-pageAnimated>:not(.sm-wrapper){
+    pointer-events:none
+}
+.bootstrap-storeify .sm-wrapper .sm-popup>div:after{
+    content:'';
+    display:block;
+    clear:both
+}
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position*=enter]{
+    left:0;
+    right:0
+}
+.sm-wrapper .sm-popup[data-sm-position*=eft]{
+    left:0;
+    right:auto
+}
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position*=ight]{
+    left:auto;
+    right:0
+}
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position*=top]{
+    top:0;
+    bottom:auto
+}
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position*=bottom]{
+    top:auto;
+    bottom:0;
+    max-height: 90%;
+    /*overflow: auto;*/
+}
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position=center],
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position=left],
+.bootstrap-storeify .sm-wrapper .sm-popup[data-sm-position=right]{
+    top:5%;
+    /*bottom:0*/
+    max-height: 90%;
+    /*overflow: auto;*/
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-animated=true]{
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-fill-mode:both;
+    animation-direction:normal;
+    backface-visibility:hidden;
+    transform-style:preserve-3d
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=zoomIn]{
+    animation-name:sm-zoomIn
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=zoomIn]{
+    animation-name:sm-zoomIn-out
+}
+@keyframes sm-zoomIn{
+    0%{
+        opacity:0;
+        transform:scale(.7)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-zoomIn-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:scale(.7)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=zoomOut]{
+    animation-name:sm-zoomOut
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=zoomOut]{
+    animation-name:sm-zoomOut-out
+}
+@keyframes sm-zoomOut{
+    0%{
+        opacity:0;
+        transform:scale(1.3)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-zoomOut-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:scale(1.3)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideTop]{
+    animation-name:sm-slideTop
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideTop]{
+    animation-name:sm-slideTop-out
+}
+@keyframes sm-slideTop{
+    0%{
+        opacity:0;
+        transform:translateY(-25%)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideTop-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:translateY(-25%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideBottom]{
+    animation-name:sm-slideBottom
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideBottom]{
+    animation-name:sm-slideBottom-out
+}
+@keyframes sm-slideBottom{
+    0%{
+        opacity:0;
+        transform:translateY(25%)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideBottom-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:translateY(25%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideRight]{
+    animation-name:sm-slideRight
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideRight]{
+    animation-name:sm-slideRight-out
+}
+@keyframes sm-slideRight{
+    0%{
+        opacity:0;
+        transform:translateX(25%)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideRight-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:translateX(25%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideLeft]{
+    animation-name:sm-slideLeft
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideLeft]{
+    animation-name:sm-slideLeft-out
+}
+@keyframes sm-slideLeft{
+    0%{
+        opacity:0;
+        transform:translateX(-25%)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideLeft-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:translateX(-25%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideInTop]{
+    animation-name:sm-slideInTop
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideInTop]{
+    animation-name:sm-slideInTop-out
+}
+@keyframes sm-slideInTop{
+    0%{
+        opacity:0;
+        transform:scale(.8) translateY(-30%)
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateY(0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideInTop-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateY(0)
+    }
+    100%{
+        opacity:0;
+        transform:scale(.8) translateY(-30%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideInBottom]{
+    animation-name:sm-slideInBottom
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideInBottom]{
+    animation-name:sm-slideInBottom-out
+}
+@keyframes sm-slideInBottom{
+    0%{
+        opacity:0;
+        transform:scale(.8) translateY(30%)
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateY(0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideInBottom-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateY(0)
+    }
+    100%{
+        opacity:0;
+        transform:scale(.8) translateY(30%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideInRight]{
+    animation-name:sm-slideInRight
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideInRight]{
+    animation-name:sm-slideInRight-out
+}
+@keyframes sm-slideInRight{
+    0%{
+        opacity:0;
+        transform:scale(.8) translateX(30%)
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateX(0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideInRight-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateX(0)
+    }
+    100%{
+        opacity:0;
+        transform:scale(.8) translateX(30%)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=slideInLeft]{
+    animation-name:sm-slideInLeft
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=slideInLeft]{
+    animation-name:sm-slideInLeft-out
+}
+@keyframes sm-slideInLeft{
+    0%{
+        opacity:0;
+        transform:scale(.8) translateX(-30%)
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateX(0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-slideInLeft-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    50%{
+        opacity:1;
+        transform:scale(.8) translateX(0)
+    }
+    100%{
+        opacity:0;
+        transform:scale(.8) translateX(-30%)
+    }
+}
+.sm-wrapper.sm-active div[data-sm-effect=rotateIn]{
+    animation-name:sm-rotateIn
+}
+.sm-wrapper div[data-sm-effect=rotateIn]{
+    animation-name:sm-rotateIn-out
+}
+@keyframes sm-rotateIn{
+    0%{
+        opacity:0;
+        transform:rotate(720deg) scale(.5)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-rotateIn-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:rotate(720deg) scale(.5)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=rotateOut]{
+    animation-name:sm-rotateOut
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=rotateOut]{
+    animation-name:sm-rotateOut-out
+}
+@keyframes sm-rotateOut{
+    0%{
+        opacity:0;
+        transform:rotate(720deg) scale(1.4)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-rotateOut-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:rotate(720deg) scale(1.4)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=flipInX]{
+    animation-name:sm-flipInX
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=flipInX]{
+    animation-name:sm-flipInX-out
+}
+@keyframes sm-flipInX{
+    0%{
+        opacity:0;
+        transform:perspective(400px) rotate3d(1,0,0,90deg);
+        transition-timing-function:ease-in
+    }
+    40%{
+        transform:perspective(400px) rotate3d(1,0,0,-20deg);
+        transition-timing-function:ease-in
+    }
+    60%{
+        opacity:1;
+        transform:perspective(400px) rotate3d(1,0,0,10deg)
+    }
+    80%{
+        transform:perspective(400px) rotate3d(1,0,0,-5deg)
+    }
+    100%{
+        transform:perspective(400px)
+    }
+}
+@keyframes sm-flipInX-out{
+    0%{
+        transform:perspective(400px)
+    }
+    20%{
+        transform:perspective(400px) rotate3d(1,0,0,-5deg)
+    }
+    40%{
+        opacity:1;
+        transform:perspective(400px) rotate3d(1,0,0,10deg)
+    }
+    60%{
+        transform:perspective(400px) rotate3d(1,0,0,-20deg);
+        transition-timing-function:ease-in
+    }
+    100%{
+        opacity:0;
+        transform:perspective(400px) rotate3d(1,0,0,90deg);
+        transition-timing-function:ease-in
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=flipInY]{
+    animation-name:sm-flipInY
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=flipInY]{
+    animation-name:sm-flipInY-out
+}
+@keyframes sm-flipInY{
+    0%{
+        opacity:0;
+        transform:perspective(400px) rotate3d(0,1,0,90deg);
+        transition-timing-function:ease-in
+    }
+    40%{
+        transform:perspective(400px) rotate3d(0,1,0,-20deg);
+        transition-timing-function:ease-in
+    }
+    60%{
+        opacity:1;
+        transform:perspective(400px) rotate3d(0,1,0,10deg)
+    }
+    80%{
+        transform:perspective(400px) rotate3d(0,1,0,-5deg)
+    }
+    100%{
+        transform:perspective(400px)
+    }
+}
+@keyframes sm-flipInY-out{
+    0%{
+        transform:perspective(400px)
+    }
+    20%{
+        transform:perspective(400px) rotate3d(0,1,0,-5deg)
+    }
+    40%{
+        opacity:1;
+        transform:perspective(400px) rotate3d(0,1,0,10deg)
+    }
+    60%{
+        transform:perspective(400px) rotate3d(0,1,0,-20deg);
+        transition-timing-function:ease-in
+    }
+    100%{
+        opacity:0;
+        transform:perspective(400px) rotate3d(0,1,0,90deg);
+        transition-timing-function:ease-in
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=swingTop]{
+    animation-name:sm-swingTop
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=swingTop]{
+    animation-name:sm-swingTop-out;
+    transform-origin:top center
+}
+@keyframes sm-swingTop{
+    0%{
+        opacity:0;
+        transform:perspective(300px) rotateX(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-swingTop-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:perspective(300px) rotateX(-90deg)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=swingBottom]{
+    animation-name:sm-swingBottom
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=swingBottom]{
+    animation-name:sm-swingBottom-out;
+    transform-origin:bottom center
+}
+@keyframes sm-swingBottom{
+    0%{
+        opacity:0;
+        transform:perspective(300px) rotateX(90deg)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-swingBottom-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:perspective(300px) rotateX(90deg)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=swingRight]{
+    animation-name:sm-swingRight
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=swingRight]{
+    animation-name:sm-swingRight-out;
+    transform-origin:center right
+}
+@keyframes sm-swingRight{
+    0%{
+        opacity:0;
+        transform:perspective(200px) rotateY(-90deg)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-swingRight-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:perspective(200px) rotateY(-90deg)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=swingLeft]{
+    animation-name:sm-swingLeft
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=swingLeft]{
+    animation-name:sm-swingLeft-out;
+    transform-origin:center left
+}
+@keyframes sm-swingLeft{
+    0%{
+        opacity:0;
+        transform:perspective(200px) rotateY(90deg)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes sm-swingLeft-out{
+    0%{
+        opacity:1;
+        transform:none
+    }
+    100%{
+        opacity:0;
+        transform:perspective(200px) rotateY(90deg)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=flash]{
+    animation-name:sm-flash
+}
+@keyframes sm-flash{
+    0%,40%,80%{
+        opacity:0
+    }
+    100%,20%,60%{
+        opacity:1
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=pulse]{
+    animation-name:sm-pulse
+}
+@keyframes sm-pulse{
+    0%{
+        opacity:0
+    }
+    25%{
+        opacity:1
+    }
+    25%,75%{
+        transform:scale(1.05)
+    }
+    0%,100%,50%{
+        transform:none
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=rubberBand]{
+    animation-name:sm-rubberBand
+}
+@keyframes sm-rubberBand{
+    0%{
+        opacity:0;
+        transform:scale3d(1,1,1)
+    }
+    30%{
+        opacity:1;
+        transform:scale3d(1.25,.75,1)
+    }
+    40%{
+        transform:scale3d(.75,1.25,1)
+    }
+    50%{
+        transform:scale3d(1.15,.85,1)
+    }
+    65%{
+        transform:scale3d(.95,1.05,1)
+    }
+    75%{
+        transform:scale3d(1.05,.95,1)
+    }
+    100%{
+        transform:scale3d(1,1,1)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=shake]{
+    animation-name:sm-shake
+}
+@keyframes sm-shake{
+    0%{
+        opacity:0
+    }
+    10%{
+        opacity:1
+    }
+    0%,100%{
+        transform:translate3d(0,0,0)
+    }
+    10%,30%,50%,70%,90%{
+        transform:translate3d(-10px,0,0)
+    }
+    20%,40%,60%,80%{
+        transform:translate3d(10px,0,0)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=swing]{
+    animation-name:sm-swing;
+    transform-origin:top center
+}
+@keyframes sm-swing{
+    0%{
+        opacity:0
+    }
+    20%{
+        opacity:1;
+        transform:rotate3d(0,0,1,15deg)
+    }
+    40%{
+        transform:rotate3d(0,0,1,-10deg)
+    }
+    60%{
+        transform:rotate3d(0,0,1,5deg)
+    }
+    80%{
+        transform:rotate3d(0,0,1,-5deg)
+    }
+    100%{
+        transform:rotate3d(0,0,1,0deg)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=tada]{
+    animation-name:sm-tada
+}
+@keyframes sm-tada{
+    0%{
+        opacity:0;
+        transform:scale3d(1,1,1)
+    }
+    10%{
+        opacity:1
+    }
+    10%,20%{
+        transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)
+    }
+    30%,50%,70%,90%{
+        transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)
+    }
+    40%,60%,80%{
+        transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)
+    }
+    100%{
+        transform:scale3d(1,1,1)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=wobble]{
+    animation-name:sm-wobble
+}
+@keyframes sm-wobble{
+    0%{
+        opacity:0;
+        transform:none
+    }
+    15%{
+        opacity:1;
+        transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)
+    }
+    30%{
+        transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)
+    }
+    45%{
+        transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)
+    }
+    60%{
+        transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)
+    }
+    75%{
+        transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)
+    }
+    100%{
+        transform:none
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounce]{
+    animation-name:sm-bounce;
+    transform-origin:center bottom
+}
+@keyframes sm-bounce{
+    0%{
+        opacity:0
+    }
+    20%{
+        opacity:1
+    }
+    0%,100%,20%,53%,80%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1);
+        transform:translate3d(0,0,0)
+    }
+    40%,43%{
+        transition-timing-function:cubic-bezier(.755,.05,.855,.06);
+        transform:translate3d(0,-30px,0)
+    }
+    70%{
+        transition-timing-function:cubic-bezier(.755,.05,.855,.06);
+        transform:translate3d(0,-15px,0)
+    }
+    90%{
+        transform:translate3d(0,-4px,0)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounceIn]{
+    animation-name:sm-bounceIn
+}
+@keyframes sm-bounceIn{
+    0%,100%,20%,40%,60%,80%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0%{
+        opacity:0;
+        transform:scale3d(.3,.3,.3)
+    }
+    20%{
+        transform:scale3d(1.1,1.1,1.1)
+    }
+    40%{
+        transform:scale3d(.9,.9,.9)
+    }
+    60%{
+        opacity:1;
+        transform:scale3d(1.03,1.03,1.03)
+    }
+    80%{
+        transform:scale3d(.97,.97,.97)
+    }
+    100%{
+        opacity:1;
+        transform:scale3d(1,1,1)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounceInUp]{
+    animation-name:sm-bounceInUp
+}
+@keyframes sm-bounceInUp{
+    0%,100%,60%,75%,90%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0%{
+        opacity:0;
+        transform:translate3d(0,3000px,0)
+    }
+    60%{
+        opacity:1;
+        transform:translate3d(0,-20px,0)
+    }
+    75%{
+        transform:translate3d(0,10px,0)
+    }
+    90%{
+        transform:translate3d(0,-5px,0)
+    }
+    100%{
+        transform:translate3d(0,0,0)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounceInDown]{
+    animation-name:sm-bounceInDown
+}
+@keyframes sm-bounceInDown{
+    0%,100%,60%,75%,90%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0%{
+        opacity:0;
+        transform:translate3d(0,-3000px,0)
+    }
+    60%{
+        opacity:1;
+        transform:translate3d(0,25px,0)
+    }
+    75%{
+        transform:translate3d(0,-10px,0)
+    }
+    90%{
+        transform:translate3d(0,5px,0)
+    }
+    100%{
+        transform:none
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounceInRight]{
+    animation-name:sm-bounceInRight
+}
+@keyframes sm-bounceInRight{
+    0%,100%,60%,75%,90%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0%{
+        opacity:0;
+        transform:translate3d(3000px,0,0)
+    }
+    60%{
+        opacity:1;
+        transform:translate3d(-25px,0,0)
+    }
+    75%{
+        transform:translate3d(10px,0,0)
+    }
+    90%{
+        transform:translate3d(-5px,0,0)
+    }
+    100%{
+        transform:none
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=bounceInLeft]{
+    animation-name:sm-bounceInLeft
+}
+@keyframes sm-bounceInLeft{
+    0%,100%,60%,75%,90%{
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0%{
+        opacity:0;
+        transform:translate3d(-3000px,0,0)
+    }
+    60%{
+        opacity:1;
+        transform:translate3d(25px,0,0)
+    }
+    75%{
+        transform:translate3d(-10px,0,0)
+    }
+    90%{
+        transform:translate3d(5px,0,0)
+    }
+    100%{
+        transform:none
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=unFold]{
+    animation-name:sm-unFold
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=unFold]{
+    animation-name:sm-unFold-out
+}
+@keyframes sm-unFold{
+    0%{
+        transform:scaleY(.01) scaleX(0)
+    }
+    50%{
+        transform:scaleY(.01) scaleX(1)
+    }
+    100%{
+        transform:scaleY(1) scaleX(1)
+    }
+}
+@keyframes sm-unFold-out{
+    0%{
+        transform:scaleY(1) scaleX(1)
+    }
+    50%{
+        transform:scaleY(.01) scaleX(1)
+    }
+    100%{
+        transform:scaleY(.01) scaleX(0)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=flowIn]{
+    animation-name:sm-flowIn
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=flowIn]{
+    animation-name:sm-flowIn-out
+}
+@keyframes sm-flowIn{
+    0%{
+        opacity:0;
+        border-radius:200px;
+        transform:scale(.6)
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+@keyframes sm-flowIn-out{
+    0%{
+        transform:scale(1)
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+        opacity:0;
+        border-radius:200px;
+        transform:scale(.6)
+    }
+}
+.bootstrap-storeify .sm-wrapper.sm-active div[data-sm-effect=fadeIn]{
+    animation-name:sm-fadeIn
+}
+@keyframes sm-fadeIn{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+.bootstrap-storeify .sm-wrapper div[data-sm-effect*=bounce],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=fadeIn],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=flash],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=pulse],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=rubberBand],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=shake],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=swing],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=tada],
+.bootstrap-storeify .sm-wrapper div[data-sm-effect=wobble]{
+    animation-name:sm-fadeIn-out
+}
+@keyframes sm-fadeIn-out{
+    0%{
+        opacity:1
+    }
+    100%{
+        opacity:0
+    }
+}
+.bootstrap-storeify .sm-wrapper .sm-button{
+    position:absolute;
+    z-index:999
+}
+.bootstrap-storeify .sm-wrapper .sm-button,.sm-wrapper .sm-button:after,.sm-wrapper .sm-button:before{
+    transition:all .1s ease
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-align=right][data-sm-button-place=inside]{
+    right:12px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-align=right][data-sm-button-place=outside]{
+    right:0
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-align=left][data-sm-button-place=inside]{
+    left:12px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-align=left][data-sm-button-place=outside]{
+    left:0
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-place=inside]{
+    top:12px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-place=outside]{
+    top:-28px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-style*=cancel]{
+    width:24px;
+    height:24px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-style*=cancel][data-sm-button-place=outside]{
+    margin-top:-6px
+}
+.bootstrap-storeify .sm-wrapper .sm-button[data-sm-button-style*=cancel]:after,.sm-wrapper .sm-button[data-sm-button-style*=cancel]:before{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:80%;
+    height:2px;
+    margin:auto;
+    transform-origin:center
+}
+.sm-wrapper .sm-button[data-sm-button-style*=cancel]:before{
+    transform:rotate(45deg)
+}
+.sm-wrapper .sm-button[data-sm-button-style*=cancel]:after{
+    transform:rotate(-45deg)
+}
+.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=inside],.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=outside]:after,.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=outside]:before,.sm-wrapper .sm-button[data-sm-button-style*="cancel simple"][data-sm-button-place=inside]:after,.sm-wrapper .sm-button[data-sm-button-style*="cancel simple"][data-sm-button-place=inside]:before{
+    background:#111
+}
+.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=inside]:after,.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=inside]:before,.sm-wrapper .sm-button:not([data-sm-button-style*=simple])[data-sm-button-style*=cancel][data-sm-button-place=outside],.sm-wrapper .sm-button[data-sm-button-style*="cancel simple"][data-sm-button-place=outside]:after,.sm-wrapper .sm-button[data-sm-button-style*="cancel simple"][data-sm-button-place=outside]:before{
+    background:#fff
+}
+.sm-wrapper .sm-button:not([data-sm-button-style*=label]){
+    opacity:.5
+}
+.sm-wrapper .sm-button:not([data-sm-button-style*=label]):hover{
+    opacity:1
+}
+.sm-wrapper .sm-button[data-sm-button-style*=text]:after{
+    content:attr(data-sm-button-text);
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-weight:700;
+    text-transform:uppercase
+}
+.sm-wrapper .sm-button[data-sm-button-style*=circle]{
+    border-radius:50%
+}
+.sm-wrapper .sm-button[data-sm-button-style*="text simple"]{
+    font-size:11px
+}
+.sm-wrapper .sm-button[data-sm-button-style*="text simple"][data-sm-button-place=inside]:after{
+    color:#111
+}
+.sm-wrapper .sm-button[data-sm-button-style*="text simple"][data-sm-button-place=outside]:after{
+    color:#fff
+}
+.sm-wrapper .sm-button[data-sm-button-style*=label]{
+    font-size:9px;
+    color:#fff;
+    padding:6px 12px;
+    background:#111;
+    background:linear-gradient(to right,#cc3434 50%,#111 50%);
+    background-size:200% 100%;
+    background-position:right bottom
+}
+.sm-wrapper .sm-button[data-sm-button-style*=label]:hover{
+    background-position:left bottom
+}
+#storeify-contactform-wrapper .wrap-contact-newtemplate01 .form-group{
+    display: block;
+    width: 100%;
+}
+
+#storeify-contactform .storeify-inner-scroll{
+     overflow-y: auto;
+     overflow-x: hidden;
+}
+
+/*#storeify-contactform .storeify-inner-scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #72a7e0 transparent;
+    scrollbar-width: thin;
+}
+#storeify-contactform .storeify-inner-scroll::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+#storeify-contactform .storeify-inner-scroll::-webkit-scrollbar-thumb {
+    background-color: #72a7e0;
+}
+
+#storeify-contactform .storeify-inner-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6469FF;
+}
+
+#storeify-contactform .storeify-inner-scroll::-webkit-scrollbar-thumb:active {
+  background: #6469FF;
+}*/
+
+/*************** SCROLLBAR BASE CSS ***************/
+ 
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+ 
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+ 
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+ 
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+ 
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+ 
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+ 
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+ 
+ 
+ 
+ 
+/*************** SCROLLBAR MAC OS X ***************/
+ 
+#storeify-contactform .storeify-inner-scroll > .scroll-element,
+#storeify-contactform .storeify-inner-scroll > .scroll-element div
+{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+ 
+#storeify-contactform .storeify-inner-scroll > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ 
+#storeify-contactform .storeify-inner-scroll > .scroll-element .scroll-element_track { display: none; }
+#storeify-contactform .storeify-inner-scroll > .scroll-element .scroll-bar {
+    background-color: #6C6E71;
+    display: block;
+ 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ 
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+ 
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+#storeify-contactform .storeify-inner-scroll:hover > .scroll-element .scroll-bar,
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-draggable .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+ 
+ 
+/*#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-x {
+    bottom: 0px;
+    height: 0px;
+    left: 0;
+    min-width: 100%;
+    overflow: visible;
+    width: 100%;
+}*/
+ 
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0px;
+    top: 0;
+    width: 0px;
+}
+ 
+/* scrollbar height/width & offset from container borders */
+/*#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-x .scroll-bar { height: 7px; min-width: 10px; top: -9px; }*/
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-y .scroll-bar { left: -9px; min-height: 10px; width: 7px; }
+ 
+/*#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-x .scroll-element_outer { left: 2px; }
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-x .scroll-element_size { left: -4px; }*/
+ 
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-y .scroll-element_outer { top: 2px; }
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-y .scroll-element_size { top: -4px; }
+ 
+/* update scrollbar offset if both scrolls are visible */
+/*#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -11px; }*/
+#storeify-contactform .storeify-inner-scroll > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -11px; }
+.storeify-requestaquote{
+	padding: 20px 10px;
+	max-width: 100%;
+	line-height: 1.2 !important;
+	position: relative;
+}
+.storeify-requestaquote select {
+   -o-appearance: none !important;
+   -ms-appearance: none !important;
+   -webkit-appearance: none !important;
+   -moz-appearance: none !important;
+   appearance: none !important;
+}
+.storeify-requestaquote .storeify-title-frm{
+	font-weight: 600;
+}
+.storeify-requestaquote .storeify-notes{
+	font-size: 13px;
+}
+.storeify-requestaquote.storeify-frm-loading{
+	overflow: hidden;
+}
+.storeify-requestaquote.storeify-frm-loading:after{
+	display: block;
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url('https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 9;
+}
+.storeify-requestaquote .storeify-body-frm{
+	margin-top:30px;
+}
+.storeify-requestaquote  .storeify-title-frm{
+	margin-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.storeify-requestaquote .storeify-sub-title-frm{
+	margin-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.storeify-requestaquote .storeify-submit-btn, .storeify-requestaquote .storeify-label-control, .storeify-requestaquote .storeify-input-control {
+    font-size: inherit;
+    font-family: inherit;
+}
+.storeify-requestaquote .storeify-frm-group {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+.storeify-requestaquote .bootstrap-datetimepicker-widget{
+	position: absolute;
+	font-size: 13px;
+	min-width: 250px !important;
+	margin: 0;
+	padding: 0;
+}
+.storeify-requestaquote .bootstrap-datetimepicker-widget table{
+	max-width: 100% !important;
+}
+.storeify-requestaquote .bootstrap-datetimepicker-widget table tr td,
+.storeify-requestaquote .bootstrap-datetimepicker-widget table tr th{
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+.storeify-requestaquote  .bootstrap-datetimepicker-widget{
+	background:rgba(255,255,255) !important;
+}
+.storeify-requestaquote .bootstrap-datetimepicker-widget,
+.storeify-requestaquote  .bootstrap-datetimepicker-widget table tr td.active{
+	color: #333 !important;
+}
+.storeify-requestaquote .storeify-label-control {
+    display: block;
+    margin: 0 0 7px 0 !important;
+}
+.storeify-requestaquote.storeify-frm-group .storeify-form-check, 
+.storeify-requestaquote .storeify-frm-group .storeify-form-radio{
+	margin: 0 15px 5px 5px;
+}
+.storeify-requestaquote .storeify-submit-frm{
+	margin: 5px 0;
+}
+.storeify-requestaquote .storeify-input-control{
+	display: block !important;
+	width: 100% !important;
+	height: 36px !important;
+	border: 1px solid #dedede;
+	background: #fff;
+	padding: 0 15px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	line-height: 36px !important;
+}
+.storeify-requestaquote .storeify-submit-btn,
+.storeify-requestaquote .storeify-label-control,
+.storeify-requestaquote .storeify-input-control {
+    font-size: inherit;
+    font-family: inherit;
+}
+.storeify-input-control.storeify-text{
+	background:transparent!important;
+	border: 0 !important;
+}
+.storeify-requestaquote .storeify-textarea{height: auto !important;}
+
+.storeify-requestaquote .storeify-label-control{
+    display: block;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0 0 7px 0 !important;
+}
+.storeify-requestaquote .storeify-submit-btn{
+	background-color:#000;
+	color:#fff;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 8px 35px;
+	margin-top: 5px;
+	border: none;
+	font-weight: 600;
+	display: inline-block;
+	margin: 5px;
+}
+.storeify-requestaquote .storeify-submit-btn.storeify-submit-style-3{
+    border-radius: 30px !important;
+}
+.storeify-requestaquote .storeify-submit-btn.storeify-submit-style-1{
+    border-radius: 0 !important;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-checkbox .storeify-checkbox-label,
+.storeify-requestaquote .storeify-frm-group .storeify-form-radio .storeify-radio-label{
+	position: relative;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-checkbox.choose_display_1,
+.storeify-requestaquote.storeify-frm-group .storeify-form-radio.choose_display_1{
+	display: inline-block;
+	padding: 5px 5px 0 5px;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-checkbox.choose_display_2,
+.storeify-requestaquote .storeify-frm-group .storeify-form-radio.choose_display_2{
+	display:block;
+	padding: 5px 5px 0 10px;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-checkbox-input,
+.storeify-requestaquote .storeify-frm-group .storeify-radio-input{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 16px;
+	height: 16px;
+	opacity: 0 !important;
+    visibility: hidden;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-checkbox-label,
+.storeify-requestaquote .storeify-frm-group .storeify-radio-label{
+	display: inline-block;
+	padding: 0 2px 0 22px;
+	margin: 0;
+	position: relative;
+	line-height: 1;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-checkbox-label:before,
+.storeify-requestaquote .storeify-frm-group .storeify-radio-label:before {
+    border: 1px solid #bfbfbf;
+    content: "";
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.storeify-requestaquote .storeify-frm-group .storeify-radio-label:before{
+	border-radius: 50%;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-checkbox-label:after,
+.storeify-requestaquote .storeify-frm-group .storeify-radio-label:after {
+    color: #4e4e4e;
+    background-color: transparent;
+    content: "";
+    height: 10px;
+    width: 10px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    left: 4px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+     cursor: pointer;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-radio .storeify-radio-label:after{
+	height: 8px;
+    width: 8px;
+    border-radius: 50%;
+     cursor: pointer;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-checkbox .storeify-checkbox-label:after{
+	left: 3px;
+	 cursor: pointer;
+}
+.storeify-frm-group .storeify-form-checkbox .storeify-checkbox-input:checked ~ .storeify-checkbox-label:after,
+.storeify-frm-group .storeify-form-radio .storeify-radio-input:checked ~ .storeify-radio-label:after{
+	opacity: 1 !important;
+	background-color: #000;
+}
+
+.storeify-body-frm.storeify-input-style-2 .storeify-input-control:not(.storeify-text){
+	border-radius: 0.25em !important;
+}
+.storeify-body-frm.storeify-input-style-3 .storeify-input-control:not(.storeify-text){
+	border-radius: 18px !important;
+}
+.storeify-body-frm.storeify-input-style-4 .storeify-input-control:not(.storeify-text){
+	border-top:0 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	padding: 0 15px 0 5px !important;
+}
+.storeify-body-frm.storeify-input-style-4 .storeify-input-control.storeify-select{
+	padding-left: 35px !important;
+}
+.storeify-text-align-1{
+	text-align: left;
+}
+.storeify-text-align-2{
+	text-align: center;
+}
+.storeify-text-align-3{
+	text-align: right;
+}
+.storeify-request-bnt{
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 9;
+}
+.storeify-request-bnt-detail{
+    text-align: left;
+}
+.storeify-select-arrow{
+	right: 12px;
+	bottom: 16px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	border-top-color: rgb(0, 0, 0);
+	display: inline;
+	position: absolute;
+	
+}
+.storeify-div-select{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.storeify-requestaquote .storeify-div-input{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.storeify-requestaquote .storeify-div-input label.error{
+	position: absolute;
+	top: 100%;
+	z-index: 5;
+	display: none;
+	max-width: 100%;
+	padding:3px 5px;
+	margin-top: -1px;
+	line-height: 1;
+	color:#fff;
+	background-color:rgba(220,53,69,.8);
+	border-radius: 2px;
+	text-transform: none;
+	font-size: 13px !important;
+	font-weight: normal !important;
+	font-style: initial;
+}
+.storeify-requestaquote .storeify-div-input label.error::after {
+	  content: "";
+	  position: absolute;
+	  bottom: 100%;
+	  left: 8%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color:  transparent transparent  rgba(220,53,69,.8) transparent;
+}
+.storeify-requestaquote .storeify-display-icon .storeify-input-control{
+	padding-left: 35px;
+}
+.storeify-requestaquote .storeify-display-icon .storeify-field-icon{
+    font-size: 14px;
+    line-height: 1;
+    left: 14px;
+    top: 12px;
+    position: absolute;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-check.choose_display_1,
+.storeify-requestaquote .storeify-frm-group .storeify-form-radio.choose_display_1{
+	display: inline-block;
+}
+.storeify-requestaquote .storeify-frm-group .storeify-form-check.choose_display_2,
+.storeify-form-preview .storeify-frm-group .storeify-form-radio.choose_display_2{
+	display:block;
+}
+.storeify-requestaquote .storeify-col-2{
+	width: 50%;
+	float: left;
+}
+.storeify-requestaquote .storeify-col-3{
+	width: 33.333333%;
+	float: left;
+}
+.storeify-frm-close{
+	font-size: 30px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	color:#000;
+	cursor: pointer;
+    z-index: 9;
+    line-height: 1;
+}
+/*.storeify-requestaquote .storeify-input-control.error{
+	outline: #f6073e99 solid 1px !important;
+}*/
+/*!
+   light-modal v1.1.0: A new lightweight css modal.
+   (c) 2017 
+   MIT License
+   git+https://github.com/hunzaboy/Light-Modal.git
+*/
+.storeify-light-modal {
+  display: none;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  right: 0;
+  z-index: 9000;
+  transition: background 1s;
+  font-size: 16px;
+  visibility: hidden;
+  overflow: auto;
+  height: 100%;
+  scrollbar-color: #ccc transparent;
+  scrollbar-width: thin;
+}
+.storeify-light-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.storeify-light-modal::-webkit-scrollbar-track {
+  background: #ccc; 
+}
+ 
+/* Handle */
+.storeify-light-modal::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+
+/* Handle on hover */
+.storeify-light-modal::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.storeify-light-modal-content {
+  background: transparent;
+  width: 640px;
+  position: relative;
+  max-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+
+}
+
+.storeify-light-modal-content.large-content {
+   width: 780px;
+}
+
+.storeify-light-modal.target {
+   background-color: rgba(0,0,0,.3);
+   background-image: -moz-radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+   background-image: -webkit-radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+   background-image: -o-radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+   background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9));
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+}
+
+
+@media (max-width: 767px) {
+
+  .storeify-light-modal.target .storeify-light-modal-content {
+    width: 90%;
+  }
+  .storeify-light-modal-content {
+  	padding-top:5%;
+  }
+}
+
+@supports (display: flex) {
+  @media (max-width: 767px) {
+    .storeify-light-modal.target .storeify-light-modal-content {
+      width: 640px;
+    }
+  }
+}
+
+/*/*/
+
+	.storeify-animated {
+	  animation-duration: 1s;
+	  animation-fill-mode: both;
+	}
+
+	.storeify-animated.infinite {
+	  animation-iteration-count: infinite;
+	}
+
+	.storeify-animated.delay-1s {
+	  animation-delay: 1s;
+	}
+
+	.storeify-animated.delay-2s {
+	  animation-delay: 2s;
+	}
+
+	.storeify-animated.delay-3s {
+	  animation-delay: 3s;
+	}
+
+	.storeify-animated.delay-4s {
+	  animation-delay: 4s;
+	}
+
+	.storeify-animated.delay-5s {
+	  animation-delay: 5s;
+	}
+
+	.storeify-animated.fast {
+	  animation-duration: 800ms;
+	}
+
+	.storeify-animated.faster {
+	  animation-duration: 500ms;
+	}
+
+	.storeify-animated.slow {
+	  animation-duration: 2s;
+	}
+
+	.storeify-animated.slower {
+	  animation-duration: 3s;
+	}
+
+	@media (print), (prefers-reduced-motion: reduce) {
+	  .storeify-animated {
+	    animation-duration: 1ms !important;
+	    transition-duration: 1ms !important;
+	    animation-iteration-count: 1 !important; 
+	  }
+	}
+	@keyframes storeifyfadeInDown {
+	  from {
+	    opacity: 0;
+	    transform: translate3d(0, -100%, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+
+	.storeifyfadeInDown {
+	  animation-name: fadeInDown;
+	}
+/*/*/
+.storeify-light-modal-quote .storeify-light-modal-content{
+    width: 550px;
+}
+.storeify-light-modal-quote.storeify-mes-modal .storeify-light-modal-content{
+    text-align: center;
+}
+.storeify-light-modal-quote .storeify-header-frm,.storeify-light-modal-quote .storeify-body-frm,.storeify-light-modal-quote .storeify-foooter-frm{
+    width: 100%;
+    float: left;
+}
+.storeify-light-modal-quote .storeify-body-frm{
+    margin-bottom: 15px;
+}
+.storeify-light-modal-quote .storeify-foooter-frm{
+    text-align: center;
+}
+.storeify-light-modal-quote.storeify-chooseproduct-modal .storeify-body-frm h5{
+    display: block;
+    margin-bottom: 15px;
+}
+/*.storeify-light-modal */
+.ify-product-head{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.storeify-light-modal  .ify-product-head .variant-title,
+.storeify-light-modal .ify-product-head h5,
+.storeify-light-modal .ify-product-body h5{
+    padding: 5px;
+    font-size: 18px;
+    margin:10px 0 15px 0;
+}
+.storeify-light-modal .ify-product-head .ify-product-thumbnail{
+    width: 125px;
+    max-width: 100%; 
+    height: 125px;
+    overflow: hidden;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    border:1px solid #e1e3e5;
+}
+.storeify-light-modal .ify-product-head .ify-product-thumbnail img{
+    /*position: absolute;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    text-rendering: auto !important;
+    display: block;
+    color: #8c9196;
+}
+.ify-price-default{
+    display: block;
+    font-size: 12px;
+    margin:3px;
+}
+.storeify-light-modal .ify-product-head .ify-product-thumbnail:after {
+    content: "";
+    display: block;
+    /*padding-bottom: 100%;*/
+}
+.storeify-light-modal .storeify-form-action-quote .variant-title{
+    text-align: center;
+}
+.ify-product-head .ify-product-thumbnail img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.storeify-frm-groupsize input{
+    max-width: 100%;
+}
+.storeify-table-product{
+    width: 100%;
+}
+.page-ify-quote{
+    padding-top: 30px;
+    width: 1200px;
+    max-width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+.ify_qty_group input{padding-left: 25px !important;}
+.storeify-form-action-quote button{cursor: pointer;}
+.storeify-quote-btn-trigger-popup{border: 0;text-transform: none;}
+.ify-quote-group{
+    position: relative;
+    z-index: 5;
+    order: 9;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+.storeify-button-detail{text-align: left;}
+.storeify-form-group .storeify-light-frm-content{
+    display: flex;
+    margin-top: 15px;
+}
+@media screen and (min-width: 380px){
+    .storeify-light-modal.storeify-mode-2 form .storeify-body-frm,
+    .storeify-light-modal.storeify-mode-2 form .storeify-foooter-frm{
+        width: 50%;
+        float: left;
+    }
+    .storeify-light-modal.storeify-mode-2 form .storeify-foooter-frm{
+        padding-top: 25%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .storeify-light-modal.storeify-mode-2 form .storeify-foooter-frm button{
+        width: 100%;
+        cursor: pointer;
+    }
+    .storeify-light-modal.storeify-mode-2 form .ify-product-head .ify-product-thumbnail{
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#storeify-quote-widget{
+    min-height: 30px;
+    font-size: 15px;
+    z-index: 99999;
+    display: inline-block;
+    line-height: 1!important;
+    border-radius: 5px 5px 0 0;
+    position: fixed;
+    padding: 8px 30px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+}
+#storeify-quote-widget .widget-button-inner > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+#storeify-quote-widget .quote-widget-icon{
+    font-size: 18px;
+    margin-right: 5px;
+}
+#storeify-quote-widget .quote-widget-label{
+    margin-right: 5px;
+}
+#storeify-quote-widget .quote-widget-count:before{
+    content: '(';
+    display: inline-block;
+}
+#storeify-quote-widget .quote-widget-count:after{
+    content: ')';
+    display: inline-block;
+}
+.storeify-quote-widget-position-1{
+    left: auto;
+    right: 0;
+    transform: translate(-31px, 0) rotate(-90deg);
+    transform-origin: right top 0;
+    -moz-transform: translate(-31px, 0) rotate(-90deg);
+    -moz-transform-origin: right top 0;
+    -webkit-transform: translate(-31px, 0) rotate(-90deg);
+    -webkit-transform-origin: right top 0;
+    bottom: auto;
+    top: 35%;
+}
+.storeify-quote-widget-position-2{
+    left: 0;
+    right: auto;
+    transform: translate(31px, 0) rotate(90deg);
+    transform-origin: left top 0;
+    -moz-transform: translate(31px, 0) rotate(90deg);
+    -moz-transform-origin: left top 0;
+    -webkit-transform: translate(31px, 0) rotate(90deg);
+    -webkit-transform-origin: left top 0;
+    bottom: auto;
+    top: 35%;  
+}
+.storeify-quote-widget-position-3{
+    bottom: 0;
+    right: 25px; 
+}
+.storeify-quote-widget-position-4{
+    bottom: 0;
+    left: 25px;
+}
+.storeify-thumbnail{object-fit: cover;}
+.ify-clear-fix{display: block !important;padding: 0;margin:0 0 15px 0;}
+.ify-clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width:1200px){
+  .page-ify-quote{width:100%;display: block;}
+}
+.ify-qty-error{border-color: red !important;}

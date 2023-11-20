@@ -1,0 +1,43 @@
+<div class="qv-product-images" style="opacity: 1"></div>
+
+<div class="qv-content">
+
+  <div class="holder">
+
+    <h3 class="qv-product-title"></h3>
+    <h4 class="qv-product-type"></h4>
+    <div class="review-json-fetch"></div>
+<!--     <h5 class="qv-product-original-price"></h5> -->
+    <h5 class="qv-product-price"></h5>
+    <hr />
+    <div class="qv-add-to-cart">
+<!--       <input type="submit" class="qv-add-button " value="Add to Cart"> -->
+      <div class="qv-add-to-cart-response"></div> 
+    </div>
+
+<!--     <div class="qv-product-description"></div> -->
+     <form method="post" action="/cart/add" class="addTocart_submit">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <div class="qv-product-options"></div>
+       <div class="quick-view-swetches" {% if product.id == 7188337197219 %} style="display:none;" {% endif %}>
+      <span class="Quantity-quantity">Quantity</span>
+         <div class="quick_quantity" >
+                <span minusbtn class="minusbtn"  onclick="minusbtn()">-</span>
+      <input min="1" type="text" class="qtty" id="quantity" quantity_qc name="quantity" value="1"/>
+           <span plusbtn class="plusbtn" onclick="plusbtn()">+</span>
+         </div>
+         </div>
+       <a href="/cart" class="go_to_cart" style="color:green; display:none;">View your cart item -></a>
+       <a href="/cart" class="msg-json" style='display:none;'>view you cart</a>
+       
+      <button {% if product.id == 7188337197219 %} style="display:none;" {% endif %} type="submit" class="addTocart qv-add-button">Add to cart </button>
+       
+      </form>
+    <button {% if product.id == 7188337197219 %} style="display:none;" {% endif %} type="button" buy_json="" onclick="buy_json_fun()" class="product--buy-shopify-payment quickviewbuy shopify-payment-button__button--unbranded ">
+              <span>Buy Now</span>
+          </button> 
+        
+  </div>
+
+  <a class="view-product" href=""><span>View Full Product Details</span></a>
+</div>

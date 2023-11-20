@@ -1,0 +1,162 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "844a9128-8aeb-4911-87b2-096572e3f11a": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19902704484681__844a9128-8aeb-4911-87b2-096572e3f11a-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/D33A5203-1-1620x1080.jpg",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "dark",
+            "button_color_palette": "dark",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Hösten är den bästa tiden att plantera",
+            "text": "<p>Koppla av under sommaren och passa på att njuta av solens varma strålar. När värmen lagt sig kan du sätta igång med dina planteringsplaner och sätta händerna i jorden.<\/p>",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19902704484681__844a9128-8aeb-4911-87b2-096572e3f11a-slide-1"
+      ],
+      "settings": {
+        "height": "s",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "1104a2df-b770-4812-ab72-bd2ec15b9b32": {
+      "type": "gallery",
+      "blocks": {
+        "bf55982b-6b87-4caa-b091-e3f692b74535": {
+          "type": "block",
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+            "link": ""
+          }
+        },
+        "7ad289b6-7476-4938-9733-5dea392850f6": {
+          "type": "block",
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/Vintergrona.jpg",
+            "link": ""
+          }
+        },
+        "2adfcd99-1cbb-4169-939b-2a25b4c21707": {
+          "type": "block",
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/Efter1.jpg",
+            "link": ""
+          }
+        },
+        "2712acf1-54a6-4df5-adbb-de7a4e15a4d0": {
+          "type": "blockfour",
+          "settings": {
+            "tfirst_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+            "tsecond_img": "shopify:\/\/shop_images\/image_a6f4f2b2-f590-4e5a-8867-373328c76281.jpg",
+            "tthird_img": "shopify:\/\/shop_images\/image_cbe05b07-7672-4c85-a993-186ab487e21c.jpg",
+            "tfour_img": "shopify:\/\/shop_images\/IMG_20220920_162922.jpg",
+            "link": ""
+          }
+        },
+        "ad10b795-aaa7-444b-8855-76d8418e2550": {
+          "type": "block",
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/Fore1.jpg",
+            "link": ""
+          }
+        },
+        "100b3ae2-2c3f-4cbf-ac21-09bdf0098d82": {
+          "type": "blocktwo",
+          "settings": {
+            "first_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+            "second_img": "shopify:\/\/shop_images\/image_13636fa0-ea78-48cd-846a-a8d33d4f0d92.jpg",
+            "link": ""
+          }
+        },
+        "589976c6-001b-4e62-8a7c-194fa55f9cf9": {
+          "type": "block",
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+            "link": ""
+          }
+        },
+        "768e6a69-1e7a-412b-8c7d-402e112d57fd": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "insta_img": "shopify:\/\/shop_images\/IMG_20220920_162922.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "bf55982b-6b87-4caa-b091-e3f692b74535",
+        "7ad289b6-7476-4938-9733-5dea392850f6",
+        "2adfcd99-1cbb-4169-939b-2a25b4c21707",
+        "2712acf1-54a6-4df5-adbb-de7a4e15a4d0",
+        "ad10b795-aaa7-444b-8855-76d8418e2550",
+        "100b3ae2-2c3f-4cbf-ac21-09bdf0098d82",
+        "589976c6-001b-4e62-8a7c-194fa55f9cf9",
+        "768e6a69-1e7a-412b-8c7d-402e112d57fd"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "grid_layout": "gthree",
+        "grid_layout_template": "l_two"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "844a9128-8aeb-4911-87b2-096572e3f11a",
+    "main-page",
+    "1104a2df-b770-4812-ab72-bd2ec15b9b32"
+  ]
+}

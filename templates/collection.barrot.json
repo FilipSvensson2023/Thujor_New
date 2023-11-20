@@ -1,0 +1,319 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "c89b8868-96c8-4879-af14-a94be3f0377c": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--19642163691849__c89b8868-96c8-4879-af14-a94be3f0377c-slide-1": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "dark",
+            "button_color_palette": "accent",
+            "video": "shopify:\/\/files\/videos\/Putsad real, Barrot.mp4",
+            "text_position": "text-center",
+            "title_size": "size-50",
+            "title": "Barrot",
+            "text": "<p><strong>Prisvärt alternativ till krukodlade eller frilandsodlade med rotklump.<\/strong><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "template--19642163691849__c89b8868-96c8-4879-af14-a94be3f0377c-slide-1"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "center"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "product_grid"
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 4,
+        "show_collection_image": false,
+        "enable_filters": false,
+        "enable_menu": false,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "filter_sticky": false,
+        "filters_show_more_limit": 7,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "cb23042f-e195-4631-be1f-9fc4dc3a2814": {
+      "type": "featured-product-pin-style",
+      "blocks": {
+        "f724b4b7-76d4-4cdd-a6cd-d05d882d757a": {
+          "type": "product",
+          "settings": {
+            "position-vertical": "",
+            "position-horizontal": "",
+            "product": "buxbom-klot-o30-35cm"
+          }
+        }
+      },
+      "block_order": [
+        "f724b4b7-76d4-4cdd-a6cd-d05d882d757a"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ThujaBrabant_fullvuxen_d9fe7760-ab48-465c-ac13-880315cc49dc.jpg",
+        "image2": "shopify:\/\/shop_images\/Thujaocc.BrabantCo10140.jpg",
+        "color_palette": "light_gradient",
+        "opacity": 0.3,
+        "image_position": "left",
+        "title_size": "h1",
+        "heading": "",
+        "description": "",
+        "button_text": "",
+        "link": "",
+        "space-top": 10,
+        "space-bottom": 10,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": false
+      }
+    },
+    "97db062d-d5ff-412b-b455-78bb5b0a9b99": {
+      "type": "section-featured-product",
+      "blocks": {
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-0": {
+          "type": "title",
+          "settings": {
+            "layout": "title-top",
+            "title_size": "h1",
+            "show_vendor_brand": true,
+            "show_vendor_name": true,
+            "show_product_rating": true,
+            "share_whatsapp": true,
+            "share_facebook": true,
+            "share_twitter": true,
+            "share_pinterest": true,
+            "share_messenger": true,
+            "share_email": true,
+            "layout_mobile": "title-top"
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-1": {
+          "type": "short_description",
+          "settings": {
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-2": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "dropdown",
+            "options": true,
+            "show_variant_images": true,
+            "show_unavailable_variants": true
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-3": {
+          "type": "inventory",
+          "settings": {
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-4": {
+          "type": "price",
+          "settings": {
+            "show_tax": false
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-5": {
+          "type": "buy_button",
+          "settings": {
+            "show_amount_selection": true,
+            "show_dynamic_buybutton": false
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-6": {
+          "type": "spacer",
+          "settings": {
+            "height": 15
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-7": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-8": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-9": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-10": {
+          "type": "shipping_timer",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-0",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-1",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-2",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-3",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-4",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-5",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-6",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-7",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-8",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-9",
+        "template--16169842016419__97db062d-d5ff-412b-b455-78bb5b0a9b99-167415576828c2a476-10"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "planterad-klar-thuja-brabant-100",
+        "show_thumbs_desktop": true,
+        "show_thumbs_mobile": true,
+        "images_layout": "aside",
+        "show_product_description": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "e2fa9cca-262d-49ad-b646-bc2945b5aece": {
+      "type": "section-video-banner",
+      "blocks": {
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-title-1": {
+          "type": "title",
+          "settings": {
+            "title": "Så planterar du barrotsplantor",
+            "title_size": "h2"
+          }
+        },
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi går igenom från start till mål hur du ska gå tillväga vid plantering av barrot. I filmen planterar vi avenbok, samma förfarande gäller för alla barrotsväxter så som liguster, bok, spirea, oxbär o.s.v<\/p>"
+          }
+        },
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Att plantera barrot är prisvärt.<\/p>"
+          }
+        },
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Att plantera barrot är lätt.<\/p>"
+          }
+        },
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Att plantera barrot är roligt.<\/p>"
+          }
+        },
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "",
+            "link_url_1": "\/",
+            "button_color_palette_1": "accent",
+            "link_text_2": "",
+            "link_url_2": "",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-title-1",
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-text-1",
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-1",
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-2",
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-usp-3",
+        "template--19379593740617__e2fa9cca-262d-49ad-b646-bc2945b5aece-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bild_2023-07-31_kl._13.51.jpg",
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=XHLNo-VwhxI&t=5s",
+        "video_alt_text": "Så planterar du barrotsplantor",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "c89b8868-96c8-4879-af14-a94be3f0377c",
+    "main-collection",
+    "cb23042f-e195-4631-be1f-9fc4dc3a2814",
+    "97db062d-d5ff-412b-b455-78bb5b0a9b99",
+    "e2fa9cca-262d-49ad-b646-bc2945b5aece"
+  ]
+}

@@ -1,0 +1,51 @@
+{{ section.settings.custom_liquid }}
+
+<style>
+  #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+  @media only screen and (max-width: 47.5em) {
+    #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.custom_liquid.name",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom_liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom_liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.custom_liquid.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:sections.custom_liquid.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:sections.custom_liquid.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom_liquid.presets.name"
+    }
+  ]
+}
+{% endschema %}

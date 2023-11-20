@@ -1,0 +1,230 @@
+
+
+<section class="gallery_wrapper ss">
+  <div class="gallery">
+    <div class="gallery_head">
+      {% if section.settings.heading != blank %}
+      <h3 class="w720 h3">{{ section.settings.heading }}</h3>
+        {% endif %}
+    </div>
+    <div class="instafeed_container 
+    {% if section.settings.grid_layout=="gone" %}gone{% endif %}
+    {% if section.settings.grid_layout=="gtwo" %}gtwo{% endif %}
+    {% if section.settings.grid_layout=="gthree" %}gthree{% endif %}
+    {% if section.settings.grid_layout=="gfour" %}gfour{% endif %}
+    {% if section.settings.grid_layout=="gfive" %}gfive{% endif %}
+
+    {% if section.settings.grid_layout_template=="l_one" %}l_one{% endif %}
+    {% if section.settings.grid_layout_template=="l_two" %}l_two{% endif %}  
+      
+      ">
+      {% for block in section.blocks %}
+      {%- case block.type -%}
+
+      {%- when 'block' -%}
+      <a href="{{ block.settings.link }}">
+      <div class="insta_img one">
+        {% if block.settings.insta_img != blank %}
+        <img src="{{ block.settings.insta_img | img_url: 'original' }}">
+        {% endif %}
+       
+      </div>
+         </a>
+
+      {%- when 'blocktwo' -%}
+         <a href="{{ block.settings.link }}">
+      <div class="two_images">
+       
+        <div class="insta_img">
+        
+          {% if block.settings.first_img != blank %}
+          <img src="{{ block.settings.first_img | img_url: 'original' }}">
+          {% endif %}
+        </div>
+
+        <div class="insta_img">
+          {% if block.settings.second_img != blank %}
+          <img src="{{ block.settings.second_img | img_url: 'original' }}">
+          {% endif %}
+       </div>
+       
+      </div>
+         </a>
+
+      {%- when 'blockfour' -%}
+        <a href="{{ block.settings.link }}">
+      <div class="four_images">
+       
+        <div class="insta_img">
+          {% if block.settings.tfirst_img != blank %}
+          <img src="{{ block.settings.tfirst_img | img_url: 'original' }}">
+          {% endif %}
+        </div>
+
+        <div class="insta_img">
+          {% if block.settings.tsecond_img != blank %}
+          <img src="{{ block.settings.tsecond_img | img_url: 'original' }}">
+          {% endif %}
+        </div>
+
+        <div class="insta_img">
+          {% if block.settings.tthird_img != blank %}
+          <img src="{{ block.settings.tthird_img | img_url: 'original' }}">
+          {% endif %}
+        </div>
+
+        <div class="insta_img">
+          {% if block.settings.tfour_img != blank %}
+          <img src="{{ block.settings.tfour_img | img_url: 'original' }}">
+          {% endif %}
+        </div>
+      
+      </div>
+           </a>
+
+      {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Gallery",
+    "settings": [
+      {
+      "type" : "text",
+      "id" : "heading",
+      "label" : "Heading"
+    },
+      {
+  "type": "select",
+  "id": "grid_layout",
+  "label": "Grid-template-columns",
+  "options": [
+    {
+      "value": "gone",
+      "label": "One"
+    },
+    {
+      "value": "gtwo",
+      "label": "Two"
+    },
+    {
+      "value": "gthree",
+      "label": "Three"
+    },
+    {
+      "value": "gfour",
+      "label": "Four"
+    },
+    {
+      "value": "gfive",
+      "label": "Five"
+    }
+  ],
+  "default": "gthree"
+},
+      {
+  "type": "select",
+  "id": "grid_layout_template",
+  "label": "Gid layout template",
+  "options": [
+    {
+      "value": "l_one",
+      "label": "Layout One"
+    },
+    {
+      "value": "l_two",
+      "label": "Layout Two"
+    }
+  ],
+  "default": "l_one"
+}
+    ],
+    "blocks" : [
+      {
+        "type" : "block",
+        "name" : "Image",
+        "settings": [
+          {
+            "type" : "image_picker",
+            "id" : "insta_img",
+            "label" : "Add Instafeed"
+          },
+          {
+            "type" : "url",
+            "id" : "link",
+            "label" : "Add block URL"
+          }
+          
+        ]
+      },
+        {
+        "type" : "blocktwo",
+        "name" : "Two image",
+        "settings": [
+          {
+            "type" : "image_picker",
+            "id" : "first_img",
+            "label" : "First image"
+          },
+          {
+            "type" : "image_picker",
+            "id" : "second_img",
+            "label" : "Second image"
+          },
+          {
+            "type" : "url",
+            "id" : "link",
+            "label" : "Add block URL"
+          }
+        ]
+      },
+      {
+        "type" : "blockfour",
+        "name" : "Four image",
+        "settings": [
+          {
+            "type" : "image_picker",
+            "id" : "tfirst_img",
+            "label" : "First image"
+          },
+          {
+            "type" : "image_picker",
+            "id" : "tsecond_img",
+            "label" : "Second image"
+          },
+          {
+            "type" : "image_picker",
+            "id" : "tthird_img",
+            "label" : "Third image"
+          },
+          {
+            "type" : "image_picker",
+            "id" : "tfour_img",
+            "label" : "Fourth image"
+          },
+          {
+            "type" : "url",
+            "id" : "link",
+            "label" : "Add block URL"
+          }
+        ]
+      }
+    ],
+      "presets": [
+        {
+            "name": "Gallery"
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

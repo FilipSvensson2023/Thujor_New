@@ -1,0 +1,314 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section-slideshow": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thuja_Smaragd_2048x_a3368206-2c1f-49a9-8493-6c0b21c3a1aa.webp",
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "black",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Hur kan vi hjälpa dig?",
+            "text": "",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "slide_1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "height": "xs",
+        "width": "boxed",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "page-service-menu": {
+      "type": "page-service-menu",
+      "settings": {
+        "menu": "main-menu"
+      }
+    },
+    "section-faq": {
+      "type": "section-faq",
+      "blocks": {
+        "faq_1": {
+          "type": "text",
+          "settings": {
+            "faq_question": "När kommer leveransen?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "",
+            "page": "leveransplan",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "faq_3": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Hur mäts växterna?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>- De räknas utan kruka eller rotklump, ovan jord till spets. De som är klotthujor eller marktäckande mäts i diameter.<br\/>Samt att vissa sorter finns endast med betäckningen Co = krukstorlek. En thuja vi säljer som tex 80+, skall vara minst 80 cm - kan vara högre vissa tider på säsongen.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "faq_2": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad är skillnaden på Brabant och Smaragd?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>- Brabant väljer ni om ni snabbt vill avgränsa en tomt tex, växer snabbt och yvigt - Kräver med andra ord beskärning på våren för att bli fin och buskig. Klipps ofta som rektangulär häck. Kan bli med rätt omvårdnad bli fullt lika proper som häck som andra Ädelthujor. Mindre grön om vintern, ibland med brunare inslag om det är brist på näring, ej så tätväxande som Tex Smaragdthuja. Åtgång ca 2,5 per meter<\/p><p>- Smaragdthuja är extremt tätväxande och likaväxande, dvs mycket noga vid plantering för att undvika tripp, trapp, trull utseende! Vackert intensivt grön om vintern - behöver inte klippas. Åtgång ca 3 per meter. Övriga frågor besvaras gärna över telefon och mail.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "53b15e4b-821d-415f-98c4-b37644ff6f6a": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Varifrån kommer växterna?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>- Stor del av de krukodlade plantor vi säljer på thujor.se kommer från Europas största thujaodling och förädling - där de bedrivit odling sedan 1950 talet, vilket borgar för yttersta kvalitet. Denna Plantskola levererar över Hela Europa inklusive Holland.<\/p><p>- Från Holland tar vi mycket stora mängder av rotklumpsplantor av sorten Brabant och Smaragd. Dessa är klassade och håller högsta kvalitet.<\/p><p>Plantagen ligger i sydöstra Polen, vilket gör att vi kan leverera Thujor från Mars till Nov. Beroende på säsong levererar vi även andra växter från denna plantskola. De aktuella finns i såfall uppe i butiken.<\/p><p>Våra thujor är härdiga svenska klimatet tack vare kallare och varmare klimat vid plantskolan. Alla våra plantor är kontrollerade och innehar sundhetsintyg, detta krävs ej i Sverige, men då vi levererar stora mängder till Norge som står utanför EU så finns det tillgängligt, och borgar för hög och sund kvalitet. Alla våra plantor är fria från sjukdomar. Vi är registrerade hos Jordbruksverket för försäljning av våra plantor. Se bilder ovan från Plantskolan.<\/p><p>Vi har sedan 2013 en egen odling i södra Sverige av Thujor och Avenbok, i dagsläget uppgår den till 2 Ha.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "524b9f3b-1cd4-42ba-96b9-5aebe2f6833b": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Är växterna krukodlade?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>- Det vi säljer som krukodlat - är odlat i kruka med omplantering efter regler sen start, helt intakt och oskadat rotsystem - fungerar att plantera vår,sommar och höst. På dessa ger vi 12 månaders garanti. Gäller även Rotklumpar, dessa säljs dock endast när tempraturen understiger 20-22 c vid upptagningsplatsen.<\/p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "b65128a0-9b4c-4385-86cd-8900ec916625": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Vad är det för skillnad mellan krukodlade thujor och rotklumpsplantor?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<h3><span style=\"text-decoration:underline\">Krukodlade plantor<\/span><\/h3><ul><li>Planteras utan undantag under hela perioden mellan tjällossning till ny tjäle - kan ni gräva så kan ni plantera! En eventuell köldknäpp, frost eller snö efter plantering har ingen som helst betydelse. En krukodlad planta är ovan mark oavsett under vintern på plantskola. En otrolig fördel som tidigarelägger och förlänger säsongen. Planteras också med samma framgång under hela sommaren oavsett temperatur, plantering under den varmaste tiden blir istället en fördel pga den enorma tillväxten i rot och växtdelar av plantan.<\/li><li>Hanteringen med en krukodlad planta passar er som inte vill känna pressen att plantera allt så fort plantan anländer, inte vill eller kan tillse att stort dike grävs, mängder med ny jord etc tillsätts - då en krukodlad planta har redan ett fullt etablerat rotsystem och bara fortsätter växa!<\/li><li>Hantering hos kund är enkel - ni vattnar plantan i sin kruka med spridare eller med slang 1-2 ggr i veckan tills ni kan plantera. Finns ingen bakre gräns för när den måste planteras.<\/li><li>Enkel att lagra inför plantering då den står upp i sin kruka.<\/li><li>Lägre vikt då plantans rotsystem är odlat i krukan - inte nerstoppad i kruka. Kompakt och extremt välutvecklat rotsystem medger säkert resultat för kunden.<\/li><li>Bevattning är extremt mycket enklare vid plantering av en krukodlad planta - hantera den som en vanlig krukväxt - dvs vattna rejält och mycket, återupprepa efter behov. Se bara till att planta inte står i väta under den första etableringsperioden.<\/li><li>Kan planteras i gödslad jord för bästa tillväxt då rotsystemet inte är avskuret som en rotklumpsprodukt.<\/li><li>Kräver inte lika mycket jordförbättring utan ni tillsätter efter behov och efter förutsättningar ny jord, torv, mull etc.<\/li><li>Är odlad efter GRO´s plantskoleregler och omplanteras varje säsong i ny kruka i större och större strl för att öka rotsystemets volym.<\/li><li>Är mindre i volym är en rotklumpsplanta då den inte är frilandsodlad - men efter en säsong är en krukodlad att likställa i volym då den krukodlade är frilandsodlade hos kund.<\/li><li>Kan levereras redan klippta från plantskola för ökad volym. Alla i klassen Exklusive och DeLuxe är klippta från 120 cm och uppåt.<\/li><li>Utan undantag det bästa sättet att odla en planta för att uppnå enklaste och bästa förutsättningarna för en utplantering i ny häck.<\/li><\/ul><h3><span style=\"text-decoration:underline\">Rotklumpsplantor<\/span><\/h3><ul><li>Planteras under tiden Innan tillväxt på plantskola, dvs när plantan kommit i tillväxt är inkommande leveranser över. Oftast är tiden för plantering i Sverige under perioden 1\/3 - 20\/5, men allt beroende på temperatur ute vid plantskolor i Europa. Den holländska plantan levereras tex kortare tid än den Polsk eller Svenskodlade plantan. När temperatur är över 22 C - slutar alla seriösa leverantörer att ta upp plantor. Svenskodlade plantor levereras oftast tills en bit in i Juni. Höstplantering av Rotklumpsplantor är September och en bit in i oktober, möjligen in i november i Skåne. <\/li><li>För att säkerställa att plantan kommer att kunna fungera och etablera sig - bör ert dike eller tänkta planteringsplats vara klart innan plantan levereras. Planera väl<\/li><li>Kan inte lagras hos kund en längre tid då rotsystem inte är anpassad för detta. Levereras och hanteras liggande. Under den varma och soliga perioden levereras plantan med skuggväv för bästa skydd inför plantering. Planta måste utan undantag skyddas från solstrålning tills plantering <\/li><li>Högre vikt på rotklump än krukodlad då rotsystemet kräver mycket mer jord och volym.<\/li><li>Kan inte planteras i gödslad jord - då finns risk för rotbränning och plantan torkar ut och dör.<\/li><li>Bevattnas efter behov under etablering vilket medför mer tillsyn från kunds sida. Får aldrig torka ur, men ej heller stå i väta. Köp till droppslang! Det förenklar allt <\/li><li>Kräver ett större jordbyte, kontroll av befintlig jord så rätt omgivning uppnås, dvs uppluckring och finfördelning av redan bra befintlig jord. Tillsättande av mull, torv och lucker jord efter behov. Se till att dike hål som grävs väl rymmer nya plantan + minst 10 cm ny\/finfördelad jord runt den. Planteras Ej i lerig jord - den ska bytas helt. Se över dräneringsbehov innan om möjligt. Växtrötterna andas = tar upp syre och avger koldioxid. Genom markandning återställs balansen. Går INTE plantera rakt ner i marken i ett hål med andra ord. Undvik att packa jord vid plantering. <\/li><li>Är odlad efter GRO´s plantskoleregler och rotbeskärs under uppväxt för att bilda så mycket nya små rötter för bästa etableringsmöjlighet.<\/li><li>Rotklumpsplantor från 100 cm är klippta kontinuerligt på plantskola mör maximal volym <\/li><li>Går åt något mindre antal per meter häck då planta är större i omfång än krukodlad.<\/li><\/ul>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "ff1de58f-d07c-4020-b2eb-39f552b11eea": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Hur planterar jag en thuja?",
+            "icon": "question",
+            "header_image_svg": "",
+            "header_image_width": 25,
+            "faq_answer": "<p>Nedan beskriver vi en generell informaton hur du planterar, tänk på att förfarandet varierar beroende på hur planteringsförutsättningarna är.<\/p><ul><li>Eftersträva alltid att utforma dike eller hål för planta enligt rekommendationer från respektive produkt. Tillför ny jord, mull, gödsel, täckbark, organiskt material så tillräcklig mängd uppnås - slarva ej med förberedelser kring detta. Allt ni investerar innan plantering med jord och tex bevattningssystem har ni tillbaka vid tillväxt. Följ våra tabeller för åtgång av jord, gödsel etc.<\/li><li>Planerar ni att plantera vid en vägkant där snö hanteras med vägsalt, se till att öka mängden organiskt material - typ barkmull för att kompensera växtens påverkan av salt - uttorkning kan ske annars. Vägsalt i sig som enskild produkt är inte farlig för planta - men missa inte barkmull vid plantering. <\/li><li>Ser ni innan eller vid plantering att mark är vattensjuk så hantera dräneringsdelen Innan plantering för att spara tid och pengar. Ofta räcker det med ett dränerade material i strl 8-32 stenkross med en markduk i botten för att undvika vatten att dra upp i rotnivå. Rötter som står i vatten orsakar oftast rotröta med uttorkning som följd.<\/li><li>Följ bevattningsråd som medföljer - men tänk på att det är en generell tabell som inte är uträknad efter just er åtgång. Alla har olika förutsättningar med hur mark tar åt sig fukt, jordens sammansättning med tex organiskt material, dolda bergsklackar\/sänkor etc under mark, dränerade material kring cykelvägar etc <\/li><li>Kontrollera att växten är rätt sort, rätt höjd innan plantering. Planterar ni plantan är den godkänd av er. Ni har rätt att häva köpet men kostnad\/tid etc för avhjälpande ersätts ej. Plantan ska även returneras i sin kruka - återplanterad på ett bra sätt. Rotklump tas ej i retur <\/li><li>Alla vintergröna växter kräver mer och oftast mer anpassad gödning för att växa rätt, hålla färg, motstå sjukdom och för bästa tillväxt. Använd rätt gödsel och sköt näringstillskottet efter våra rekommendation. Fel gödsel kan rubba hela systemet som skapas med den nya plantan. <\/li><li>Alla vintergröna växter utan undantag kan drabbas av tjältorka innan rötter nått under tjälfri nivå - tjälfri nivå skiljer sig markant åt i landet, men ju längre norrut, desto högre zontillhörighet, lerhalten i jorden - desto mer ökar chansen att ni ska drabbas av det. Det tar minst 2 växtsäsongen innan rötter nått så pass långt ned i marken att plantan drar vatten även under den tidiga våren då solen börjar värma och plantan kan ”luras” att starta igång - kan den inte dra vatten då så kommer den att kunna drabbas och torka ut. Tänk er till exempel en julgran, den är grön, frisk och doftar fint under lång tid under tiden den står inomhus, och då har den även säkert huggits en månad tidigare ute hos odlare - men den är död… Det finns fördröjning i vintergrönt - ni ser inte när skadan sker förens det är försent - I Zon 2- rekommenderar vi vintertäckning (skydd mot sol och vinduttorlkning) första säsongen. Zon 3-6 kan behövas även andra säsongen.<\/li><li>Sandjord är bra för syresättningen vid nyetablering av plantan, men uttorkningen är hög - tillsätt mull eller annat organiskt material<\/li><li>Lerjord håller fukt, tänk på det vid bevattning - men blanda upp med lätt och fin jord, gärna torv för att syresätta jorden rätt.<\/li><li>Moränlera måste bearbetas - den är för hård för att tillväxt av rötter ska kunna ske.<\/li><li>Normal matjord - tillför gärna gödsel för näringsbehovet framöver. <\/li><li>Följ instruktioner kring respektive planta kring klippning och ansning - vissa sorter kräver klippning för att bli täta vilket de flesta önskar. Med en häcksax underlättas allt detta arbete. Tänk på att börja klippa er häck innan den vuxit sig för stor och ohanterlig.<\/li><li>Genomvattna hela rotsystemet - välj droppslang deepdrip - finns inget annat sätt att rotbevattna med vettig ekonomi. Låt aldrig ytskiktet torka ut, låg tillförselintensitet är bättre än hög. Det uppnås med droppbevattning då vattentillförsel sker under lång tid men med betydligt mindre vatten än tex vid bevattning med slang. <\/li><li>Mät exakt längd på er häck senast vid plantering - Nu finns chans att hantera avvikelser både i leverans och fel i beställning. Inget är hugget i sten, är det en felmarginal på upp till 5-10% så hanteras det med hjälp av planteringsinstruktioner som hjälper er att enkelt att räkna ut avstånd mellan plantor - sk cc mått. Om cc mått är tänkt att vara tex 33 cm och blir 37 cm så går det inte att se med blotta ögat, då felet är 2,5 cm på var sida planta - men det gör att ni kan slutföra er plantering även om vi gjort en felleverans med någon planta, eller om ni vill utöka er häck med några meter exempelvis.<\/li><li>Använd er av vår planeringsfolder i första hand för tips och råd under hela planterings och efterskötselperioden. Annars finns vi på chatt\/mail\/telefon för att bistå med svar och tips för er.<\/li><\/ul>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_3",
+        "faq_2",
+        "53b15e4b-821d-415f-98c4-b37644ff6f6a",
+        "524b9f3b-1cd4-42ba-96b9-5aebe2f6833b",
+        "b65128a0-9b4c-4385-86cd-8900ec916625",
+        "ff1de58f-d07c-4020-b2eb-39f552b11eea"
+      ],
+      "settings": {
+        "alignment": "left",
+        "title_size": "h2",
+        "compact": false,
+        "title": "Vanliga frågor",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section-contact-form": {
+      "type": "section-contact-form",
+      "blocks": {
+        "0fd44d31-da56-43fe-972d-74b438cbb328": {
+          "type": "text",
+          "settings": {
+            "title": "Namn",
+            "placeholder": "Namn",
+            "required": true
+          }
+        },
+        "b8774408-fd65-4d42-865e-40eb5da3e9ee": {
+          "type": "text",
+          "settings": {
+            "title": "Företag",
+            "placeholder": "Företag",
+            "required": false
+          }
+        },
+        "30c68dd5-0daf-4c67-9e87-30fae9f6db2e": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Email"
+          }
+        },
+        "e70b7df4-5299-4c87-b7a3-7f0ab2f6cd55": {
+          "type": "tel",
+          "settings": {
+            "title": "Telefonnummer",
+            "placeholder": "Telefonnummer",
+            "required": false
+          }
+        },
+        "7f5b90a3-0ea1-466d-a8bb-fb174e340aed": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "placeholder": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "0fd44d31-da56-43fe-972d-74b438cbb328",
+        "b8774408-fd65-4d42-865e-40eb5da3e9ee",
+        "30c68dd5-0daf-4c67-9e87-30fae9f6db2e",
+        "e70b7df4-5299-4c87-b7a3-7f0ab2f6cd55",
+        "7f5b90a3-0ea1-466d-a8bb-fb174e340aed"
+      ],
+      "settings": {
+        "alignment": "left",
+        "title_size": "h2",
+        "title": "Kontaktformulär",
+        "button_color_palette": "accent",
+        "show_placeholder": true,
+        "compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "page-service-info-blocks": {
+      "type": "page-service-info-blocks",
+      "blocks": {
+        "18ebb386-ad40-4c3f-8386-2c45cb1a6cb2": {
+          "type": "information",
+          "settings": {
+            "color_palette": "light",
+            "title": "Konto detaljer",
+            "text": "<p><a href=\"\/account\" title=\"\/account\">Track your last order<\/a>, <a href=\"\/account\" title=\"\/account\">view all orders<\/a> or <a href=\"\/account\/addresses\" title=\"\/account\/addresses\">manage your addresses<\/a>.<\/p>",
+            "show_login_links": true,
+            "show_shop_address": false,
+            "show_maps_url": false,
+            "show_phone_link": false,
+            "show_mail_link": false,
+            "show_whatsapp_link": false
+          }
+        },
+        "1aac02b6-6669-4da9-8318-348245b71f6a": {
+          "type": "information",
+          "settings": {
+            "color_palette": "light",
+            "title": "Kundsupport",
+            "text": "<p><strong>Kundsupport: <\/strong>010-188 80 00<br\/><strong>Mån-Tor: <\/strong>09:00-12:00, 13:00-15:00<br\/><strong>Fre: <\/strong>09:00-12:00<\/p>",
+            "show_login_links": true,
+            "show_shop_address": true,
+            "show_maps_url": true,
+            "show_phone_link": true,
+            "show_mail_link": true,
+            "show_whatsapp_link": true
+          }
+        },
+        "e40e00a1-f1c1-46de-84f4-9f8ac1ca29af": {
+          "type": "information",
+          "settings": {
+            "color_palette": "light_2",
+            "title": "Svedberga Plantskola AB",
+            "text": "",
+            "show_login_links": false,
+            "show_shop_address": true,
+            "show_maps_url": true,
+            "show_phone_link": false,
+            "show_mail_link": false,
+            "show_whatsapp_link": false
+          }
+        }
+      },
+      "block_order": [
+        "18ebb386-ad40-4c3f-8386-2c45cb1a6cb2",
+        "1aac02b6-6669-4da9-8318-348245b71f6a",
+        "e40e00a1-f1c1-46de-84f4-9f8ac1ca29af"
+      ],
+      "settings": {
+      }
+    },
+    "section-google-maps": {
+      "type": "section-google-maps",
+      "settings": {
+        "google_maps_iframe": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2222.088202540793!2d12.693900615845205!3d56.15557958066305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522f4d8cb5d5a1%3A0x84bf36580fdc86b5!2sThujor.se%20-%20Allerum!5e0!3m2!1sen!2sin!4v1678787576427!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section-slideshow",
+    "page-service-menu",
+    "section-faq",
+    "section-contact-form",
+    "page-service-info-blocks",
+    "section-google-maps"
+  ]
+}

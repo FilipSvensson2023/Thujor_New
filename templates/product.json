@@ -1,0 +1,255 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": true
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "c7259cb9-7235-4028-b6df-3a68077fed80": {
+          "type": "title",
+          "settings": {
+            "layout": "title-right",
+            "title_size": "h1",
+            "show_vendor_brand": true,
+            "show_vendor_name": true,
+            "show_product_rating": true,
+            "share_whatsapp": true,
+            "share_facebook": true,
+            "share_twitter": true,
+            "share_pinterest": true,
+            "share_messenger": true,
+            "share_email": true,
+            "layout_mobile": "title-top"
+          }
+        },
+        "13ce978e-e086-46dd-b21a-5fadca9b0181": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"shopify-product-reviews-badge\" data-id=\"{{ product.id }}\"><\/span>"
+          }
+        },
+        "acd66545-7995-4ed9-902c-9753272c852b": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "short_description": {
+          "type": "short_description",
+          "disabled": true,
+          "settings": {
+            "show_read_more": true
+          }
+        },
+        "variant_selection": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "dropdown",
+            "options": true,
+            "show_variant_images": true,
+            "show_unavailable_variants": true,
+            "enable_selling_plans": true
+          }
+        },
+        "90724a70-740a-4cc9-984c-764e1d76a5bd": {
+          "type": "codes",
+          "settings": {
+            "show_sku": true,
+            "show_barcode": true
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": true
+          }
+        },
+        "buy_button": {
+          "type": "buy_button",
+          "settings": {
+            "show_amount_selection": true,
+            "show_dynamic_buybutton": false,
+            "preorder": false,
+            "preorder_button_text": "Pre-order",
+            "preorder_label": "",
+            "preorder_label_color_palette": "light_2",
+            "preorder_show_dynamic_buybutton": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "d94f252c-5e6c-41f6-9160-b7c99d602c40": {
+          "type": "shopify:\/\/apps\/s-request-a-quote-hide-price\/blocks\/button_block\/dac9aba2-251e-4c25-abc3-9fc57dbf7885",
+          "settings": {
+            "font_size": 16,
+            "color_text": "#ffffff",
+            "bg_button": "#000000",
+            "label_btn": "Add to Quote",
+            "multi_lang": true,
+            "class_button": "storeify-btn-custom",
+            "form_id": ""
+          }
+        },
+        "e9431daf-3b99-40f6-89ff-dab164cda2ff": {
+          "type": "spacer",
+          "settings": {
+            "height": 0
+          }
+        },
+        "e9f01486-513a-498e-8474-305ee3efabac": {
+          "type": "short_description",
+          "settings": {
+            "show_read_more": true
+          }
+        },
+        "80e67d89-9369-4ddb-8111-2aa1c36fb500": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "ce57c15f-9a2f-4731-8dfe-6ed8eefa9924": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "52df90b0-c2aa-4ae2-8f31-d18e5a33e088": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp": "<p>Tell a unique detail about this product<\/p>"
+          }
+        },
+        "47fd681c-2e39-4a5a-9450-94c928596127": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "global.short_description"
+          }
+        }
+      },
+      "block_order": [
+        "c7259cb9-7235-4028-b6df-3a68077fed80",
+        "13ce978e-e086-46dd-b21a-5fadca9b0181",
+        "acd66545-7995-4ed9-902c-9753272c852b",
+        "short_description",
+        "variant_selection",
+        "90724a70-740a-4cc9-984c-764e1d76a5bd",
+        "inventory",
+        "price",
+        "buy_button",
+        "d94f252c-5e6c-41f6-9160-b7c99d602c40",
+        "e9431daf-3b99-40f6-89ff-dab164cda2ff",
+        "e9f01486-513a-498e-8474-305ee3efabac",
+        "80e67d89-9369-4ddb-8111-2aa1c36fb500",
+        "ce57c15f-9a2f-4731-8dfe-6ed8eefa9924",
+        "52df90b0-c2aa-4ae2-8f31-d18e5a33e088",
+        "47fd681c-2e39-4a5a-9450-94c928596127"
+      ],
+      "settings": {
+        "show_thumbs_desktop": true,
+        "show_thumbs_mobile": true,
+        "images_layout": "aside",
+        "show_product_description": true,
+        "product_description_enable_read_more": false,
+        "pros": "",
+        "cons": "",
+        "specifications": "",
+        "product_description_mobile_collapse": false
+      }
+    },
+    "1679383361760b2789": {
+      "type": "apps",
+      "blocks": {
+        "e3a3c9ca-beea-44b9-8729-32e81944f32a": {
+          "type": "shopify:\/\/apps\/propair-furniture-warranty\/blocks\/app-block\/0fac0297-0c28-4409-8d5e-8673f623171f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e3a3c9ca-beea-44b9-8729-32e81944f32a"
+      ],
+      "settings": {
+      }
+    },
+    "1678855448b240e54e": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommended_products_qty": 6,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Du kanske också gillar...",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 0,
+        "mobile_collapse": false
+      }
+    },
+    "reviews": {
+      "type": "product-reviews",
+      "settings": {
+        "text_alignment": "start",
+        "title_size": "h3",
+        "title": "Recensioner",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "mobile_collapse": false
+      }
+    },
+    "recently-viewed": {
+      "type": "section-recently-viewed-products",
+      "custom_css": [
+        "ul.l4cl.mobile-compact.w20 {gap: 16px;}"
+      ],
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "left",
+        "title_size": "h3",
+        "title": "Tittat på tidigare",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_quick_buy_compact": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "1679383361760b2789",
+    "1678855448b240e54e",
+    "recommendations",
+    "reviews",
+    "recently-viewed"
+  ]
+}

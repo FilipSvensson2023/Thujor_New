@@ -1,0 +1,30 @@
+{% assign label_btn = "Begär offert som Planterad & Klar" %}
+{% if shop.metafields.storeifyquote %}
+    {% assign locale_current = shop.locale %}
+    {% assign storeify_quote_mode = shop.metafields.storeifyquote.quote_settings.mode %}
+    {% assign quote_lang = shop.metafields.storeifyquote.quote_settings.lang %}
+    {% if quote_lang contains locale_current %}
+        {% if storeify_quote_mode == 1 %}
+          {% assign label_btn = quote_lang[locale_current].btn_addquote  %}
+        {% else %}
+          {% assign label_btn = quote_lang[locale_current].call_for_price  %}
+         {% endif %}
+    {% else %}
+        {% if storeify_quote_mode == 1 %}
+          {% assign label_btn = quote_lang.default.btn_addquote  %}
+        {% else %}
+          {% assign label_btn = quote_lang.default.call_for_price  %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+<div class="ify-hide ify-quote-group ify-quote-group-{{product.id}}" data-targetid="{{product.id}}" data-targethandle="{{product.handle}}">
+<button type="button" class="storeify-quote-btn-trigger-popup btn button button--primary ify-button-code" data-product="{{ product.handle }}">{{ label_btn }}</button>
+{% assign productCollections = product.collections | map:'id' %}
+<script id="ify_script_item_{{product.id}}">
+    var storeifyRequestaquote = storeifyRequestaquote || {};
+    storeifyRequestaquote.productdata = storeifyRequestaquote.productdata || {};
+    storeifyRequestaquote.productdata['{{product.id}}'] = {"id":{{ product.id }},"title":{{ product.title | json }},"handle":"{{ product.handle }}","available":{{ product.available }},"vendor":"{{ product.vendor }}","type":"{{ product.type }}","tags":{{ product.tags | json }},"price":{{ product.price }}};
+    storeifyRequestaquote.collections = storeifyRequestaquote.collections || {};
+    storeifyRequestaquote.collections['{{product.id}}'] = {{ productCollections | json }};
+</script>
+</div>

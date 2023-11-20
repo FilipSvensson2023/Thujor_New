@@ -1,0 +1,147 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+<article class="palette-{{ section.settings.color_palette }} m6er module-color-palette">
+	<h1><span class="strong">{{ '404.404' | t }}</span> {{ '404.title' | t }}</h1>
+	<p>{{ '404.subtitle_html' | t }}</p>
+	<p class="button-palette-{{ section.settings.button_color_palette }} {% unless section.settings.show_link %} link-btn{% endunless %}"><a href="{{ section.settings.link_url }}" {% if section.settings.show_link %}class="strong"{% endif %}>{{ section.settings.link_text }}{% if section.settings.show_link %}&nbsp;<i aria-hidden="true" class="icon-chevron-right"></i>{% endif %}</a></p>
+</article>
+<figure id="background" class="palette-{{ section.settings.color_palette }} module-color-palette static">
+  <span class="img-overlay" style="opacity:{{ section.settings.overlay_opacity | divided_by: 100.0 }}"></span>
+	{%- if section.settings.video -%}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+	{%- endif -%}
+	{%- if section.settings.image -%}
+		{%- assign default_alt = 'header.extra_img_default_alt' | t %}
+		<picture {% if section.settings.video %}class="mobile-only"{% endif %}>
+	      <img
+			src="{{ 'placeholder-pixel.png' | asset_img_url }}"
+	        data-src="{{ section.settings.image | image_url: width: 1400 }}"
+	        data-srcset="{% render 'image-srcset', image: section.settings.image %}"
+	        sizes="100vw"
+	        width="1400"
+	        height="846"
+			alt="{{ section.settings.image.alt | default: default_alt | escape }}"
+            style="object-position: {{ section.settings.image.presentation.focal_point }}"
+	      >
+		</picture>
+	{% endif %}
+</figure>
+
+{% schema %}
+{
+  "name": "t:main.404.name",
+  "class": "align-center",
+  "settings": [
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "t:main.404.settings.image.label",
+      "info": "t:main.404.settings.image.info"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "t:main.404.settings.overlay_opacity.label",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "color_palette",
+      "label": "t:main.404.settings.color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:main.404.settings.color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:main.404.settings.color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:main.404.settings.color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:main.404.settings.color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:main.404.settings.color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:main.404.settings.color_palette.options__6.label"
+        },
+        {
+          "value": "light_gradient",
+          "label": "t:main.404.settings.color_palette.options__7.label"
+        },
+        {
+          "value": "dark_gradient",
+          "label": "t:main.404.settings.color_palette.options__8.label"
+        }
+      ],
+      "default": "dark"
+    },
+    {
+      "id": "video",
+      "type": "video",
+      "label": "t:main.404.settings.video.label",
+      "info": "t:main.404.settings.video.info"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "t:main.404.settings.link_text.label",
+      "default": "Button"
+    },
+    {
+      "id": "link_url",
+      "type": "url",
+      "label": "t:main.404.settings.link_url.label",
+      "default": "/"
+    },
+    {
+      "type": "select",
+      "id": "button_color_palette",
+      "label": "t:main.404.settings.button_color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:main.404.settings.button_color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:main.404.settings.button_color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:main.404.settings.button_color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:main.404.settings.button_color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:main.404.settings.button_color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:main.404.settings.button_color_palette.options__6.label"
+        }
+      ],
+      "default": "accent"
+    },
+    {
+      "id": "show_link",
+      "type": "checkbox",
+      "label": "t:main.404.settings.show_link.label"
+    }
+  ]
+}
+{% endschema %}

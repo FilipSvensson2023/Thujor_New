@@ -1,0 +1,248 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{%- liquid
+  if section.settings.title_size == 'size-50'
+    assign title_classes = section.settings.title_size | append: ' mobile-size-' | append: settings.mobile_font_size | remove: 'px'
+    assign title_size = 'h1'
+  else
+    assign title_classes = false
+    assign title_size = section.settings.title_size
+  endif
+-%}
+<article class="palette-{{ section.settings.color_palette }}
+  module-color-palette
+  m6wd
+  large
+  text-{{ section.settings.text_position }}
+  {% if section.settings.numbers_accent_color %}numbers-accent{% endif %}
+  ">
+  {%- if section.settings.image %}
+    <figure class="background plain">
+      <span class="img-overlay" style="opacity:{{ section.settings.overlay_opacity | divided_by: 100.0 }}"></span>
+      <picture>
+        <img
+          src="{{ 'placeholder-pixel.png' | asset_img_url }}"
+          data-src="{{ section.settings.image | image_url: height: 373, width: 1400 }}"
+          data-srcset="{% render 'image-srcset', image: section.settings.image, max_width: 2900 %}"
+          sizes="
+            100vw
+          "
+          width="1400"
+          height="373"
+          alt="{{ section.settings.image.alt | default: section.settings.title | escape }}"
+          style="object-position: {{ section.settings.image.presentation.focal_point }}"
+        >
+      </picture>
+    </figure>
+  {%- endif -%}
+  <header class="w720 {% if section.settings.text_position == 'center' %}align-center{% endif %} {% if section.settings.title_size == 'size-50' %}size-18 mobile-size-14{% endif %}">
+    {%- if section.settings.title != empty -%}
+      <{{ title_size }}{% if title_classes %} class="{{ title_classes }}"{% endif %}>{{ section.settings.title }}</{{ title_size }}>
+    {%- endif -%}
+    {%- if section.settings.text != empty -%}{{ section.settings.text }}{%- endif -%}
+  </header>
+  {%- if section.blocks.size > 0 -%}
+    <ul class="l4cu{% if section.settings.numbers_boxed %} box{% endif %}">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}><span>{{ block.settings.number | replace: ',', '.' }}</span> {{ block.settings.text }}</li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</article>
+
+<style>
+  #shopify-section-{{ section.id }} .m6wd { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+  @media only screen and (max-width: 47.5em) {
+    #shopify-section-{{ section.id }} .m6wd { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.counters.name",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "t:sections.counters.settings.image.label",
+      "info": "t:sections.counters.settings.image.info"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "t:sections.counters.settings.overlay_opacity.label",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "color_palette",
+      "label": "t:sections.counters.settings.color_palette.label",
+      "options": [
+        {
+          "value": "white",
+          "label": "t:sections.counters.settings.color_palette.options__1.label"
+        },
+        {
+          "value": "black",
+          "label": "t:sections.counters.settings.color_palette.options__2.label"
+        },
+        {
+          "value": "light",
+          "label": "t:sections.counters.settings.color_palette.options__3.label"
+        },
+        {
+          "value": "dark",
+          "label": "t:sections.counters.settings.color_palette.options__4.label"
+        },
+        {
+          "value": "accent",
+          "label": "t:sections.counters.settings.color_palette.options__5.label"
+        },
+        {
+          "value": "light_2",
+          "label": "t:sections.counters.settings.color_palette.options__6.label"
+        },
+        {
+          "value": "light_gradient",
+          "label": "t:sections.counters.settings.color_palette.options__7.label"
+        },
+        {
+          "value": "dark_gradient",
+          "label": "t:sections.counters.settings.color_palette.options__8.label"
+        }
+      ],
+      "default": "dark_gradient"
+    },
+    {
+      "id": "text_position",
+      "type": "select",
+      "label": "t:sections.counters.settings.text_position.label",
+      "info": "t:sections.counters.settings.text_position.info",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.counters.settings.text_position.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.counters.settings.text_position.options__2.label"
+        },
+        {
+          "value": "end",
+          "label": "t:sections.counters.settings.text_position.options__3.label"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "label": "t:sections.counters.settings.title_size.label",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.counters.settings.title_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.counters.settings.title_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.counters.settings.title_size.options__3.label"
+        },
+        {
+          "value": "size-50",
+          "label": "t:sections.counters.settings.title_size.options__4.label"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "label": "t:sections.counters.settings.title.label",
+      "default": "Counters"
+    },
+    {
+      "id": "text",
+      "type": "richtext",
+      "label": "t:sections.counters.settings.text.label",
+      "default": "<p>Share achievements, numbers, facts and information about your brand with your customers.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "numbers_boxed",
+      "label": "t:sections.counters.settings.numbers_boxed.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "numbers_accent_color",
+      "label": "t:sections.counters.settings.numbers_accent_color.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.counters.settings.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:sections.counters.settings.spacing.spacing_desktop.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:sections.counters.settings.spacing.spacing_mobile.label",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "counter",
+      "name": "t:sections.counters.blocks.counter.name",
+      "settings": [
+        {
+          "id": "number",
+          "type": "text",
+          "label": "t:sections.counters.blocks.counter.settings.number.label",
+          "default": "50"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "t:sections.counters.blocks.counter.settings.text.label",
+          "default": "<p>Describe facts or numbers</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.counters.presets.name",
+      "blocks": [
+        {
+          "type": "counter"
+        },
+        {
+          "type": "counter"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
